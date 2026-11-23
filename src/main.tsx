@@ -3,13 +3,14 @@ import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { BUILDINGS, LANGS, UI, tr, type Building, type Errand, type Lang } from './data';
 import { CityMap } from './CityMap';
 import guidesJson from './guides.json';
+import { NEXT_UPDATE, STAND, VERSION, fmtDate } from './version';
 import './styles.css';
 
 const STAMP = '<svg viewBox="0 0 64 64" width="38" height="38" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="none" stroke="#e63946" stroke-width="5"/><circle cx="32" cy="32" r="21" fill="none" stroke="#e63946" stroke-width="2.5" stroke-dasharray="4 3"/><text x="32" y="41" text-anchor="middle" font-size="26" font-weight="900" fill="#e63946" font-family="system-ui,sans-serif">S</text></svg>';
 
 const initLang = (): Lang => {
   const n = (navigator.language || 'en').slice(0, 2);
-  const map: Record<string, Lang> = { de: 'de', ar: 'ar', tr: 'tr', uk: 'uk', ru: 'ru', fa: 'fa', ur: 'ur', hi: 'hi' };
+  const map: Record<string, Lang> = { de: 'de', ar: 'ar', tr: 'tr', uk: 'uk', ru: 'ru', pl: 'pl', ro: 'ro', fa: 'fa', ur: 'ur', hi: 'hi' };
   return map[n] ?? 'en';
 };
 
@@ -118,7 +119,7 @@ function App() {
         </section>
       )}
       </div>
-      <footer class="foot"><a href="./impressum.html">Impressum</a> · <a href="./datenschutz.html">Datenschutz</a> · <span>{u('notAuthority')}</span></footer>
+      <footer class="foot"><span>StempelMap v{VERSION} · {fmtDate(STAND, lang)} · ⟳ {fmtDate(NEXT_UPDATE, lang)}</span> · <a href="./impressum.html">Impressum</a> · <a href="./datenschutz.html">Datenschutz</a> · <span>{u('notAuthority')}</span></footer>
     </div>
   );
 }
@@ -148,12 +149,12 @@ function Guide({ id, lang, u }: { id: string; lang: Lang; u: (k: string) => stri
       <div class="g-links">
         {g.links.map(l => <a class="official" href={l} target="_blank" rel="noopener noreferrer">🔗 {new URL(l).hostname.replace(/^www\./, '')}</a>)}
       </div>
-      <p class="g-checked">{u('checked')}</p>
+      <p class="g-checked">🕓 {fmtDate(STAND, lang)} · {u('checked')}</p>
     </div>
   );
 }
 
-const VOICE: Record<string, string> = { de: 'de-DE', en: 'en-US', ar: 'ar-SA', tr: 'tr-TR', uk: 'uk-UA', ru: 'ru-RU', fa: 'fa-IR', ur: 'ur-PK', hi: 'hi-IN' };
+const VOICE: Record<string, string> = { pl: 'pl-PL', ro: 'ro-RO', de: 'de-DE', en: 'en-US', ar: 'ar-SA', tr: 'tr-TR', uk: 'uk-UA', ru: 'ru-RU', fa: 'fa-IR', ur: 'ur-PK', hi: 'hi-IN' };
 /** Read the guide aloud with the device's own voice (free, offline, nothing is sent). */
 function ReadAloud({ lang, text, u }: { lang: string; text: string; u: (k: string) => string }) {
   const [on, setOn] = useState(false);
