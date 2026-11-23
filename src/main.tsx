@@ -1,5 +1,5 @@
 import { render } from 'preact';
-import { useMemo, useState } from 'preact/hooks';
+import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { BUILDINGS, LANGS, UI, tr, type Building, type Errand, type Lang } from './data';
 import { CityMap } from './CityMap';
 import guidesJson from './guides.json';
@@ -27,14 +27,48 @@ function App() {
 
   const pick = (b: Building, x?: Errand) => { setActive(b); setErrand(x ?? null); setQ(''); };
 
+  // accessibility preferences (kept in this browser only)
+  const load = (k: string) => { try { return localStorage.getItem('pc.' + k) === '1'; } catch { return false; } };
+  const [listMode, setListMode] = useState(load('list'));
+  const [big, setBig] = useState(load('big'));
+  const [contrast, setContrast] = useState(load('contrast'));
+  const [panel, setPanel] = useState(false);
+  const save = (k: string, v: boolean) => { try { localStorage.setItem('pc.' + k, v ? '1' : '0'); } catch { /* ignore */ } };
+  useEffect(() => { document.documentElement.classList.toggle('big', big); save('big', big); }, [big]);
+  useEffect(() => { document.documentElement.classList.toggle('hc', contrast); save('contrast', contrast); }, [contrast]);
+  useEffect(() => save('list', listMode), [listMode]);
+
+  // screen reader announcement + move focus to the opened panel
+  const [say, setSay] = useState('');
+  const sheetHead = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    if (!active) return;
+    setSay(`${tr(errand ? errand.t : active.t, lang)} ${u('opened')}` + (errand ? '' : `, ${active.errands.length} ${u('errands')}`));
+    setTimeout(() => sheetHead.current?.focus(), 50);
+  }, [active, errand]);
+  const listHead = useRef<HTMLHeadingElement>(null);
+  const skipToList = (e: Event) => { e.preventDefault(); setListMode(true); setTimeout(() => listHead.current?.focus(), 50); };
+
   return (
     <div class={'app' + (active ? ' has-sheet' : '')} dir={rtl ? 'rtl' : 'ltr'} lang={lang}>
+      <a href="#list" class="skip" onClick={skipToList}>{u('skip')}</a>
+      <div class="sr" aria-live="polite">{say}</div>
       <header>
         <div class="brand"><span class="logo">📎</span><div><b>Paperclip</b><small>{u('title')} · {u('sub')}</small></div></div>
+        <div class="tools">
+        <button class="a11y-btn" aria-expanded={panel} aria-controls="a11y-panel" onClick={() => setPanel(!panel)}>♿ <span class="lbl">{u('a11y')}</span></button>
         <select value={lang} onChange={ev => setLang((ev.target as HTMLSelectElement).value as Lang)} aria-label="Language">
           {LANGS.map(l => <option value={l.id}>{l.name}</option>)}
         </select>
+        </div>
       </header>
+      {panel && (
+        <div id="a11y-panel" class="a11y-panel" role="group" aria-label={u('a11y')}>
+          <label><input type="checkbox" checked={listMode} onChange={() => setListMode(!listMode)} /> 📋 {u('listView')}</label>
+          <label><input type="checkbox" checked={big} onChange={() => setBig(!big)} /> 🔠 {u('bigText')}</label>
+          <label><input type="checkbox" checked={contrast} onChange={() => setContrast(!contrast)} /> 🌓 {u('contrast')}</label>
+        </div>
+      )}
       <div class="search">
         <input value={q} onInput={ev => setQ((ev.target as HTMLInputElement).value)} placeholder={u('search')} aria-label={u('search')} />
         {hits.length > 0 && (
@@ -43,15 +77,27 @@ function App() {
       </div>
 
       <div class="stage">
+      {listMode ? (
+        <nav class="list-view" id="list" aria-labelledby="list-h">
+          <h2 id="list-h" ref={listHead} tabIndex={-1}>{u('allPlaces')}</h2>
+          {BUILDINGS.map(b => (
+            <section class="lv-b">
+              <h3><span aria-hidden="true">{b.icon}</span> {tr(b.t, lang)}</h3>
+              <ul>{b.errands.map(x => <li><button aria-current={errand?.id === x.id} onClick={() => pick(b, x)}>{tr(x.t, lang)}</button></li>)}</ul>
+            </section>
+          ))}
+        </nav>
+      ) : (
       <div class="map-wrap">
         <CityMap lang={lang} active={active} onPick={b => pick(b)} />
         {!active && <span class="hint">🖐️ {u('hint')}</span>}
         {active && <button class="map-back" onClick={() => { setActive(null); setErrand(null); }}>{back} {u('back')}</button>}
       </div>
+      )}
 
       {active && (
-        <section class="sheet" style={{ '--c': active.color } as any}>
-          <div class="sheet-head"><span class="big-icon">{active.icon}</span><h2>{tr(active.t, lang)}</h2></div>
+        <section class="sheet" aria-label={tr(active.t, lang)} style={{ '--c': active.color } as any}>
+          <div class="sheet-head"><span class="big-icon" aria-hidden="true">{active.icon}</span><h2 ref={sheetHead} tabIndex={-1}>{tr(active.t, lang)}</h2></div>
           {!errand ? (
             <>
               <p class="muted">{u('errands')}</p>

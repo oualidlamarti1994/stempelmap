@@ -492,5 +492,558 @@
   ],
   "cost": "Genellikle ücretsizdir.",
   "tip": "⚠️ Telefon üzerinden asla TAN (işlem onay kodu) veya şifre vermeyin – bankalar bunları asla istemez."
+ },
+ "krankenversicherung": {
+  "steps": [
+   "Almanya'da sağlık sigortası zorunludur.",
+   "Çalışanlar için: Genellikle kamu sigortası (örneğin AOK, TK, Barmer) – sigorta şirketini kendiniz seçersiniz.",
+   "Üyelik için başvurun ve sertifikayı işvereninize verin.",
+   "Fotoğraflı sağlık kartınız posta yoluyla size ulaşacaktır."
+  ],
+  "docs": [
+   "Pasaport",
+   "Kayıt belgesi (Anmeldung)",
+   "İş sözleşmesi veya öğrenci belgesi",
+   "Fotoğraf"
+  ],
+  "cost": "Kamu sigortası: Maaşınızın belirli bir yüzdesi; işveren yaklaşık yarısını öder.",
+  "tip": "Kendi geliri olmayan aile üyeleri genellikle kamu sigortası kapsamında ücretsiz olarak sigortalanır."
+ },
+ "hausarzt": {
+  "steps": [
+   "Yakınınızda bir aile hekimi (Hausarzt) bulun (sigortanızdan veya 116117.de üzerinden yardım alabilirsiniz).",
+   "Arayıp yeni hasta kabul edip etmediklerini sorun.",
+   "Sağlık kartınızı (Gesundheitskarte) yanınızda getirin.",
+   "Gerekirse aile hekiminiz sizi uzman doktorlara sevk eder."
+  ],
+  "docs": [
+   "Sağlık kartı",
+   "İlaç listesi",
+   "Önceki tıbbi raporlar"
+  ],
+  "cost": "Kamu sigortası (gesetzliche Krankenversicherung) ile ücretsizdir.",
+  "tip": "Randevu alamıyor musunuz? 116 117 randevu servisi size yardımcı olabilir."
+ },
+ "termin116": {
+  "steps": [
+   "116 117'yi arayın veya 116117 uygulamasını / web sitesini kullanın.",
+   "Aile hekimi (GP) ve uzman doktor randevuları ile gece/hafta sonu nöbetçi hizmeti için.",
+   "Uzman doktor randevuları için genellikle kod içeren bir sevk belgesi (Überweisung) gerekir.",
+   "Hayati tehlike mi var? Her zaman 112'yi arayın."
+  ],
+  "docs": [
+   "Sağlık kartı (Gesundheitskarte)",
+   "Gerekirse kod içeren sevk belgesi (Überweisung)"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "116 117, hayati tehlike arz etmeyen ancak acil olan durumlar içindir."
+ },
+ "krankmeldung": {
+  "steps": [
+   "İlk hastalık gününüzün sabahında işvereninizi bilgilendirin.",
+   "4. günden itibaren (genellikle daha erken olabilir – sözleşmenize bakın) doktor raporu almanız gerekir.",
+   "Doktor raporu elektronik olarak sigortanıza gönderir; işvereniniz bu raporu sistemden alır (eAU).",
+   "Maaşınız 6 haftaya kadar ödenmeye devam eder."
+  ],
+  "docs": [
+   "Sağlık kartı"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Eğer zamanında bildirim yapmazsanız, resmi bir uyarı (Abmahnung) alma riskiyle karşı karşıya kalırsınız."
+ },
+ "apotheke": {
+  "steps": [
+   "E-reçeteniz (sağlık kartı) veya kağıt reçeteniz ile bir eczaneye gidin.",
+   "İlaç başına düşen katılım payını (Zuzahlung) ödeyin.",
+   "Gece/hafta sonları: bir nöbetçi eczane (Notapotheke) bulun.",
+   "Birçok basit ilaç için reçete gerekmez – eczaneye danışın."
+  ],
+  "docs": [
+   "Sağlık kartı / reçete"
+  ],
+  "cost": "Genellikle ilaç başına 5–10 € katılım payı ödenir, çocuklar muaftır.",
+  "tip": "Eczacılar ücretsiz danışmanlık yapar – ilaç etkileşimleri hakkında da bilgi verebilirler."
+ },
+ "notfall": {
+  "steps": [
+   "Hayati tehlike, ciddi kaza, yangın: 112'yi arayın.",
+   "Şunları söyleyin: Nerede? Ne oldu? Kaç yaralı var? Sonra soruları bekleyin.",
+   "Acil ancak hayati tehlike arz etmeyen durumlar için: 116 117.",
+   "Hastane acil servisleri günün her saati açıktır."
+  ],
+  "docs": [
+   "Sağlık kartı (mümkünse)"
+  ],
+  "cost": "Acil durum aramaları ücretsizdir.",
+  "tip": "112, SIM kart olmasa bile tüm Avrupa genelinde çalışır."
+ },
+ "steuerid": {
+  "steps": [
+   "Kayıttan (Anmeldung) birkaç hafta sonra posta yoluyla otomatik olarak gelir.",
+   "İşvereninizin maaş bordrosu işlemleri için buna ihtiyacı vardır.",
+   "Kaybettiniz mi? bzst.de üzerinden tekrar talep edin – posta ile gönderilir."
+  ],
+  "docs": [
+   "Kayıtlı adres (Meldeadresse)"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Vergi kimlik numaranız (Steuer-ID) ömür boyu aynı kalır."
+ },
+ "steuerklasse": {
+  "steps": [
+   "Bekar: I. sınıf. Tek ebeveyn: II. sınıf. Evli: IV/IV veya III/V (seçim yapabilirsiniz).",
+   "Evlilikten sonra otomatik olarak IV/IV olur.",
+   "ELSTER (online vergi dairesi portalı) üzerinden değişiklik için başvurun.",
+   "Vergi sınıfı sadece aylık kesintiyi belirler – yıllık vergi beyannamesi ile kesinleşir."
+  ],
+  "docs": [
+   "Vergi Kimlik Numarası (Tax ID)",
+   "ELSTER hesabı"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "III/V sınıfında vergi beyannamesi verilmesi zorunludur."
+ },
+ "steuererklaerung": {
+  "steps": [
+   "Bir ELSTER hesabı oluşturun (aktivasyon kodu posta yoluyla gelir).",
+   "Makbuzları toplayın: maaş vergisi belgesi (Lohnsteuerbescheinigung), yol masrafları, iş ekipmanları, bağışlar.",
+   "Beyannameyi çevrimiçi doldurun – birçok veri önceden doldurulmuş olarak gelir.",
+   "Gönderin ve vergi bildirimini (Steuerbescheid) bekleyin."
+  ],
+  "docs": [
+   "Vergi Kimlik Numarası (Steuer-ID)",
+   "Maaş vergisi belgesi (Lohnsteuerbescheinigung)",
+   "Makbuzlar",
+   "IBAN"
+  ],
+  "cost": "ELSTER üzerinden ücretsizdir.",
+  "tip": "Geriye dönük 4 yıl için gönüllü beyanname verilmesi mümkündür – birçok kişi vergi iadesi alır. Zorunlu beyannameler genellikle takip eden yılın 31 Temmuz tarihine kadar verilmelidir."
+ },
+ "arbeitslosengeld": {
+  "steps": [
+   "İşten çıkarıldığınızı öğrendiğiniz anda: en geç 3 gün içinde (veya işten çıkıştan en geç 3 ay önce) iş arayan (Arbeitssuchend) olarak kayıt yaptırın.",
+   "İşsiz kaldığınız ilk gün işsiz (Arbeitslos) olarak kayıt yaptırın (çevrimiçi veya şahsen).",
+   "İşsizlik ödeneği (Arbeitslosengeld) için başvurun.",
+   "İlgili kurumun (Agentur für Arbeit) randevularına katılın."
+  ],
+  "docs": [
+   "Pasaport / oturum izni",
+   "İşten çıkarma bildirimi (Kündigung)",
+   "Çalışma belgesi",
+   "IBAN"
+  ],
+  "cost": "Ücretsiz. Net maaşınızın yaklaşık %60'ını (çocuğunuz varsa %67'sini) alırsınız.",
+  "tip": "Geç kayıt yaptırmak, ödemelerde bir bekleme süresine (Sperrzeit) yol açar."
+ },
+ "buergergeld": {
+  "steps": [
+   "1 Temmuz 2026'dan itibaren Bürgergeld (vatandaşlık parası), yeterli geliri olmayan kişiler için \"Grundsicherungsgeld\" (temel geçim desteği - maaşlara ek olarak da verilebilir) olarak adlandırılacaktır.",
+   "Jobcenter'a (iş merkezi) başvurun (çevrimiçi veya şahsen).",
+   "Gelirinizi, birikimlerinizi ve barınma masraflarınızı belgeleyin.",
+   "Jobcenter ile düzenli olarak iş birliği yapın."
+  ],
+  "docs": [
+   "Pasaport / oturum izni",
+   "Kira sözleşmesi",
+   "Banka hesap dökümleri",
+   "Gelir belgesi"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "\"Bürgergeld\" ifadesini kullanan eski bildirimler geçerliliğini korumaktadır. Reform, daha sıkı iş birliği yükümlülükleri getirmektedir. Hak sahipliği ayrıca oturum izninize de bağlıdır."
+ },
+ "jobsuche": {
+  "steps": [
+   "İş ajansının (Agentur für Arbeit) iş portalını ve büyük iş sitelerini kullanın.",
+   "Almanca formatta özgeçmiş (tablo şeklinde, fotoğraf isteğe bağlı).",
+   "Niyet mektubunu kısa ve öz tutun.",
+   "Oturum izninizin çalışmaya izin verip vermediğini kontrol edin."
+  ],
+  "docs": [
+   "Özgeçmiş",
+   "Sertifikalar (tercüme edilmiş)",
+   "Diploma denkliği"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "İş ajansı (Agentur für Arbeit) ücretsiz iş arama danışmanlığı sunmaktadır."
+ },
+ "anerkennung": {
+  "steps": [
+   "Hangi ofisin sorumlu olduğunu anerkennung-in-deutschland.de adresinden kontrol edin.",
+   "Düzenlenmiş meslekler (doktor, hemşire, öğretmen) için denklik (Anerkennung) zorunludur.",
+   "Sertifikalar ve tercümeler ile başvuru yapın.",
+   "Üniversite diplomaları için: ZAB'dan (Zentralstelle für ausländisches Bildungswesen) karşılaştırılabilirlik belgesi alın."
+  ],
+  "docs": [
+   "Sertifikalar + onaylı tercümeler",
+   "Özgeçmiş (CV)",
+   "Pasaport"
+  ],
+  "cost": "Mesleğe bağlı olarak genellikle yaklaşık 100–600 €. Finansman desteği mümkün olabilir.",
+  "tip": "\"Working and Living in Germany\" yardım hattı ve IQ danışma merkezleri ücretsiz destek sağlamaktadır."
+ },
+ "arbeitsvertrag": {
+  "steps": [
+   "Kontrol edin: ödeme, çalışma saatleri, tatiller, deneme süresi, ihbar süresi.",
+   "Asgari ücret geçerlidir (2026: saat başına 13.90 €).",
+   "Haftada 5 günlük çalışma için yasal olarak en az 20 gün tatil hakkı vardır.",
+   "Sözleşmeyi yazılı olarak alın."
+  ],
+  "docs": [
+   "Vergi Kimlik Numarası (Steuer-ID)",
+   "Sosyal güvenlik numarası (Sozialversicherungsnummer)",
+   "Sağlık sigortası (Krankenkasse)",
+   "IBAN"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Emin değil misiniz? Bir sendansa veya göçmen danışma merkezinden yardım isteyin."
+ },
+ "minijob": {
+  "steps": [
+   "Mini-job, belirli bir kazanç sınırına kadar olan küçük çaplı bir istihdam türüdür (2026: ayda 603 €).",
+   "İşvereniniz sizi Minijob-Zentrale (Mini-job merkezi) kurumuna kaydeder.",
+   "Mini-joblerde de asgari ücret, tatil hakları ve hastalık ödeneği geçerlidir.",
+   "Oturum izninizin buna izin verip vermediğini kontrol edin."
+  ],
+  "docs": [
+   "Vergi Kimlik Numarası (Tax ID)",
+   "Sosyal güvenlik numarası (Sozialversicherungsnummer)",
+   "IBAN"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Sizin için genellikle vergiden ve sosyal katkı paylarından muaftır (emeklilik sigortası isteğe bağlıdır)."
+ },
+ "kindergeld": {
+  "steps": [
+   "Aile yardımları ofisine (Familienkasse) çevrimiçi veya posta yoluyla başvurun.",
+   "Kendinizin ve çocuğunuzun vergi kimlik numaralarını (Tax ID) verin.",
+   "Karar yazısının gelmesini bekleyin – ödemeler aylık yapılır."
+  ],
+  "docs": [
+   "Çocuğun doğum belgesi",
+   "Vergi kimlik numaraları (Tax ID)",
+   "Oturum izni (Residence permit)",
+   "IBAN"
+  ],
+  "cost": "Ücretsiz. 2026: Çocuk başına ayda 259 €",
+  "tip": "6 aya kadar geriye dönük talep edilebilir. Hak sahipliği oturum izninize (Residence permit) bağlıdır."
+ },
+ "elterngeld": {
+  "steps": [
+   "Doğumdan sonra eyaletinizin ebeveynlik ödeneği ofisine (Elterngeldstelle) başvurun (genellikle çevrimiçi olarak yapılır).",
+   "Temel ebeveynlik ödeneği (Elterngeld) veya ElterngeldPlus seçeneğini tercih edin.",
+   "Doğumdan sonraki 3 ay içinde başvurun."
+  ],
+  "docs": [
+   "Doğum belgesi",
+   "Gelir belgesi",
+   "Oturum izni",
+   "Doğum yardımı belgesi (Mutterschaftsgeldbescheinigung)"
+  ],
+  "cost": "Ücretsiz. Genellikle net gelirin %65–67'si (en az 300 €).",
+  "tip": "Sadece son 3 ay geriye dönük ödeme yapılır – başvurunuzu erken yapın."
+ },
+ "kita": {
+  "steps": [
+   "1 yaşından itibaren çocukların yasal olarak bir çocuk bakım yeri (Kindertagesstätte) hakkı vardır.",
+   "Erken kayıt yaptırın – ideal olarak doğumdan önce veya taşındıktan hemen sonra.",
+   "Şehre bağlı olarak bir çevrimiçi portal üzerinden veya doğrudan kreşlere başvurabilirsiniz.",
+   "Aynı anda birkaç farklı kreşe başvurun."
+  ],
+  "docs": [
+   "Doğum belgesi",
+   "Kayıt belgesi (Meldebescheinigung)",
+   "Kızamık aşısı kanıtı"
+  ],
+  "cost": "Eyalete ve gelire bağlı olarak, ücretsizden birkaç yüz euroya kadar değişebilir.",
+  "tip": "Yer bulunamadı mı? Bunu Jugendamt (Gençlik Dairesi) birimine bildirin – yasal hak geçerlidir."
+ },
+ "schule": {
+  "steps": [
+   "Okul zorunluluğu yaklaşık 6 yaşından itibaren başlar – yeni gelen çocuklar için de geçerlidir.",
+   "Okul idaresine veya yerel ilkokula kayıt yaptırın.",
+   "Almancası olmayan çocuklar genellikle bir karşılama veya hazırlık sınıfında (Willkommensklasse) eğitime başlar.",
+   "Sağlık dairesinde (Gesundheitsamt) okul giriş sağlık kontrolü."
+  ],
+  "docs": [
+   "Doğum belgesi",
+   "Kayıt belgesi (Meldebescheinigung)",
+   "Kızamık aşısı kanıtı",
+   "Önceki okul karneleri"
+  ],
+  "cost": "Devlet okulları ücretsizdir.",
+  "tip": "Zorunlu eğitim kontrol edilmektedir – çocukları hızlıca kaydettirin."
+ },
+ "wohngeld": {
+  "steps": [
+   "Düşük gelirli kişiler için bir kira yardımı (Grundsicherungsgeld [temel geçim yardımı] alanlar için değildir).",
+   "Uygunluk durumunuzu kontrol etmek için konut yardımı hesaplayıcısını kullanın.",
+   "Belediyenizin konut yardımı ofisine (Wohngeldbehörde) başvurun.",
+   "Genellikle 12 ay için onaylanır, ardından tekrar başvuru yapmanız gerekir."
+  ],
+  "docs": [
+   "Kira sözleşmesi",
+   "Gelir belgesi",
+   "Banka hesap dökümleri",
+   "Oturum izni"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Başvurduğunuz aydan itibaren ödenir – geriye dönük ödeme yapılmaz."
+ },
+ "integrationskurs": {
+  "steps": [
+   "Kurs, bir dil kursunu (B1 seviyesine kadar) ve bir oryantasyon kursunu (Almanya'da yaşam) birleştirir.",
+   "Uygunluk belgenizi yabancılar dairesinden (Ausländerbehörde) veya Jobcenter'dan (iş merkezi) alın.",
+   "Yakınınızdaki bir kurs sağlayıcısı bulun (BAMF kurs bulucu) ve kayıt olun.",
+   "Son aşamada: Göçmenler için Almanca sınavı ve \"Almanya'da Yaşam\" (Leben in Deutschland) testi."
+  ],
+  "docs": [
+   "Uygunluk belgesi",
+   "Pasaport / oturum izni"
+  ],
+  "cost": "Ders başına küçük bir katkı payı (güncel tutarı BAMF üzerinden kontrol edin) – örneğin Grundsicherungsgeld (temel geçim yardımı) ile muafiyet mümkündür.",
+  "tip": "B1 sertifikası, süresiz oturum izni ve vatandaşlık süreçlerinde yardımcı olur."
+ },
+ "deutschkurs": {
+  "steps": [
+   "En ucuz yol genellikle entegrasyon kursudur (Integrationskurs).",
+   "Halk eğitim merkezleri (VHS) düşük maliyetli kurslar sunar.",
+   "Ücretsiz öğrenin: uygulamalar ve çevrimiçi kurslar (örneğin Deutsche Welle).",
+   "İş için: BAMF (Federal Göç ve Mülteci Dairesi) ve Jobcenter (İş Merkezi) aracılığıyla mesleki dil kursları (B2/C1)."
+  ],
+  "docs": [
+   "Pasaport"
+  ],
+  "cost": "Ücretsizden birkaç yüz euroya kadar.",
+  "tip": "Günde 15 dakika, haftada bir kez 2 saat çalışmaktan daha etkilidir."
+ },
+ "studium": {
+  "steps": [
+   "Bir program seçin ve kabul şartlarını kontrol edin (DAAD).",
+   "Doğrudan üniversiteye veya uni-assist üzerinden başvurun.",
+   "Dil sertifikası (Almanca veya İngilizce) ve gerekirse bir hazırlık okulu (Studienkolleg).",
+   "Öğrenci vizesi ve finansal kanıt (Bloke hesap / Sperrkonto)."
+  ],
+  "docs": [
+   "Okul diploması + tercümesi",
+   "Dil sertifikası",
+   "Pasaport",
+   "Finansal kanıt"
+  ],
+  "cost": "Devlet üniversiteleri genellikle sadece dönem harcı (yaklaşık 150–400 €) alır.",
+  "tip": "Son başvuru tarihlerine dikkat edin – genellikle 15 Ocak ve 15 Temmuz."
+ },
+ "bafoeg": {
+  "steps": [
+   "Üniversite ve okul için devlet desteği.",
+   "Yabancılar, oturum izinlerine bağlı olarak bu destekten yararlanabilirler.",
+   "BAföG Digital üzerinden çevrimiçi başvuru yapın.",
+   "Üniversite için: yarısı hibe, yarısı faizsiz kredi."
+  ],
+  "docs": [
+   "Öğrenci belgesi (Enrolment certificate)",
+   "Ebeveynlerin gelir belgesi",
+   "Oturum izni (Aufenthaltstitel)",
+   "Kira sözleşmesi"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Hızlı başvurun – BAföG sadece başvuru yaptığınız aydan itibaren ödenir."
+ },
+ "haftpflicht": {
+  "steps": [
+   "Başkalarının mülküne yanlışlıkla zarar verdiğinizde (örneğin su hasarı, kırılan bir telefon) ödeme yapar.",
+   "En önemli özel sigorta olarak kabul edilir.",
+   "Tarifeleri karşılaştırın – aile üyeleri de dahil edilebilir.",
+   "En az 10 milyon € teminat."
+  ],
+  "docs": [
+   "Kimlik (ID)",
+   "IBAN"
+  ],
+  "cost": "Genellikle yılda yaklaşık 40–80 € civarındadır.",
+  "tip": "Birçok ev sahibi bunu talep eder."
+ },
+ "hausrat": {
+  "steps": [
+   "Eşyalarınızı evdeki yangın, su, hırsızlık ve fırtınaya karşı korur.",
+   "Sigorta tutarını eşyalarınızın değeriyle eşleştirin.",
+   "Gerekirse bisiklet hırsızlığı teminatını ekleyin."
+  ],
+  "docs": [
+   "Adres",
+   "Yaşam alanı",
+   "IBAN"
+  ],
+  "cost": "Genellikle yılda yaklaşık 50–150 €.",
+  "tip": "Az eşyası olanlar için genellikle zorunlu değildir."
+ },
+ "rechtsschutz": {
+  "steps": [
+   "Örneğin iş veya kira anlaşmazlıklarında avukat ve mahkeme masraflarını karşılar.",
+   "Genellikle fayda sağlamaya başlamadan önce 3 aylık bir bekleme süresi vardır.",
+   "Alternatif: Kiracı dernekleri ve sendikalar genellikle üyeleri için hukuki koruma sağlar."
+  ],
+  "docs": [
+   "Kimlik (ID)",
+   "IBAN"
+  ],
+  "cost": "Genellikle yılda yaklaşık 200–400 €.",
+  "tip": "Daha önceden başlamış olan anlaşmazlıklar için ödeme yapmaz."
+ },
+ "sim": {
+  "steps": [
+   "Bir mağazadan, süpermarketten veya internet üzerinden ön ödemeli (prepaid) veya sözleşmeli bir SIM kart satın alın.",
+   "Yasal zorunluluk: Kimliğinizi pasaport veya kimlik kartı ile doğrulayın (video görüşme ile veya mağazada).",
+   "Aktivasyon için bekleyin."
+  ],
+  "docs": [
+   "Pasaport veya Kimlik",
+   "Adres"
+  ],
+  "cost": "Ön ödemeli kartlar yaklaşık 5–10 €'dan başlar.",
+  "tip": "Başlangıç için ön ödemeli kartlar iyidir – sözleşme gerektirmez ve SCHUFA (Almanya'daki kredi notu sistemi) kontrolü istemez."
+ },
+ "handyvertrag": {
+  "steps": [
+   "Tarifeleri karşılaştırın: veri miktarı, süre (aylık iptal edilebilir veya 24 aylık).",
+   "Sözleşmeler genellikle bir SCHUFA (Almanya'daki kredi notu/finansal geçmiş kontrolü) kontrolü gerektirir.",
+   "Eski sağlayıcınızdan numaranızı alın (numara taşıma)."
+  ],
+  "docs": [
+   "Kimlik",
+   "Kayıtlı adres (Anmeldung adresi)",
+   "IBAN"
+  ],
+  "cost": "Genellikle ayda yaklaşık 10–30 € civarındadır.",
+  "tip": "⚠️ Kapıdan satışlara ve telefon satışlarına karşı dikkatli olun – 14 günlük cayma hakkınız bulunmaktadır."
+ },
+ "deutschlandticket": {
+  "steps": [
+   "Almanya'daki tüm otobüs, tramvay, metro/S-Bahn ve bölgesel trenler için aylık abonelik.",
+   "Ulaşım şirketlerinden veya Deutsche Bahn üzerinden çevrimiçi satın alın.",
+   "Aylık olarak iptal edilebilir.",
+   "Şunu sorun: Daha ucuz bir iş veya öğrenci bileti var mı?"
+  ],
+  "docs": [
+   "IBAN",
+   "Telefon veya akıllı kart"
+  ],
+  "cost": "2026: ayda 63 €. (2027'den itibaren: 66.80 €).",
+  "tip": "ICE/IC/EC (uzun mesafeli trenler) için geçerli değildir."
+ },
+ "oepnv": {
+  "steps": [
+   "Yolculuktan önce biletinizi alın (makine, uygulama) – genellikle binmeden önce onaylatmanız (validate) gerekir.",
+   "Geçerli bir biletiniz yoksa ceza genellikle 60 €'dur.",
+   "Yerel ulaşım uygulamaları bağlantıları gösterir.",
+   "6 yaş altındaki çocuklar genellikle ücretsiz seyahat eder."
+  ],
+  "docs": [
+   "Bilet"
+  ],
+  "cost": "Şehre göre değişir.",
+  "tip": "Deutschlandticket (Almanya genelinde geçerli aylık bilet) ile yerel ulaşım için tekli bilet almanıza gerek yoktur."
+ },
+ "mbe": {
+  "steps": [
+   "Yetişkinler için göçmenlik danışmanlığı (MBE) ve gençler (27 yaşına kadar) için göçmenlik hizmetleri ücretsiz yardım sağlar.",
+   "Resmi makamlardan gelen mektuplar, başvurular, dil kursları, iş ve barınma konularında destek verilir.",
+   "BAMF (Federal Göç ve Mülteciler Dairesi) arama motoru üzerinden size yakın bir danışma merkezi bulabilirsiniz.",
+   "Genellikle birçok dilde hizmet verilmektedir."
+  ],
+  "docs": [
+   "Mektuplarınız ve belgeleriniz"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Yardım için ücret ödemeden önce başvurulabilecek iyi bir ilk duraktır."
+ },
+ "verbraucher": {
+  "steps": [
+   "Sözleşmeler, abonelik tuzakları, enerji, sigorta ve şüpheli web siteleri konusunda yardımcı olur.",
+   "İnternette çok sayıda ücretsiz bilgi bulunmaktadır.",
+   "Kişisel danışmanlık genellikle küçük bir ücret karşılığında sunulur."
+  ],
+  "docs": [
+   "Sözleşme / fatura"
+  ],
+  "cost": "Bilgi almak ücretsiz, danışmanlık genellikle ucuzdur.",
+  "tip": "Bir sözleşmeyi anlamadığınızda veya dolandırıldığınızda iyi bir yardım kaynağıdır."
+ },
+ "mieterverein": {
+  "steps": [
+   "Üye olun; kira, yan giderler (Nebenkosten), depozito ve kusurlar konusunda danışmanlık alın.",
+   "Genellikle kira hukuku alanında hukuki koruma da içerir.",
+   "Yan giderler (Nebenkosten) dökümünüzü kontrol ettirin."
+  ],
+  "docs": [
+   "Kira sözleşmesi",
+   "Ev sahibinden gelen mektuplar"
+  ],
+  "cost": "Genellikle ayda yaklaşık 5–10 € civarındadır.",
+  "tip": "Özellikle ev sahibinizle yaşadığınız anlaşmazlıklarda oldukça faydalıdır."
+ },
+ "notrufe": {
+  "steps": [
+   "110 = polis (tehlike, şiddet, hırsızlık, yaralanmalı kazalar).",
+   "112 = itfaiye ve ambulans (yangın, tıbbi acil durum).",
+   "116 117 = tıbbi nöbetçi servis (medical on-call service).",
+   "Sakin kalın, konumunuzu belirtin ve soruları yanıtlayın."
+  ],
+  "docs": [
+   "Hiçbir şey – arama ücretsizdir"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Acil durum numaralarını gereksiz yere kullanmak bir suçtur."
+ },
+ "anzeige": {
+  "steps": [
+   "Bir polis merkezinde veya eyaletinizin çevrimiçi polis hizmeti aracılığıyla online olarak.",
+   "Mümkün olduğunca kesin bir şekilde açıklayın: ne, ne zaman, nerede, kim.",
+   "Kanıtları saklayın (fotoğraflar, mesajlar, makbuzlar).",
+   "Vaka numarasını (Aktenzeichen) not edin – sigorta ve resmi makamlar için buna ihtiyacınız olacak."
+  ],
+  "docs": [
+   "Kimlik",
+   "Kanıtlar"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Şiddet veya tehdit durumunda: 110'u arayın."
+ },
+ "pfand": {
+  "steps": [
+   "Birçok şişe ve kutuda depozito bulunur (etiket üzerindeki sembol).",
+   "Tek kullanımlıklar genellikle 0.25 €, yeniden kullanılabilir olanlar genellikle 0.08–0.15 €'dur.",
+   "Boş şişeleri süpermarketteki depozito makinesine (Pfandautomat) koyun.",
+   "Fişi kasada kullanarak paranızı geri alın."
+  ],
+  "docs": [
+   "Boş şişeler"
+  ],
+  "cost": "Paranızı geri alırsınız.",
+  "tip": "Depozitosu olmayan şişeler cam veya sarı geri dönüşüm (Gelber Sack/Tonne) kutusuna atılır."
+ },
+ "sonntag": {
+  "steps": [
+   "Pazar günleri ve resmi tatillerde çoğu mağaza kapalıdır.",
+   "Açık olanlar: benzin istasyonları, istasyon mağazaları, fırınlar (genellikle sabahları), nöbetçi eczaneler.",
+   "Cumartesi günleri alışveriş yapın ve bulunduğunuz eyaletin resmi tatillerini öğrenin."
+  ],
+  "docs": [
+   "–"
+  ],
+  "cost": "–",
+  "tip": "Pazar günü dinlenme günüdür – evde gürültülü işler yapmaktan kaçının."
+ },
+ "muell": {
+  "steps": [
+   "Sarı: plastik ve metal ambalajlar. Mavi: kağıt. Kahverengi: organik atıklar. Siyah/gri: evsel atıklar.",
+   "Camları renklerine göre cam konteynerlere atın.",
+   "Toplama tarihleri için belediyenizin atık takvimine bakın (genellikle bir uygulama üzerinden sunulur).",
+   "Hacimli atıkları (mobilya vb.) belediyeye bildirerek kayıt yaptırın."
+  ],
+  "docs": [
+   "–"
+  ],
+  "cost": "Atık ücretleri genellikle hizmet bedellerinin bir parçasıdır.",
+  "tip": "Atıkların yanlış ayrıştırılması, ev sahibi ve komşularla sorun yaşamanıza neden olabilir."
  }
 }

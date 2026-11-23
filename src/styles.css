@@ -76,3 +76,28 @@ select { padding: 8px 10px; border-radius: 12px; border: 1px solid var(--line); 
 .foot { margin: 18px 0 4px; font-size: .72rem; color: var(--muted); text-align: center; }
 .foot a { color: var(--muted); }
 .read-btn { margin-top: 8px; padding: 10px 16px; border-radius: 999px; border: 0; background: #3cb98a; color: #fff; font-weight: 700; cursor: pointer; }
+
+/* Accessibility */
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip { position: absolute; inset-inline-start: 8px; top: -60px; z-index: 50; background: #ffd166; color: #1d2140; padding: 10px 14px; border-radius: 10px; font-weight: 700; }
+.skip:focus { top: 8px; }
+.tools { display: flex; gap: 8px; align-items: center; }
+.a11y-btn { padding: 8px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); cursor: pointer; font-weight: 700; }
+.a11y-panel { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 10px; padding: 12px 14px; border-radius: 14px; background: var(--card); border: 1px solid var(--line); }
+.a11y-panel label { display: flex; align-items: center; gap: 8px; cursor: pointer; font-weight: 600; }
+.a11y-panel input { width: 20px; height: 20px; }
+@media (max-width: 560px) { .a11y-btn .lbl { display: none; } }
+.list-view { background: var(--card); border-radius: 22px; padding: 6px 16px 16px; }
+.list-view h2:focus, .sheet h2:focus { outline: 3px solid #ffd166; outline-offset: 4px; border-radius: 6px; }
+.lv-b h3 { margin: 18px 0 8px; font-size: 1.05rem; }
+.lv-b ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.lv-b button { width: 100%; text-align: start; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); cursor: pointer; font-weight: 600; }
+.lv-b button[aria-current="true"] { border-color: var(--p); box-shadow: 0 0 0 2px var(--p); }
+button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible, .pin:focus-visible rect { outline: 3px solid #ffd166; outline-offset: 2px; }
+html.big { font-size: 125%; }
+html.hc { --bg: #000; --card: #000; --text: #fff; --muted: #fff; --line: #fff; --p: #ffd166; }
+html.hc body { background: #000; color: #fff; }
+html.hc .sheet, html.hc .list-view, html.hc .lv-b button, html.hc .errands button, html.hc .g-steps li, html.hc .g-cost, html.hc .g-tip { border: 2px solid #fff !important; background: #000 !important; color: #fff !important; }
+html.hc a { color: #ffd166; }
+html.hc .official, html.hc .read-btn { background: #ffd166 !important; color: #000 !important; }
+@media (min-width: 980px) { .app.has-sheet .stage:has(.list-view) { grid-template-columns: minmax(0, 1fr) minmax(360px, 1fr); } }
