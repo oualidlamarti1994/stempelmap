@@ -30,7 +30,7 @@ function App() {
   return (
     <div class={'app' + (active ? ' has-sheet' : '')} dir={rtl ? 'rtl' : 'ltr'} lang={lang}>
       <header>
-        <div class="brand"><span class="logo">🗺️</span><div><b>{u('title')}</b><small>{u('sub')}</small></div></div>
+        <div class="brand"><span class="logo">📎</span><div><b>Paperclip</b><small>{u('title')} · {u('sub')}</small></div></div>
         <select value={lang} onChange={ev => setLang((ev.target as HTMLSelectElement).value as Lang)} aria-label="Language">
           {LANGS.map(l => <option value={l.id}>{l.name}</option>)}
         </select>
@@ -70,11 +70,12 @@ function App() {
         </section>
       )}
       </div>
+      <footer class="foot"><a href="./impressum.html">Impressum</a> · <a href="./datenschutz.html">Datenschutz</a> · <span>{u('notAuthority')}</span></footer>
     </div>
   );
 }
 
-type GuideText = { steps: string[]; docs: string[]; cost: string; tip: string };
+type GuideText = { steps: string[]; docs: string[]; cost: string; tip: string; ai?: boolean };
 const GUIDES = guidesJson as Record<string, { links: string[]; de: GuideText; en: GuideText }>;
 
 /** Step-by-step guide. de/en written by hand; other languages show English with a note until translated. */
@@ -87,6 +88,7 @@ function Guide({ id, lang, u }: { id: string; lang: Lang; u: (k: string) => stri
   return (
     <div class="g">
       {!own && u('guideEn') && <p class="g-note">🌐 {u('guideEn')}</p>}
+      {own?.ai && u('aiNote') && <p class="g-note">🤖 {u('aiNote')}</p>}
       <h4>{u('steps')}</h4>
       <ol class="g-steps" dir={own ? undefined : 'ltr'}>{t.steps.map(s => <li>{s}</li>)}</ol>
       <h4>{u('docs')}</h4>

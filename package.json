@@ -1,1 +1,22 @@
-{"name":"ankommen","private":true,"version":"0.0.1","type":"module","scripts":{"dev":"vite","build":"tsc --noEmit && vite build","preview":"vite preview --port 4174"},"dependencies":{"preact":"^11.2.0"},"devDependencies":{"@preact/preset-vite":"^2.10.6","typescript":"^7.0.2","vite":"^8.3.8"}}
+{
+  "name": "ankommen",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "preact": "^11.2.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.70.1",
+    "@preact/preset-vite": "^2.10.6",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "wrangler": "^4.167.0"
+  }
+}

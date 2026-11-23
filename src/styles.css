@@ -73,3 +73,5 @@ select { padding: 8px 10px; border-radius: 12px; border: 1px solid var(--line); 
 .g-links .official { margin: 0; font-size: .9rem; }
 .g-note { font-size: .85rem; background: rgba(91,108,255,.12); padding: 8px 12px; border-radius: 10px; }
 .g-checked { font-size: .75rem; color: var(--muted); margin-top: 12px; }
+.foot { margin: 18px 0 4px; font-size: .72rem; color: var(--muted); text-align: center; }
+.foot a { color: var(--muted); }

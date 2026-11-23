@@ -137,6 +137,7 @@ export const UI: Record<string, T> = {
   links: { de: 'Offizielle Links', en: 'Official links', ar: 'روابط رسمية' },
   guideEn: { de: '', en: '', ar: 'هذا الدليل غير متوفر بالعربية بعد – يُعرض حالياً بالإنجليزية.' },
   checked: { de: 'Stand 2026. Kosten können je nach Stadt abweichen – prüfe die offizielle Seite.', en: 'As of 2026. Costs can differ by town – check the official site.', ar: 'المعلومات حتى 2026. قد تختلف التكاليف حسب المدينة – تحقق من الموقع الرسمي.' },
+  aiNote: { de: '', en: '', ar: 'تمت ترجمة هذا الدليل آلياً – في الأمور المهمة تحقق من الموقع الرسمي.' },
   hint: { de: 'Ziehen zum Bewegen · Mausrad zum Zoomen', en: 'Drag to move · scroll to zoom', ar: 'اسحب للتحريك · استخدم العجلة للتكبير' },
   machine: { de: '', en: 'Translation coming soon – showing English.', ar: '' },
 };

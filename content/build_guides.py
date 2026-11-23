@@ -10,5 +10,13 @@ for gid, g in _g.GUIDES.items():
     for l in ("de", "en"):
         assert g[l]["steps"], gid
     for u in g["links"]: assert u.startswith("https://"), (gid, u)
+tdir = here / "translations"
+counts = {}
+if tdir.exists():
+    for f in tdir.glob("*.json"):
+        lang = f.stem; tr = json.loads(f.read_text(encoding="utf-8")); counts[lang] = len(tr)
+        for gid, t in tr.items():
+            if gid in _g.GUIDES: _g.GUIDES[gid][lang] = {**t, "ai": True}
+print("translations", counts)
 (here.parent / "src" / "guides.json").write_text(json.dumps(_g.GUIDES, ensure_ascii=False), encoding="utf-8")
 print("guides", len(_g.GUIDES), "errands", len(ids), "missing", missing, "extra", extra)

@@ -1,2 +1,7 @@
 node_modules
 dist
+.wrangler
+translator/node_modules
+translator/.wrangler
+translator/run.log
+.pages-project
