@@ -34,7 +34,6 @@ function App() {
           {LANGS.map(l => <option value={l.id}>{l.name}</option>)}
         </select>
       </header>
-      {!UI.title[lang] && <p class="note">🌐 {tr(UI.machine, 'en')}</p>}
       <div class="search">
         <input value={q} onInput={ev => setQ((ev.target as HTMLInputElement).value)} placeholder={u('search')} aria-label={u('search')} />
         {hits.length > 0 && (

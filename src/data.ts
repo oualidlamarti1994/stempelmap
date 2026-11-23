@@ -135,3 +135,16 @@ export const UI: Record<string, T> = {
 };
 
 export const tr = (t: T, l: Lang) => t[l] ?? t.en;
+
+// --- merge tr/uk/ru/fa/ur/hi translations ---
+import { B, E, MORE_LANGS, U } from './i18n_more';
+export const MISSING: string[] = [];
+for (const b of BUILDINGS) {
+  const tb = B[b.id]; if (!tb) MISSING.push('building:' + b.id);
+  MORE_LANGS.forEach((l, i) => { if (tb) { b.s[l] = tb[0][i]; b.t[l] = tb[1][i]; } });
+  for (const x of b.errands) {
+    const te = E[x.id]; if (!te) MISSING.push('errand:' + x.id);
+    MORE_LANGS.forEach((l, i) => { if (te) x.t[l] = te[i]; });
+  }
+}
+for (const [k, v] of Object.entries(U)) MORE_LANGS.forEach((l, i) => { if (UI[k]) UI[k][l] = v[i]; });
