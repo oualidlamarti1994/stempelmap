@@ -5,6 +5,8 @@ import { CityMap } from './CityMap';
 import guidesJson from './guides.json';
 import './styles.css';
 
+const STAMP = '<svg viewBox="0 0 64 64" width="38" height="38" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="none" stroke="#e63946" stroke-width="5"/><circle cx="32" cy="32" r="21" fill="none" stroke="#e63946" stroke-width="2.5" stroke-dasharray="4 3"/><text x="32" y="41" text-anchor="middle" font-size="26" font-weight="900" fill="#e63946" font-family="system-ui,sans-serif">S</text></svg>';
+
 const initLang = (): Lang => {
   const n = (navigator.language || 'en').slice(0, 2);
   const map: Record<string, Lang> = { de: 'de', ar: 'ar', tr: 'tr', uk: 'uk', ru: 'ru', fa: 'fa', ur: 'ur', hi: 'hi' };
@@ -54,7 +56,7 @@ function App() {
       <a href="#list" class="skip" onClick={skipToList}>{u('skip')}</a>
       <div class="sr" aria-live="polite">{say}</div>
       <header>
-        <div class="brand"><span class="logo">📎</span><div><b>Paperclip</b><small>{u('title')} · {u('sub')}</small></div></div>
+        <div class="brand"><span class="logo" dangerouslySetInnerHTML={{ __html: STAMP }} /><div><b>StempelMap</b><small>{u('title')} · {u('sub')}</small></div></div>
         <div class="tools">
         <button class="a11y-btn" aria-expanded={panel} aria-controls="a11y-panel" onClick={() => setPanel(!panel)}>♿ <span class="lbl">{u('a11y')}</span></button>
         <select value={lang} onChange={ev => setLang((ev.target as HTMLSelectElement).value as Lang)} aria-label="Language">
