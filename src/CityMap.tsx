@@ -55,6 +55,7 @@ export function CityMap({ lang, active, onPick }: { lang: Lang; active: Building
   }, []);
   useEffect(() => {
     if (active) { const w = 420; fly([active.x - w / 2, active.y - (w * aspect.current) / 2, w, w * aspect.current]); }
+    else if (cur.current !== FULL) overview();
   }, [active]);
 
   // pointer → world coordinates
