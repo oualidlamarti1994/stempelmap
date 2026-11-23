@@ -14,32 +14,108 @@ const CARS: [number, number, string, boolean][] = [[90, 150, '#ff6b6b', true], [
   [700, 590, '#06d6a0', true], [215, 520, '#ef476f', false], [545, 760, '#118ab2', false], [780, 380, '#ffd166', false], [300, 860, '#8338ec', true]];
 const TREES = [[30, 445], [210, 165], [550, 595], [790, 600], [30, 860], [210, 600], [550, 1000], [790, 280], [400, 870]];
 
-/** Original cartoon city map (own design). Tapping a building zooms in smoothly. */
+/** Original cartoon city map (own design) with a game-style camera:
+ *  drag = move, wheel / pinch = zoom (towards pointer), double-click = zoom in, tap building = fly there. */
+const WORLD = { x: -150, y: -60, w: 1100, h: 1220 };       // pannable area
+const MIN_W = 220, MAX_W = 2600;
+
 export function CityMap({ lang, active, onPick }: { lang: Lang; active: Building | null; onPick: (b: Building) => void }) {
+  const svg = useRef<SVGSVGElement>(null);
   const [vb, setVb] = useState(FULL);
   const cur = useRef(FULL);
-  useEffect(() => {
-    const to = active ? [active.x - 190, active.y - 230, 380, 460] : FULL;
-    const from = cur.current; const t0 = performance.now(); let raf = 0;
+  const aspect = useRef(1100 / 800);                       // height / width of the element
+  const anim = useRef(0);
+
+  const clamp = (v: number[]) => {
+    let [x, y, w] = v; w = Math.min(MAX_W, Math.max(MIN_W, w)); const h = w * aspect.current;
+    x = w >= WORLD.w ? WORLD.x + (WORLD.w - w) / 2 : Math.min(WORLD.x + WORLD.w - w, Math.max(WORLD.x, x));
+    y = h >= WORLD.h ? WORLD.y + (WORLD.h - h) / 2 : Math.min(WORLD.y + WORLD.h - h, Math.max(WORLD.y, y));
+    return [x, y, w, h];
+  };
+  const set = (v: number[]) => { const c = clamp(v); cur.current = c; setVb(c); };
+  const fly = (to: number[]) => {
+    cancelAnimationFrame(anim.current);
+    const from = cur.current; const t0 = performance.now();
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
     const step = (t: number) => {
-      const k = reduce ? 1 : Math.min(1, (t - t0) / 600); const ease = 1 - Math.pow(1 - k, 3);
-      const v = from.map((f, i) => f + (to[i] - f) * ease); cur.current = v; setVb(v);
-      if (k < 1) raf = requestAnimationFrame(step);
+      const k = reduce ? 1 : Math.min(1, (t - t0) / 600); const e = 1 - Math.pow(1 - k, 3);
+      set(from.map((f, i) => f + (to[i] - f) * e)); if (k < 1) anim.current = requestAnimationFrame(step);
     };
-    raf = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(raf);
+    anim.current = requestAnimationFrame(step);
+  };
+  const overview = () => { const w = Math.min(MAX_W, Math.max(860, 1130 / aspect.current)); fly([400 - w / 2, 550 - (w * aspect.current) / 2, w, w * aspect.current]); };
+
+  // keep the map filling its element when the window size changes
+  useEffect(() => {
+    const el = svg.current!; const ro = new ResizeObserver(() => {
+      const r = el.getBoundingClientRect(); if (!r.width) return;
+      aspect.current = r.height / r.width; if (!active) overview(); else set(cur.current);
+    });
+    ro.observe(el); return () => ro.disconnect();
+  }, []);
+  useEffect(() => {
+    if (active) { const w = 420; fly([active.x - w / 2, active.y - (w * aspect.current) / 2, w, w * aspect.current]); }
   }, [active]);
 
+  // pointer → world coordinates
+  const toWorld = (cx: number, cy: number) => {
+    const r = svg.current!.getBoundingClientRect(); const [x, y, w, h] = cur.current;
+    return [x + ((cx - r.left) / r.width) * w, y + ((cy - r.top) / r.height) * h];
+  };
+  const zoomAt = (cx: number, cy: number, f: number) => {
+    const [wx, wy] = toWorld(cx, cy); const [x, y, w] = cur.current;
+    const nw = Math.min(MAX_W, Math.max(MIN_W, w * f)); const k = nw / w;
+    set([wx - (wx - x) * k, wy - (wy - y) * k, nw]);
+  };
+
+  const ptrs = useRef(new Map<number, { x: number; y: number }>());
+  const moved = useRef(0);
+  const pinch = useRef(0);
+  const onDown = (e: PointerEvent) => {
+    cancelAnimationFrame(anim.current); ptrs.current.set(e.pointerId, { x: e.clientX, y: e.clientY }); moved.current = 0;
+    if (ptrs.current.size === 2) { const [a, b] = [...ptrs.current.values()]; pinch.current = Math.hypot(a.x - b.x, a.y - b.y); }
+  };
+  const onMove = (e: PointerEvent) => {
+    const p = ptrs.current.get(e.pointerId); if (!p) return;
+    const r = svg.current!.getBoundingClientRect(); const [x, y, w, h] = cur.current;
+    if (ptrs.current.size === 1) {
+      const dx = e.clientX - p.x, dy = e.clientY - p.y; moved.current += Math.abs(dx) + Math.abs(dy);
+      if (moved.current > 6 && !svg.current!.hasPointerCapture(e.pointerId)) svg.current!.setPointerCapture(e.pointerId);
+      if (moved.current <= 6) return;
+      set([x - (dx / r.width) * w, y - (dy / r.height) * h, w]);
+    }
+    ptrs.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (ptrs.current.size === 2) {
+      const [a, b] = [...ptrs.current.values()]; const d = Math.hypot(a.x - b.x, a.y - b.y);
+      if (pinch.current) zoomAt((a.x + b.x) / 2, (a.y + b.y) / 2, pinch.current / d); pinch.current = d; moved.current += 10;
+    }
+  };
+  const onUp = (e: PointerEvent) => { ptrs.current.delete(e.pointerId); if (ptrs.current.size < 2) pinch.current = 0; };
+  const onWheel = (e: WheelEvent) => { e.preventDefault(); cancelAnimationFrame(anim.current); zoomAt(e.clientX, e.clientY, Math.exp(e.deltaY * 0.0015)); };
+  useEffect(() => { const el = svg.current!; el.addEventListener('wheel', onWheel, { passive: false }); return () => el.removeEventListener('wheel', onWheel); }, []);
+  // a drag must not count as a tap on a building
+  const onClickCapture = (e: MouseEvent) => { if (moved.current > 6) { e.stopPropagation(); e.preventDefault(); } };
+  const zoomBtn = (f: number) => { const r = svg.current!.getBoundingClientRect(); const [x, y, w] = cur.current;
+    const cx = x + w / 2, cy = y + (w * aspect.current) / 2; const nw = Math.min(MAX_W, Math.max(MIN_W, w * f));
+    fly([cx - nw / 2, cy - (nw * aspect.current) / 2, nw, nw * aspect.current]); void r; };
+
   return (
-    <svg class="city" viewBox={vb.join(' ')} role="img" aria-label="City map">
+    <div class="map-cam">
+    <div class="zoom-ctl">
+      <button onClick={() => zoomBtn(0.7)} aria-label="Zoom in">＋</button>
+      <button onClick={() => zoomBtn(1.4)} aria-label="Zoom out">−</button>
+      <button onClick={overview} aria-label="Overview">⌂</button>
+    </div>
+    <svg ref={svg} class="city" viewBox={vb.join(' ')} preserveAspectRatio="xMidYMid slice" role="img" aria-label="City map"
+      onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp} onClickCapture={onClickCapture}
+      onDblClick={(e: MouseEvent) => zoomAt(e.clientX, e.clientY, 0.6)}>
       <defs>
         <pattern id="grass" width="40" height="40" patternUnits="userSpaceOnUse">
           <rect width="40" height="40" fill="#cfe8b5" /><circle cx="8" cy="10" r="1.6" fill="#b5d897" /><circle cx="28" cy="30" r="1.4" fill="#b5d897" />
         </pattern>
         <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity=".28" /></filter>
       </defs>
-      <rect x="-400" y="-400" width="1600" height="1900" fill="url(#grass)" />
+      <rect x="-2000" y="-1000" width="4800" height="3100" fill="url(#grass)" />
       <path d="M -50 100 C 120 140, 160 40, 330 70 S 620 20, 860 90" fill="none" stroke="#7cc4f2" stroke-width="62" stroke-linecap="round" />
       <path d="M -50 100 C 120 140, 160 40, 330 70 S 620 20, 860 90" fill="none" stroke="#a9dbfa" stroke-width="14" stroke-dasharray="30 26" opacity=".7" />
       <text x="680" y="58" font-size="18" fill="#fff" opacity=".8">⛵</text>
@@ -87,6 +163,7 @@ export function CityMap({ lang, active, onPick }: { lang: Lang; active: Building
         );
       })}
     </svg>
+    </div>
   );
 }
 

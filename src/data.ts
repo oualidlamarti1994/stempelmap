@@ -130,6 +130,7 @@ export const UI: Record<string, T> = {
   notAuthority: { de: 'Wir sind keine Behörde. Wir zeigen dir den offiziellen, meist kostenlosen Weg.', en: 'We are not an authority. We show you the official, usually free route.', ar: 'نحن لسنا جهة حكومية. نرشدك إلى الطريق الرسمي والمجاني غالباً.' },
   back: { de: 'Zurück zur Karte', en: 'Back to map', ar: 'العودة إلى الخريطة' },
   errands: { de: 'Erledigungen', en: 'Errands', ar: 'المعاملات' },
+  hint: { de: 'Ziehen zum Bewegen · Mausrad zum Zoomen', en: 'Drag to move · scroll to zoom', ar: 'اسحب للتحريك · استخدم العجلة للتكبير' },
   machine: { de: '', en: 'Translation coming soon – showing English.', ar: '' },
 };
 

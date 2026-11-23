@@ -45,6 +45,7 @@ function App() {
       <div class="stage">
       <div class="map-wrap">
         <CityMap lang={lang} active={active} onPick={b => pick(b)} />
+        {!active && <span class="hint">🖐️ {u('hint')}</span>}
         {active && <button class="map-back" onClick={() => { setActive(null); setErrand(null); }}>{back} {u('back')}</button>}
       </div>
 
