@@ -1,6 +1,6 @@
 // Translate all guides (en -> 7 languages) via the local translator; resumable; stops on quota errors.
 import fs from 'node:fs';
-const LANGS = { ar: 'Arabic (Modern Standard Arabic)', tr: 'Turkish', uk: 'Ukrainian', ru: 'Russian', fa: 'Dari (Afghan Persian – use Afghan vocabulary)', ur: 'Urdu', hi: 'Hindi' };
+const LANGS = { pl: 'Polish', ro: 'Romanian', ar: 'Arabic (Modern Standard Arabic)', tr: 'Turkish', uk: 'Ukrainian', ru: 'Russian', fa: 'Dari (Afghan Persian – use Afghan vocabulary)', ur: 'Urdu', hi: 'Hindi' };
 const guides = JSON.parse(fs.readFileSync('../src/guides.json', 'utf8'));
 const dir = '../content/translations'; fs.mkdirSync(dir, { recursive: true });
 const only = process.argv[2]?.split(',');

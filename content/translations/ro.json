@@ -1,0 +1,1017 @@
+{
+ "anmeldung": {
+  "steps": [
+   "Programați o programare la Bürgeramt (biroul cetățenilor) din orașul dumneavoastră, online sau prin telefon. Multe orașe oferă, de asemenea, înregistrare online.",
+   "Solicitați proprietarului dumneavoastră confirmarea locuinței (Wohnungsgeberbestätigung).",
+   "Completați formularul de înregistrare (pe site-ul web al orașului dumneavoastră).",
+   "Mergeți la programare. Veți primi certificatul de înregistrare (Anmeldung) imediat.",
+   "După câteva săptămâni, numărul dumneavoastră de identificare fiscală (Steuer-ID) va sosi prin poștă."
+  ],
+  "docs": [
+   "Pașaport sau carte de identitate",
+   "Confirmarea proprietarului (Wohnungsgeberbestätigung)",
+   "Formular de înregistrare",
+   "Pentru familie: certificate de căsătorie și de naștere"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Este obligatoriu în termen de 2 săptămâni de la mutare. Fără acesta: nu puteți deschide un cont bancar, nu puteți semna contracte și nu primiți numărul de identificare fiscală."
+ },
+ "ummeldung": {
+  "steps": [
+   "Obțineți o nouă confirmare de la proprietarul locuinței (Wohnungsgeberbestätigung).",
+   "Rezervați o programare la Bürgeramt (Biroul de cetățeni) din noul dumneavoastră oraș.",
+   "Înregistrați-vă (Anmeldung) ca la prima dată – vechea adresă va fi radiată automat.",
+   "Faceți adresa nouă pe buletin / permis de ședere.",
+   "Anunțați banca, angajatorul, asigurarea de sănătate, biroul pentru taxa de radiodifuziune (Rundfunkbeitrag) și biroul de înmatriculare auto."
+  ],
+  "docs": [
+   "Buletin / pașaport",
+   "Permis de ședere",
+   "Confirmarea proprietarului"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Chiar și atunci când vă mutați în cadrul aceluiași oraș: termenul limită este de 2 săptămâni."
+ },
+ "abmeldung": {
+  "steps": [
+   "Anunțați plecarea (Abmeldung) cel puțin cu 1 săptămână înainte și cel târziu cu 2 săptămâni după mutare.",
+   "În multe orașe puteți face acest lucru prin formular, prin poștă sau online.",
+   "Păstrați certificatul de deregistrare (Abmeldebescheinigung) – aveți nevoie de el pentru taxa de radiodifuziune (Rundfunkbeitrag), asigurarea de sănătate și contracte.",
+   "Anulați taxa de radiodifuziune, electricitatea, internetul, telefonul și asigurările."
+  ],
+  "docs": [
+   "ID / pașaport",
+   "Noua adresă din străinătate"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Necesar numai dacă părăsiți Germania în întregime."
+ },
+ "meldebescheinigung": {
+  "steps": [
+   "Solicitați la Bürgeramt (biroul de evidență a populației) – de multe ori îl primiți direct la înregistrare.",
+   "Multe orașe permit comandarea acestuia online.",
+   "Comandați doar de la autoritate, nu de pe site-uri private."
+  ],
+  "docs": [
+   "ID / pașaport"
+  ],
+  "cost": "Gratuit la înregistrare, ulterior de obicei câțiva euro.",
+  "tip": "⚠️ Site-urile private percep adesea taxe mult mai mari pentru acest lucru."
+ },
+ "ausweis": {
+  "steps": [
+   "Doar cetățenii germani pot obține un act de identitate sau un pașaport german – la Bürgeramt (biroul de evidență a populației).",
+   "Fără cetățenie germană: pașaportul dumneavoastră se obține de la ambasada sau consulatul țării dumneavoastră.",
+   "Reînnoirea pașaportului trebuie făcută la timp – acesta trebuie să fie valabil pe întreaga durată a permisului de ședere.",
+   "În caz de pierdere: mai întâi raportați incidentul la poliție, apoi informați ambasada și biroul de imigrație (Ausländerbehörde)."
+  ],
+  "docs": [
+   " fotografie de pașaport biometrică",
+   "Pașaportul vechi",
+   "Certificat de înregistrare (Meldebescheinigung)"
+  ],
+  "cost": "Depinde de țara dumneavoastră.",
+  "tip": "Fără un pașaport valabil, biroul de imigrație nu poate prelungi perioada dumneavoastră de ședere."
+ },
+ "fuehrungszeugnis": {
+  "steps": [
+   "Solicitați online la das Bundesamt für Justiz (cu funcția de ID online sau permis de ședere electronic) – sau în persoană la Bürgeramt (Biroul cetățeanului).",
+   "Alegeți tipul: privat sau extins (de exemplu, pentru lucrul cu copiii).",
+   "Plătiți 13 €.",
+   "Acesta ajunge prin poștă după aproximativ 1–2 săptămâni."
+  ],
+  "docs": [
+   "Cartea de identitate sau permisul de ședere electronic cu funcție online",
+   "Pentru versiunea extinsă: confirmarea angajatorului"
+  ],
+  "cost": "13 €.",
+  "tip": "⚠️ Doar prin fuehrungszeugnis.bund.de sau la Bürgeramt. Site-urile private percep taxe mai mari și trimit adesea doar instrucțiuni."
+ },
+ "geburt": {
+  "steps": [
+   "Spitalul raportează de obicei nașterea la oficiul de stare civilă (Standesamt) – întrebați acolo.",
+   "Raportați nașterea la oficiul de stare civilă în termen de 1 săptămână.",
+   "Decideți numele copilului.",
+   "Comandați certificatele de naștere (pentru Kindergeld [ajutorul de stat pentru copii], Elterngeld [indemnizația pentru părinți], asigurarea de sănătate)."
+  ],
+  "docs": [
+   "Pașapoartele părinților",
+   "Certificatul de căsătorie (dacă sunteți căsătoriți)",
+   "Certificatele voastre de naștere",
+   "Traduceri ale documentelor străine, dacă este necesar"
+  ],
+  "cost": "Primele certificate sunt adesea gratuite (pentru Kindergeld/Elterngeld), copiile suplimentare costă aproximativ 10–15 € fiecare.",
+  "tip": "Apoi depuneți cererea pentru Kindergeld (ajutorul de stat pentru copii), Elterngeld (indemnizația pentru părinți), asigurarea de sănătate și permisul de ședere pentru copil."
+ },
+ "heirat": {
+  "steps": [
+   "Faceți o programare la Standesamt (Oficiul Stării Civile) din localitatea în care locuiți pentru a înregistra căsătoria.",
+   "Standesamt vă va comunica exact ce documente aveți nevoie.",
+   "Documentele străine au adesea nevoie de legalizare/apostilă și de o traducere autorizată.",
+   "Este posibil să aveți nevoie de un certificat de neimpediment (certificat de celibatitate) din țara de origine.",
+   "Stabiliți data nunții."
+  ],
+  "docs": [
+   "Pașapoarte",
+   "Certificate de înregistrare (Meldebescheinigung)",
+   "Certificate de naștere",
+   "Certificat de neimpediment (pentru străini)",
+   "Traduceri"
+  ],
+  "cost": "Depinde de oraș, aproximativ 40–100 €, adesea mai mult cu documente străine.",
+  "tip": "Începeți din timp – documentele din străinătate durează adesea luni de zile."
+ },
+ "namensaenderung": {
+  "steps": [
+   "La căsătorie sau divorț: declararea numelui la Standesamt (Starea Civilă).",
+   "Alte motive: depuneți cererea la autoritatea pentru schimbarea numelui din orașul dumneavoastră (este necesar un motiv important).",
+   "Apoi actualizați pașaportul, permisul de ședere, contul bancar și contractele."
+  ],
+  "docs": [
+   "Pașaport",
+   "Documente care dovedesc motivul (de exemplu, certificatul de căsătorie)"
+  ],
+  "cost": "Standesamt (Starea Civilă) costă de obicei aproximativ 25–50 €, schimbările oficiale de nume costă mai mult.",
+  "tip": "Legislația privind numele în Germania a fost reformată în 2025 – întrebați Standesamt despre opțiunile dumneavoastră."
+ },
+ "aufenthalt": {
+  "steps": [
+   "Verifică ce permis de ședere ți se potrivește (muncă, studii, familie, protecție).",
+   "Programază o întâlnire la biroul de imigrație local (Ausländerbehörde) – de cele mai multe ori online.",
+   "Adu toate documentele.",
+   "Se vor prelua amprentele și o fotografie.",
+   "După câteva săptămâni, ridică permisul de ședere electronic (eAT)."
+  ],
+  "docs": [
+   "Pașaport",
+   " fotografie biometrică",
+   "Certificat de înregistrare (Meldebescheinigung)",
+   "Dovada asigurării medicale",
+   "Contract de muncă / locul la universitate / certificat de căsătorie",
+   "Contract de închiriere"
+  ],
+  "cost": "De obicei aproximativ 100 € (taxele sunt stabilite prin lege și depind de tipul permisului).",
+  "tip": "Aplică înainte de expirarea vizei. Astfel, vei primi o certificare provizorie (Fiktionsbescheinigung) până la luarea deciziei."
+ },
+ "verlaengerung": {
+  "steps": [
+   "Programați o întâlnire la Ausländerbehörde (biroul pentru străini) cu 6–8 săptămâni înainte de expirare.",
+   "Colectați documentele actuale (salariu, contract de închiriere, asigurare).",
+   "Depuneți cererea – înainte de data expirării!",
+   "Dacă există așteptare: solicitați o Fiktionsbescheinigung (certificat provizoriu de rezidență)."
+  ],
+  "docs": [
+   "Pașaport",
+   "Permisul de ședere actual",
+   "Fotografie",
+   "Fluturași de salariu",
+   "Contract de închiriere",
+   "Asigurare medicală"
+  ],
+  "cost": "De obicei aproximativ 90–100 €.",
+  "tip": "Depunerea cererii prea târziu vă poate costa dreptul de rezidență. Solicitați un chitanță pentru cererea dumneavoastră."
+ },
+ "bluecard": {
+  "steps": [
+   "Verifică cerințele: diplomă universitară recunoscută sau specialist IT cu experiență, ofertă de muncă cu un salariu minim.",
+   "Salariul minim este stabilit în fiecare an – verifică suma actuală pe make-it-in-germany.com.",
+   "Din străinătate: viză la ambasada Germaniei. În Germania: depune cererea la Ausländerbehörde (autoritatea pentru imigrație).",
+   "După 21–27 de luni, rezidența permanentă este posibilă."
+  ],
+  "docs": [
+   "Pașaport",
+   "Contract de muncă",
+   "Certificat de studii + recunoaștere (anabin/ZAB)",
+   "Asigurare de sănătate"
+  ],
+  "cost": "De obicei aproximativ 100 €.",
+  "tip": "Cu o Blue Card, familia ta se poate alătura mult mai ușor."
+ },
+ "niederlassung": {
+  "steps": [
+   "De regulă, este posibil după 5 ani (detentorii de Blue Card și lucrătorii calificați pot obține acest lucru mai devreme).",
+   "Cerințe: venit sigur, 60 de luni de contribuții la pensie (mai puțin pentru lucrătorii calificați), nivel de germană B1, testul „Leben in Deutschland\" (Viața în Germania).",
+   "Programați o întâlnire la Ausländerbehörde (Oficiul pentru imigrație).",
+   "Ridicați permisul permanent."
+  ],
+  "docs": [
+   "Pașaport",
+   "Dovada contribuțiilor la asigurarea de pensie",
+   "Fluturași de salariu",
+   "Certificat B1",
+   "Testul „Leben in Deutschland\"",
+   "Contract de închiriere"
+  ],
+  "cost": "De regulă, aproximativ 113–147 €.",
+  "tip": "Cu rezidența permanentă, nu mai este necesar să vă reînnoiți permisul."
+ },
+ "einbuergerung": {
+  "steps": [
+   "Din 2024, de obicei este posibil după 5 ani de rezidență legală (mai devreme, cu integrare specială).",
+   "Cerințe: nivel B1 de germană, test de naturalizare, trai fără ajutor social (există excepții), fără antecedente penale.",
+   "Dubla cetățenie este permisă în general din 2024.",
+   "Depune cererea la Einbürgerungsbehörde (biroul de naturalizare) din orașul sau districtul tău (adesea online)."
+  ],
+  "docs": [
+   "Pașaport",
+   "Permis de ședere",
+   "Certificat B1",
+   "Test de naturalizare",
+   "Fluturași de salariu",
+   "Certificat de naștere / căsătorie"
+  ],
+  "cost": "255 € per adult, 51 € per copil (dacă sunt naturalizați împreună).",
+  "tip": "Procesarea durează adesea multe luni – depune cererea din timp."
+ },
+ "wohnungssuche": {
+  "steps": [
+   "Căutați pe portaluri mari de anunțuri, la cooperative locative și la companii municipale de locuințe.",
+   "Pregătiți un dosar de aplicare: formular de declarație personală, fluturași de salariu, raport SCHUFA (verificare de credit), act de identitate.",
+   "Acceptați rapid programările pentru vizionări – apartamentele bune se închiriază repede.",
+   "Cu un venit scăzut: solicitați un certificat de drept la locuință (WBS - Wohnberechtigungsschein) la biroul pentru locuințe (Wohnungsamt)."
+  ],
+  "docs": [
+   "Act de identitate / pașaport",
+   "Permis de ședere",
+   "Fluturași de salariu pentru ultimele 3 luni",
+   "Raport SCHUFA (verificare de credit)"
+  ],
+  "cost": "Căutarea este gratuită. Taxa agentului imobiliar este plătită, de obicei, de către proprietar.",
+  "tip": "⚠️ Avertisment împotriva fraudelor: nu transferați niciodată bani înainte de a vedea apartamentul și de a semna contractul."
+ },
+ "mietvertrag": {
+  "steps": [
+   "Verificați chiria de bază (Kaltmiete), taxele de service și chiria totală (Warmmiete).",
+   "Verificați perioada de preaviz (de obicei 3 luni pentru chiriași) și durata minimă a contractului.",
+   "Citiți clauzele referitoare la renovări și animale de companie.",
+   "Întocmiți un proces-verbal de predare-primire (Übergabeprotokoll) cu fotografii la mutare.",
+   "Întrebări: asociația de chiriași."
+  ],
+  "docs": [
+   "ID",
+   "Semnătură"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Nu semnați nimic ce nu înțelegeți – cereți explicații despre contract."
+ },
+ "kaution": {
+  "steps": [
+   "Cel mult 3 luni de chirie de bază.",
+   "Puteți plăti suma în 3 rate lunare.",
+   "Proprietarul trebuie să păstreze această sumă separat de propriile sale bani.",
+   "După mutare, suma vă este returnată, minus eventuale creanțe justificate (de obicei în câteva luni)."
+  ],
+  "docs": [
+   "Contract de închiriere",
+   "Dovada plății"
+  ],
+  "cost": "Până la 3 luni de chirie de bază.",
+  "tip": "Alternativ, există garanții de depozit – comparați costul anual."
+ },
+ "wohnungsgeber": {
+  "steps": [
+   "Solicită confirmarea de la proprietarul tău (sau chiriașul principal).",
+   "Aceștia trebuie să ți-o ofere în termen de 2 săptămâni de la mutarea în locuință.",
+   "Formularul se găsește pe site-ul primăriei tale.",
+   "Mergi cu el la înregistrarea la Bürgeramt (biroul de evidență a populației)."
+  ],
+  "docs": [
+   "Numele și adresa proprietarului",
+   "Data mutării"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Fără această confirmare nu te poți înregistra."
+ },
+ "strom": {
+  "steps": [
+   "Fotografiați citirea contorului la mutarea în locuință.",
+   "Fără un contract, furnizorul implicit (Grundversorger [furnizorul de bază din zonă]) vă furnizează automat – de obicei, este scump.",
+   "Comparați tarifele și alegeți un furnizor (verificați perioada de preaviz și garanția prețului).",
+   "Comunicați furnizorului numărul contorului și citirea acestuia."
+  ],
+  "docs": [
+   "Numărul contorului",
+   "Citirea contorului",
+   "Data mutării",
+   "IBAN"
+  ],
+  "cost": "Depinde de consum, pentru o persoană este adesea aproximativ 30–50 € pe lună.",
+  "tip": "Compararea tarifelor merită – tariful implicit este adesea cel mai scump."
+ },
+ "internet": {
+  "steps": [
+   "Verificați ce conexiuni sunt disponibile la adresa dumneavoastră (DSL, cablu, fibră).",
+   "Comparați tarifele – adesea există contracte de 24 de luni.",
+   "Rezervați o dată pentru activare (poate dura câteva săptămâni).",
+   "Între timp: utilizați internetul mobil prin hotspot-ul telefonului."
+  ],
+  "docs": [
+   "ID (Act de identitate)",
+   "Adresa de domiciliu (Anmeldung)",
+   "IBAN"
+  ],
+  "cost": "De obicei, aproximativ 30–50 € pe lună.",
+  "tip": "După perioada minimă contractuală, puteți rezilia contractul lunar."
+ },
+ "rundfunk": {
+  "steps": [
+   "Fiecare gospodărie plătește o singură dată – indiferent de numărul de persoane care locuiesc acolo.",
+   "După înregistrare, de obicei, va sosi automat o scrisoare.",
+   "Înregistrați-vă online pe rundfunkbeitrag.de sau asociați numărul de contribuție existent într-un apartament comun.",
+   "Scutirea este posibilă cu Grundsicherungsgeld (asistență socială pentru vârstnici sau persoane cu dizabilități), BAföG (burse de studii) sau asistență socială."
+  ],
+  "docs": [
+   "Adresă",
+   "Număr de contribuție (dacă există)",
+   "Decizia de acordare a prestațiilor pentru scutire"
+  ],
+  "cost": "18.36 € pe lună per gospodărie (din 2026).",
+  "tip": "Nu ignorați acest lucru – altfel vor urma notificări de plată și penalități."
+ },
+ "nachsenden": {
+  "steps": [
+   "Comandați direct de la Deutsche Post (online sau la o poștă).",
+   "Alegeți perioada (6 sau 12 luni).",
+   "Anunțați în continuare toate instituțiile importante despre noua dumneavoastră adresă."
+  ],
+  "docs": [
+   "Adresa veche și noua adresă",
+   "Document de identitate"
+  ],
+  "cost": "La Deutsche Post, costă aproximativ 32 € pentru 6 luni.",
+  "tip": "⚠️ Site-urile private solicită uneori peste 100 € – rezervați doar direct prin Deutsche Post."
+ },
+ "fuehrerschein": {
+  "steps": [
+   "O permis de conducere eliberat de o țară non-UE este de obicei valabil doar timp de 6 luni după ce vă înregistrați (Anmeldung).",
+   "Transformați-l la timp la oficiul pentru permis de conducere (Führerscheinstelle).",
+   "În funcție de țară: fără examen, doar teorie, sau teorie + practică (este necesară școala de șofer).",
+   "Permisele UE rămân valabile."
+  ],
+  "docs": [
+   "Permis străin + traducere",
+   "Pașaport",
+   "Certificat de înregistrare (Meldebescheinigung)",
+   "Test de vedere",
+   "Curs de prim ajutor",
+   " fotografie biometrică"
+  ],
+  "cost": "Oficiul costă aproximativ 40–60 €, mult mai mult cu examenele și școala de șofer.",
+  "tip": "După 6 luni, fără transformarea permisului, conduceți fără un permis valabil – acest lucru constituie o infracțiune."
+ },
+ "auto_anmelden": {
+  "steps": [
+   "Încheiați asigurarea auto – veți primi un număr eVB (elektronische Versicherungsbestätigung - confirmare electronică a asigurării).",
+   "Programare la Bürgeramt (biroul de evidență a populației) sau online prin i-Kfz pe site-ul autorității de înmatriculare locale.",
+   "Faceți plăcuțele de înmatriculare (la fața locului).",
+   "Obțineți autocolele și certificatul de înmatriculare.",
+   "Taxa auto este încasată prin debit direct de către Zoll (Vama germană)."
+  ],
+  "docs": [
+   "ID / pașaport + certificatul de înmatriculare",
+   "numărul eVB",
+   "Certificatul de înmatriculare partea I și partea II",
+   "Dovada inspecției tehnice (TÜV)",
+   "Mandat SEPA pentru taxa auto"
+  ],
+  "cost": "Înmatricularea costă de obicei aproximativ 30–40 € + plăcuțele aproximativ 20–40 €.",
+  "tip": "⚠️ Înmatricularea online se face doar prin site-ul oficial al autorității de înmatriculare. Site-urile private percep taxe de peste 200 €."
+ },
+ "auto_abmelden": {
+  "steps": [
+   "Anunțați deconectarea la Bürgeramt (biroul de înregistrare) sau online prin serviciul i-Kfz al autorității.",
+   "Aduceți plăcuțele de înmatriculare și certificatul de înmatriculare partea I (Zulassungsbescheinigung Teil I).",
+   "Asigurarea și taxa auto se vor încheia automat."
+  ],
+  "docs": [
+   "Plăcuțe de înmatriculare",
+   "Certificat de înmatriculare partea I",
+   "Act de identitate"
+  ],
+  "cost": "Aproximativ 5–20 €, în funcție de oraș.",
+  "tip": "⚠️ Site-urile private percep aproximativ 50 € pentru acest lucru – la autoritate este mult mai ieftin."
+ },
+ "kfz_versicherung": {
+  "steps": [
+   "Asigurarea de răspundere civilă este obligatorie, asigurarea parțială și cea completă sunt opționale.",
+   "Comparați ofertele.",
+   "Întrebați dacă istoricul dumneavoastră de neaccidente din străinătate este recunoscut.",
+   "Obțineți numărul eVB (elektronische Versicherungsbestätigung - confirmare electronică a asigurării) pentru înmatriculare."
+  ],
+  "docs": [
+   "Permis de conducere",
+   "Datele vehiculului",
+   "IBAN"
+  ],
+  "cost": "Variază foarte mult – șoferii începători plătesc mult mai mult.",
+  "tip": "Schimbarea asigurării este de obicei posibilă până pe 30 noiembrie pentru sfârșitul anului."
+ },
+ "tuev": {
+  "steps": [
+   "Inspecția principală (HU) se face la fiecare 2 ani, pentru mașinile noi prima dată după 3 ani.",
+   "Data limită este indicată pe autocolantul de pe numărul de înmatriculare din spate.",
+   "Rezervați o programare la TÜV, DEKRA, GTÜ sau instituții similare.",
+   "Reparați defectele și solicitați o re-inspecție dacă este necesar."
+  ],
+  "docs": [
+   "Certificatul de înmatriculare partea I (Zulassungsbescheinigung Teil I)",
+   "Mașina"
+  ],
+  "cost": "Aproximativ 140–170 €.",
+  "tip": "O inspecție depășită poate atrage o amendă."
+ },
+ "kfz_steuer": {
+  "steps": [
+   "Oferiți un mandat SEPA la înregistrare.",
+   "Vama (Zoll) trimite notificarea de taxă și o debitează anual.",
+   "Suma depinde de cilindrada motorului și de CO₂ – există un calculator pe zoll.de."
+  ],
+  "docs": [
+   "IBAN",
+   "Datele vehiculului"
+  ],
+  "cost": "Depinde de mașină, adesea aproximativ 50–300 € pe an. Mașinile electrice sunt scutite temporar.",
+  "tip": "Asigurați-vă că aveți fonduri suficiente în cont – altfel veți primi notificări de plată."
+ },
+ "konto": {
+  "steps": [
+   "Toată persoană cu rezidență legală în UE are dreptul la un cont de bază (Basiskonto).",
+   "Alegeți o bancă sau o bancă online și începeți procesul de deschidere a contului.",
+   "Confirmați-vă identitatea prin video sau la o sucursală.",
+   "Cardul și datele de autentificare vor sosi prin poștă."
+  ],
+  "docs": [
+   "Pașaport",
+   "Permis de ședere",
+   "Certificat de înregistrare (Meldebescheinigung)"
+  ],
+  "cost": "Adesea 0–10 € pe lună.",
+  "tip": "Dacă un cont de bază este refuzat, puteți depune o reclamație la BaFin (Autoritatea Federală de Supraveghere Financiară)."
+ },
+ "schufa": {
+  "steps": [
+   "SCHUFA înregistrează dacă plătiți facturile și împrumuturile.",
+   "Proprietarii de imobile și furnizorii de telefonie solicită adesea acest document.",
+   "Comandați copia gratuită a datelor (Art. 15 GDPR) pe meineschufa.de.",
+   "Plătiți facturile la timp pentru a menține un scor bun."
+  ],
+  "docs": [
+   "ID",
+   "Adresă"
+  ],
+  "cost": "Copia datelor este gratuită.",
+  "tip": "⚠️ Produsele SCHUFA contra cost nu sunt necesare – copia gratuită a datelor este, de obicei, suficientă."
+ },
+ "ueberweisung": {
+  "steps": [
+   "Transfer: trimiteți bani folosind IBAN-ul și numele beneficiarului.",
+   "Direct debit (Debit automat): permiteți unei companii să vă retragă banii (de exemplu, pentru chirie, electricitate).",
+   "Puteți anula debitările automate eronate în termen de 8 săptămâni.",
+   "Configurați ordine permanente (Dauerauftrag) pentru plăți regulate."
+  ],
+  "docs": [
+   "IBAN-ul beneficiarului",
+   "Banca online"
+  ],
+  "cost": "De obicei gratuit.",
+  "tip": "⚠️ Nu oferiți niciodată coduri TAN sau parole prin telefon – băncile nu vă vor cere niciodată acest lucru."
+ },
+ "krankenversicherung": {
+  "steps": [
+   "Asigurarea de sănătate este obligatorie în Germania.",
+   "Angajații: de obicei publică (de exemplu, AOK, TK, Barmer) – vă alegeți singuri asigurătorul.",
+   "Solicitați înscrierea și transmiteți certificatul angajatorului dumneavoastră.",
+   "Cardul de sănătate cu fotografie va sosi prin poștă."
+  ],
+  "docs": [
+   "Pașaport",
+   "Certificat de înregistrare (Anmeldung)",
+   "Contract de muncă sau certificat de student",
+   " fotografie"
+  ],
+  "cost": "Publică: un procent din salariul dumneavoastră, angajatorul plătește aproximativ jumătate.",
+  "tip": "Membrii familiei fără venituri proprii sunt adesea asigurați gratuit prin asigurarea publică."
+ },
+ "hausarzt": {
+  "steps": [
+   "Găsiți un medic de familie (Hausarzt) în apropierea dumneavoastră (prin asigurătorul dumneavoastră sau pe 116117.de).",
+   "Sunați și întrebați daca accepta pacienți noi.",
+   "Traati cu cardul de sănătate (Krankenkassenkarte).",
+   "Medicul de familie vă poate trimite la specialiști, dacă este necesar."
+  ],
+  "docs": [
+   "Cardul de sănătate",
+   "Lista de medicamente",
+   "Rapoarte medicale anterioare"
+  ],
+  "cost": "Gratuit cu asigurare publică.",
+  "tip": "Nu puteți programa o programare? Serviciul de programare 116 117 vă poate ajuta."
+ },
+ "termin116": {
+  "steps": [
+   "Sunați la 116 117 sau utilizați aplicația / site-ul web 116117.",
+   "Pentru programări la medicul de familie (GP) și specialiști, precum și pentru serviciul de gardă noaptea/weekend.",
+   "Programările la specialiști necesită adesea o trimitere (Überweisung) cu un cod.",
+   "Situație care pune viața în pericol? Sunați întotdeauna la 112."
+  ],
+  "docs": [
+   "Cardul de sănătate",
+   "Trimitere cu cod, dacă este necesar"
+  ],
+  "cost": "Gratuit.",
+  "tip": "116 117 este pentru cazuri urgente, dar care nu pun viața în pericol."
+ },
+ "krankmeldung": {
+  "steps": [
+   "Informă-ți angajatorul în dimineața primei zile de boală.",
+   "Începând cu ziua a 4-a (adesea mai devreme – consultă-ți contractul) ai nevoie de un certificat medical.",
+   "Medicul îl transmite electronic asigurătorului tău; angajatorul îl descarcă (eAU).",
+   "Salariul tău este plătit integral timp de până la 6 săptămâni."
+  ],
+  "docs": [
+   "Cardul de sănătate"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Dacă nu anunți la timp, riști o avertizare formală."
+ },
+ "apotheke": {
+  "steps": [
+   "Mergeți la o farmacie cu rețeta electronică (cardul de sănătate) sau cu rețeta pe hârtie.",
+   "Plătiți co-plata (sumă de participare) pentru fiecare medicament.",
+   "Noaptea/weekend: găsiți o farmacie de urgență (Notapotheke).",
+   "Multe medicamente simple nu necesită rețetă – întrebați la farmacie."
+  ],
+  "docs": [
+   "Card de sănătate / rețetă"
+  ],
+  "cost": "De obicei, o co-plată de 5–10 € per medicament, copiii sunt scutiți.",
+  "tip": "Farmaciștii oferă consultanță gratuit – inclusiv despre interacțiunile dintre medicamente."
+ },
+ "notfall": {
+  "steps": [
+   "Pericol de viață, accident grav, incendiu: sunați la 112.",
+   "Spuneți: unde? ce s-a întâmplat? câți sunt răniți? Apoi așteptați întrebările.",
+   "Urgent, dar nu pune viața în pericol: 116 117.",
+   "Unitățile de primiri urgențe ale spitalelor sunt deschise non-stop."
+  ],
+  "docs": [
+   "Cardul de sănătate (dacă este posibil)"
+  ],
+  "cost": "Apelurile de urgență sunt gratuite.",
+  "tip": "112 funcționează în toată Europa, chiar și fără o cartelă SIM."
+ },
+ "steuerid": {
+  "steps": [
+   "Va ajunge automat prin poștă la câteva săptămâni după Anmeldung (înregistrarea adresei).",
+   "Angajatorul dumneavoastră are nevoie de acesta pentru procesarea salariului.",
+   "L-ați pierdut? Solicitați-l din nou pe bzst.de – va fi trimis prin poștă."
+  ],
+  "docs": [
+   "Adresa înregistrată"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Codul dumneavoastră fiscal (Steuer-ID) rămâne același pe tot parcursul vieții."
+ },
+ "steuerklasse": {
+  "steps": [
+   "Căsătorit: clasa I. Părinte singur: II. Căsătorit: IV/IV sau III/V (puteți alege).",
+   "După căsătorie, automat IV/IV.",
+   "Solicitați modificarea prin intermediul ELSTER (portalul online pentru declarații fiscale).",
+   "Clasa determină doar deducerea lunară – impozitul anual se stabilește prin declarația fiscală."
+  ],
+  "docs": [
+   "Tax ID (Cod fiscal)",
+   "cont ELSTER"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Cu clasa III/V, depunerea declarației fiscale este obligatorie."
+ },
+ "steuererklaerung": {
+  "steps": [
+   "Creați un cont ELSTER (codul de activare va fi trimis prin poștă).",
+   "Colectați chitanțele: certificatul de impozitare pe salariu (Lohnsteuerbescheinigung), costurile de deplasare, echipamentul de lucru, donațiile.",
+   "Completați declarația online – multe date sunt deja precompletate.",
+   "Trimiteți și așteptați notificarea fiscală (Steuerbescheid)."
+  ],
+  "docs": [
+   "Tax ID (Număr de identificare fiscală)",
+   "Certificat de impozitare pe salariu (Lohnsteuerbescheinigung)",
+   "Chitanțe",
+   "IBAN"
+  ],
+  "cost": "Gratuit prin ELSTER.",
+  "tip": "Declarațiile voluntare pot fi depuse pentru ultimii 4 ani – mulți oameni primesc bani înapoi. Declarațiile obligatorii trebuie de obicei depuse până la data de 31 iulie a anului următor."
+ },
+ "arbeitslosengeld": {
+  "steps": [
+   "Imediat ce aflați despre concediere: înregistrați-vă ca persoană în căutarea unui loc de muncă în termen de 3 zile (cel târziu cu 3 luni înainte de încetarea contractului).",
+   "În prima zi în care nu mai aveți un loc de muncă, înregistrați-vă ca persoană șomeră (online sau în persoană).",
+   "Solicitați ajutorul de șomaj.",
+   "Participați la întâlnirile programate la agenție."
+  ],
+  "docs": [
+   "Pașaport / permis de ședere",
+   "Documentul de concediere (Kündigung)",
+   "Certificat de muncă",
+   "IBAN"
+  ],
+  "cost": "Gratuit. Veți primi aproximativ 60 % (67 % dacă aveți un copil) din salariul dumneavoastră net.",
+  "tip": "Înregistrarea întârziată duce la o perioadă de suspendare a plății (Sperrzeit)."
+ },
+ "buergergeld": {
+  "steps": [
+   "Începând cu 1 iulie 2026, Bürgergeld (ajutor social) se va numi „Grundsicherungsgeld” (supliment de venit de bază) – pentru persoanele care nu au venituri suficiente (de asemenea, ca supliment la salariu).",
+   "Depune cererea la Jobcenter (online sau în persoană).",
+   "Prezintă dovezi privind veniturile, economiile și costurile de locuire.",
+   "Colaborează regulat cu Jobcenter (centrul de ocupare a forței de muncă)."
+  ],
+  "docs": [
+   "Pașaport / permis de ședere",
+   "Contract de închiriere",
+   "Extras de cont bancar",
+   "Dovadă a veniturilor"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Notificările vechi care folosesc termenul „Bürgergeld” rămân valabile. Reforma introduce obligații mai stricte de cooperare. Eligibilitatea depinde, de asemenea, de permisul dumneavoastră de ședere."
+ },
+ "jobsuche": {
+  "steps": [
+   "Utilizați portalul de locuri de muncă al agenției pentru ocuparea forței de muncă (Agentur für Arbeit) și site-urile mari de recrutare.",
+   "CV în format german (stil tabel, fotografia este opțională).",
+   "Mențineți scrisoarea de intenție scurtă și specifică.",
+   "Verificați dacă permisul dumneavoastră de ședere permite activitatea profesională."
+  ],
+  "docs": [
+   "CV",
+   "Certificate (traduse)",
+   "Recunoașterea diplomei"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Agenția pentru ocuparea forței de muncă oferă consultanță gratuită pentru căutarea unui loc de muncă."
+ },
+ "anerkennung": {
+  "steps": [
+   "Verificați pe anerkennung-in-deutschland.de care este biroul responsabil.",
+   "Pentru profesiile reglementate (medic, asistent medical, profesor), recunoașterea este obligatorie.",
+   "Depuneți cererea împreună cu certificatele și traducerile.",
+   "Diplome universitare: declarație de comparabilitate de la ZAB (Zentralstelle für ausländisches Bildungswesen)."
+  ],
+  "docs": [
+   "Certificate + traduceri autorizate",
+   "CV",
+   "Pașaport"
+  ],
+  "cost": "De obicei între 100–600 €, în funcție de profesie. Există posibilități de finanțare.",
+  "tip": "Linia telefonică „Working and Living in Germany” și centrele de consiliere IQ oferă ajutor gratuit."
+ },
+ "arbeitsvertrag": {
+  "steps": [
+   "Verificați: plata, orele de lucru, concediul, perioada de probă, perioada de preaviz.",
+   "Se aplică salariul minim (2026: 13.90 € pe oră).",
+   "Cel puțin 20 de zile de concediu pentru o săptămână de 5 zile (conform legii).",
+   "Obțineți contractul în scris."
+  ],
+  "docs": [
+   "Tax ID (Număr de identificare fiscală)",
+   "Număr de asigurări sociale",
+   "Asigurător de sănătate",
+   "IBAN"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Nu sunteți sigur? Întrebați un sindicat sau un serviciu de consiliere pentru migrație."
+ },
+ "kindergeld": {
+  "steps": [
+   "Solicitați la Familienkasse (biroul pentru beneficii familiale) online sau prin poștă.",
+   "Furnizați numerele de identificare fiscală (Steuer-ID) pentru dumneavoastră și pentru copilul dumneavoastră.",
+   "Așteptați notificarea – plata se face lunar."
+  ],
+  "docs": [
+   "Certificatul de naștere al copilului",
+   "Numere de identificare fiscală (Steuer-ID)",
+   "Permisul de ședere",
+   "IBAN"
+  ],
+  "cost": "Gratuit. 2026: 259 € pe copil, pe lună.",
+  "tip": "Retroactiv până la 6 luni. Eligibilitatea depinde de permisul dumneavoastră de ședere."
+ },
+ "elterngeld": {
+  "steps": [
+   "După naștere, depuneți cererea la oficiul pentru alocația parentală (Elterngeld) al statului dumneavoastră federal (adesea online).",
+   "Alegeți alocația parentală de bază (Elterngeld) sau ElterngeldPlus.",
+   "Depuneți cererea în termen de 3 luni de la naștere."
+  ],
+  "docs": [
+   "Certificat de naștere",
+   "Dovada veniturilor",
+   "Permis de ședere",
+   "Certificat de concediu medical pentru maternitate"
+  ],
+  "cost": "Gratuit. De obicei 65–67 % din venitul net (cel puțin 300 €).",
+  "tip": "Doar pentru ultimele 3 luni – depuneți cererea cât mai curând."
+ },
+ "kita": {
+  "steps": [
+   "Copiii de la vârsta de 1 an au dreptul legal la un loc la creșterea copiilor.",
+   "Înregistrați-vă din timp – ideal înainte de naștere sau imediat după mutare.",
+   "În funcție de oraș, prin intermediul unui portal online sau direct la creștele de copii.",
+   "Aplicați la mai multe crește în același timp."
+  ],
+  "docs": [
+   "Certificat de naștere",
+   "Certificat de înregistrare (Anmeldung)",
+   "Dovada vaccinării împotriva rujeolei"
+  ],
+  "cost": "Depinde de stat și de venit, de la gratuit la câteva sute de euro.",
+  "tip": "Nu aveți loc? Raportați situația la oficiul de asistență pentru tineret (Jugendamt) – dreptul legal este aplicabil."
+ },
+ "schule": {
+  "steps": [
+   "Școlarizarea este obligatorie de la aproximativ 6 ani – inclusiv pentru copiii proaspăt sosiți.",
+   "Înregistrați-vă la secretariatul școlii sau la școala primară locală.",
+   "Copiii care nu vorbesc germana încep adesea într-o clasă de bun venit sau pregătitoare.",
+   "Control medical pentru intrarea la școală la oficiul de sănătate."
+  ],
+  "docs": [
+   "Certificat de naștere",
+   "Certificat de înregistrare (Meldebescheinigung)",
+   "Dovada vaccinării împotriva rujeolei",
+   "Notele școlare anterioare"
+  ],
+  "cost": "Școlile publice sunt gratuite.",
+  "tip": "Obligația școlară este verificată – înregistrați copiii cât mai repede."
+ },
+ "wohngeld": {
+  "steps": [
+   "Un ajutor pentru chirie pentru persoanele cu venituri mici (nu și pentru cei care primesc Grundsicherungsgeld [asistență socială de bază]).",
+   "Folosiți calculatorul pentru ajutorul de locuință pentru a verifica eligibilitatea.",
+   "Depuneți cererea la biroul pentru ajutorul de locuință (Wohngeldbehörde) din orașul dumneavoastră.",
+   "De obicei, este aprobat pentru 12 luni, apoi trebuie depusă o nouă cerere."
+  ],
+  "docs": [
+   "Contractul de închiriere",
+   "Dovada veniturilor",
+   "Extras de cont bancar",
+   "Permisul de ședere"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Se plătește începând cu luna în care depuneți cererea – nu se plătește retroactiv."
+ },
+ "integrationskurs": {
+  "steps": [
+   "Cursul combină un curs de limba străină (până la nivelul B1) și un curs de orientare (viața în Germania).",
+   "Obțineți confirmarea eligibilității de la biroul de imigrație (Ausländerbehörde) sau de la Jobcenter (centrul de ocupare a forței de muncă).",
+   "Găsiți un furnizor de cursuri în apropierea dumneavoastră (BAMF course finder) și înscrieți-vă.",
+   "La final: testul de limba germană pentru imigranți și testul „Leben in Deutschland\" (Viața în Germania)."
+  ],
+  "docs": [
+   "Certificat de eligibilitate",
+   "Pașaport / permis de ședere"
+  ],
+  "cost": "O mică contribuție per lecție (verificați suma actuală la BAMF) – scutirea este posibilă, de exemplu, cu Grundsicherungsgeld (ajutor social de bază).",
+  "tip": "Certificatul B1 ajută la obținerea rezidenței permanente și a cetățeniei."
+ },
+ "deutschkurs": {
+  "steps": [
+   "Cursul de integrare (Integrationskurs) este adesea cea mai ieftină variantă.",
+   "Centrele de educație pentru adulți (VHS) oferă cursuri la costuri reduse.",
+   "Învață gratuit: aplicații și cursuri online (de exemplu, Deutsche Welle).",
+   "Pentru muncă: cursuri de limbaj profesional (B2/C1) prin BAMF (Federal Office for Migration and Refugees) și Jobcenter (centrul de ocupare a forței de muncă)."
+  ],
+  "docs": [
+   "Pașaport"
+  ],
+  "cost": "De la gratuit la câteva sute de euro.",
+  "tip": "15 minute pe zi sunt mai eficiente decât 2 ore o dată pe săptămână."
+ },
+ "studium": {
+  "steps": [
+   "Alegeți un program și verificați cerințele de admitere (DAAD).",
+   "Aplicați direct la universitate sau prin uni-assist.",
+   "Certificat lingvistic (germană sau engleză) și, eventual, un colegiu pregătitor (Studienkolleg).",
+   "Viză de student și dovadă a finanțelor (un cont blocat/Sperrkonto)."
+  ],
+  "docs": [
+   "Diplomă de absolvire + traducere",
+   "Certificat lingvistic",
+   "Pașaport",
+   "Dovadă a finanțelor"
+  ],
+  "cost": "Universitățile publice percep de obicei doar o taxă de semestru (aproximativ 150–400 €).",
+  "tip": "Aveți grijă la termenele limită – adesea 15 ianuarie și 15 iulie."
+ },
+ "bafoeg": {
+  "steps": [
+   "Finanțare de la stat pentru universitate și școală.",
+   "Străinii pot beneficia de aceste fonduri în funcție de permisul de ședere.",
+   "Aplicați online prin BAföG Digital.",
+   "Pentru universitate: jumătate sub formă de grant, jumătate sub formă de împrumut fără dobândă."
+  ],
+  "docs": [
+   "Certificat de înmatriculare",
+   "Dovada veniturilor părinților",
+   "Permis de ședere",
+   "Contract de închiriere"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Aplicați rapid – BAföG se plătește doar începând cu luna în care ați depus cererea."
+ },
+ "haftpflicht": {
+  "steps": [
+   "Plătește dacă deteriorați accidental proprietatea altor persoane (de exemplu, daune cauzate de apă, un telefon spart).",
+   "Considerată cea mai importantă asigurare privată.",
+   "Comparați tarifele – pot fi incluse și membrii familiei.",
+   "Acoperire de cel puțin 10 milioane €."
+  ],
+  "docs": [
+   "ID",
+   "IBAN"
+  ],
+  "cost": "De cele mai multe ori, aproximativ 40–80 € pe an.",
+  "tip": "Mulți proprietari de locuințe o solicită."
+ },
+ "hausrat": {
+  "steps": [
+   "Protejează bunurile din locuința dumneavoastră împotriva incendiului, a apei, a furtului și a furtunilor.",
+   "Potriviți suma asigurată cu valoarea bunurilor dumneavoastră.",
+   "Adăugați furtul de bicicletă, dacă este necesar."
+  ],
+  "docs": [
+   "Adresă",
+   "Suprafața locuinței",
+   "IBAN"
+  ],
+  "cost": "De cele mai multe ori, aproximativ 50–150 € pe an.",
+  "tip": "Dacă aveți puține bunuri, asigurarea nu este întotdeauna esențială."
+ },
+ "rechtsschutz": {
+  "steps": [
+   "Plătește costurile cu avocații și tribunalul, de exemplu în litigiile de muncă sau de închiriere.",
+   "De obicei, există o perioadă de așteptare de 3 luni înainte ca asigurarea să fie utilă.",
+   "Alternativă: asociațiile de chiriași și sindicatele includ adesea protecție juridică pentru membrii lor."
+  ],
+  "docs": [
+   "ID",
+   "IBAN"
+  ],
+  "cost": "Adesea aproximativ 200–400 € pe an.",
+  "tip": "Nu acoperă litigiile care au început înainte de încheierea asigurării."
+ },
+ "sim": {
+  "steps": [
+   "Cumpărați o cartelă SIM preplătită sau un abonament într-un magazin, supermarket sau online.",
+   "Cerință legală: confirmați-vă identitatea cu pașaportul sau buletinul (prin video sau în magazin).",
+   "Așteptați activarea."
+  ],
+  "docs": [
+   "Pașaport sau buletin",
+   "Adresă"
+  ],
+  "cost": "Preplătită de la aproximativ 5–10 €.",
+  "tip": "O cartelă preplătită este o soluție bună pentru început – fără contract și fără verificarea SCHUFA (sistemul de verificare a creditului)."
+ },
+ "handyvertrag": {
+  "steps": [
+   "Comparați tarifele: datele, perioada contractului (cu anulare lunară sau 24 de luni).",
+   "Contractele necesită adesea o verificare SCHUFA (verificare a istoricului de credit).",
+   "Solicitați numărul de la furnizorul anterior (portabilitate)."
+  ],
+  "docs": [
+   "Act de identitate",
+   "Adresă de domiciliu înregistrată",
+   "IBAN"
+  ],
+  "cost": "De obicei, aproximativ 10–30 € pe lună.",
+  "tip": "⚠️ Aveți grijă la vânzările de la ușă sau prin telefon – aveți dreptul de retragere de 14 zile."
+ },
+ "deutschlandticket": {
+  "steps": [
+   "Abonament lunar pentru toate autobuzele, tramvaiele, metroul/S-Bahn și trenurile regionale din Germania.",
+   "Cumpărați online de la companiile de transport sau de la Deutsche Bahn.",
+   "Se poate anula lunar.",
+   "Întrebați: există un bilet mai ieftin pentru angajați sau studenți?"
+  ],
+  "docs": [
+   "IBAN",
+   "Telefon sau card inteligent"
+  ],
+  "cost": "2026: 63 € pe lună (din 2027: 66.80 €).",
+  "tip": "Nu este valabil pentru ICE/IC/EC (trenuri de distanță lungă)."
+ },
+ "oepnv": {
+  "steps": [
+   "Cumpărați biletul înainte de călătorie (automat, aplicație) – de multe ori trebuie validat înainte de îmbarcare.",
+   "Fără un bilet valid, amenda este de obicei de 60 €.",
+   "Aplicațiile de transport local arată conexiunile disponibile.",
+   "Copiii sub 6 ani călătoresc de obicei gratuit."
+  ],
+  "docs": [
+   "Bilet"
+  ],
+  "cost": "Depinde de oraș.",
+  "tip": "Cu Deutschlandticket (biletul național lunar) nu aveți nevoie de bilete individuale pentru transportul local."
+ },
+ "mbe": {
+  "steps": [
+   "Consilierea pentru migrație pentru adulți (MBE) și serviciile de migrație pentru tineri (până la 27 de ani) oferă ajutor gratuit.",
+   "Cu scrisori de la autorități, cereri, cursuri de limba germană, muncă și locuințe.",
+   "Găsiți un centru de consiliere aproape de dvs. prin intermediul căutării BAMF (Federal Office for Migration and Refugees).",
+   "Adesea disponibile în mai multe limbi."
+  ],
+  "docs": [
+   "Scrisorile și documentele dvs."
+  ],
+  "cost": "Gratuit.",
+  "tip": "O primă oprire excelentă – înainte de a plăti pentru ajutor."
+ },
+ "verbraucher": {
+  "steps": [
+   "Ajută cu contractele, capcanele de abonamente, energia, asigurările și site-urile web dubioase.",
+   "Multe informații gratuite online.",
+   "Consiliere personală, adesea contra unei taxe mici."
+  ],
+  "docs": [
+   "Contract / factură"
+  ],
+  "cost": "Informațiile sunt gratuite, consilierea este de obicei ieftină.",
+  "tip": "Ajutor util dacă nu înțelegeți un contract sau dacă ați fost păcăliți."
+ },
+ "mieterverein": {
+  "steps": [
+   "Deveniți membru și primiți consultanță privind chiria, costurile de întreținere, depozitul și defectele.",
+   "Include adesea protecție juridică în materia dreptului locativ.",
+   "Faceți verificarea extrasului de cheltuieli de întreținere."
+  ],
+  "docs": [
+   "Contract de închiriere",
+   "Scrisori de la proprietar"
+  ],
+  "cost": "De obicei, aproximativ 5–10 € pe lună.",
+  "tip": "Este deosebit de util în cazul disputelor cu proprietarul dumneavoastră."
+ },
+ "notrufe": {
+  "steps": [
+   "110 = poliția (pericol, violență, jaf, accidente cu persoane rănite).",
+   "112 = pompierii și ambulanța (incendiu, urgență medicală).",
+   "116 117 = serviciul medical de gardă.",
+   "Rămâneți calm, comunicați locația și răspundeți la întrebări."
+  ],
+  "docs": [
+   "Nimic – apelul este gratuit"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Utilizarea abuzivă a numerelor de urgență este o infracțiune."
+ },
+ "anzeige": {
+  "steps": [
+   "La o secție de poliție sau online prin serviciul polițienesc online al statului federal în care vă aflați.",
+   "Descrieți cât mai precis posibil: ce, când, unde, cine.",
+   "Păstrați probele (fotografii, mesaje, chitanțe).",
+   "Notați numărul de caz – aveți nevoie de acesta pentru asigurări și autorități."
+  ],
+  "docs": [
+   "ID (Act de identitate)",
+   "Probe"
+  ],
+  "cost": "Gratuit.",
+  "tip": "Pentru violență sau amenințări: sunați la 110."
+ },
+ "pfand": {
+  "steps": [
+   "Multe sticle și doze au un depozit (simbol pe etichetă).",
+   "Cele de unică folosință au de obicei 0.25 €, cele reutilizabile au de obicei 0.08–0.15 €.",
+   "Pune sticlele goale în aparatul de depozit (Pfandautomat) din supermarket.",
+   "Rămredează bonul la casa de marcat."
+  ],
+  "docs": [
+   "Sticle goale"
+  ],
+  "cost": "Primești banii înapoi.",
+  "tip": "Sticlele fără depozit se pun la reciclarea de sticlă sau la coșul galben (Gelber Sack)."
+ },
+ "sonntag": {
+  "steps": [
+   "Duminica și în zilele de sărbătoare publică, majoritatea magazinelor sunt închise.",
+   "Deschise: benzinării, magazinele din stații, brutării (adesea dimineața), farmacii de urgență.",
+   "Faceți cumpărăturile sâmbăta și cunoașteți sărbătorile oficiale din statul dumneavoastră federal."
+  ],
+  "docs": [
+   "–"
+  ],
+  "cost": "–",
+  "tip": "Duminica este zi de odihnă – evitați lucrurile zgomotoase acasă."
+ },
+ "muell": {
+  "steps": [
+   "Galben: ambalaje din plastic și metal. Albastru: hârtie. Maro: deșeuri organice. Negru/gri: deșeuri reziduale.",
+   "Sticlă pe culori în containerele de sticlă.",
+   "Datele de colectare se găsesc în calendarul de deșeuri al orașului dumneavoastră (adesea sub formă de aplicație).",
+   "Înregistrați deșeurile voluminoase (mobilă) la primărie."
+  ],
+  "docs": [
+   "–"
+  ],
+  "cost": "Taxele de deșeuri fac de obicei parte din taxele de servicii.",
+  "tip": "Sortarea incorectă a deșeurilor poate cauza probleme cu proprietarul și cu vecinii."
+ }
+}

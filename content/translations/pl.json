@@ -1,0 +1,1049 @@
+{
+ "anmeldung": {
+  "steps": [
+   "Umów wizytę w swoim urzędzie miasta (Bürgeramt) online lub telefonicznie. Wiele miast oferuje również rejestrację przez internet.",
+   "Poproś swojego wynajmującego o potwierdzenie zamieszkania (Wohnungsgeberbestätigung).",
+   "Wypełnij formularz rejestracyjny (na stronie internetowej Twojego miasta).",
+   "Udaj się na umówioną wizytę. Potwierdzenie zameldowania (Anmeldung) otrzymasz od razu.",
+   "Po kilku tygodniach otrzymasz numer identyfikacji podatkowej (Steuer-ID) pocztą."
+  ],
+  "docs": [
+   "Paszport lub dowód osobisty",
+   "Potwierdzenie od wynajmującego (Wohnungsgeberbestätigung)",
+   "Formularz rejestracyjny",
+   "Dla rodzin: akty małżeństwa i akty urodzenia"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Wymagane w ciągu 2 tygodni od przeprowadzki. Bez tego: brak konta bankowego, brak umów, brak numeru Steuer-ID."
+ },
+ "ummeldung": {
+  "steps": [
+   "Uzyskaj nowe potwierdzenie od nowego wynajmującego (Wohnungsgeberbestätigung).",
+   "Umów wizytę w Bürgeramt (urząd stanu obywatelskiego) w Twoim nowym mieście.",
+   "Zamelduj się (Anmeldung) tak jak za pierwszym razem – Twój stary adres zostanie automatycznie wyrejestrowany.",
+   "Dopisz nowy adres do dowodu osobistego lub karty pobytu.",
+   "Poinformuj o zmianie adresu bank, pracodawcę, ubezpieczalnię zdrowotną, urząd opłat radiowo-telewizyjnych (Beitragsservice) oraz urząd komunikacji (Kfz-Zulassungsstelle)."
+  ],
+  "docs": [
+   "Dowód osobisty / paszport",
+   "Karta pobytu",
+   "Potwierdzenie od wynajmującego"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Dotyczy to również przeprowadzki w obrębie tego samego miasta: termin to 2 tygodnie."
+ },
+ "abmeldung": {
+  "steps": [
+   "Zamelduj się (Abmeldung) najwcześniej 1 tydzień przed wyprowadzką i najpóźniej 2 tygodnie po wyprowadzce.",
+   "W wielu miastach można to zrobić za pomocą formularza, pocztą lub online.",
+   "Zachowaj zaświadczenie o wymeldowaniu (Abmeldebescheinigung) – będzie ono potrzebne do opłaty za media (Rundfunkbeitrag), ubezpieczenia zdrowotnego i umów.",
+   "Wypowiedz umowę na opłatę za media (Rundfunkbeitrag), prąd, internet, telefon oraz ubezpieczenia."
+  ],
+  "docs": [
+   "Dowód osobisty / paszport",
+   "Nowy adres za granicą"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Potrzebne tylko wtedy, gdy całkowicie opuszczasz Niemcy."
+ },
+ "meldebescheinigung": {
+  "steps": [
+   "Zapytaj w Bürgeramt (urząd miasta) – często otrzymasz go od razu podczas Anmeldung (zameldowania).",
+   "Wiele miast umożliwia zamówienie go online.",
+   "Zamawiaj wyłącznie w urzędzie, a nie na prywatnych stronach internetowych."
+  ],
+  "docs": [
+   "Dowód osobisty / paszport"
+  ],
+  "cost": "Bezpłatnie przy zameldowaniu, później zazwyczaj kilka euro.",
+  "tip": "⚠️ Prywatne strony internetowe często pobierają za to znacznie wyższe opłaty."
+ },
+ "ausweis": {
+  "steps": [
+   "Tylko obywatele Niemiec otrzymują niemiecki dowód osobisty lub paszport – w Bürgeramt (urząd stanu obywatelskiego).",
+   "Bez niemieckiego obywatelstwa: Twój paszport otrzymasz w ambasadzie lub konsulacie swojego kraju.",
+   "Odnow paszport w odpowiednim czasie – musi on być ważny przez cały okres obowiązywania Twojego pozwolenia na pobyt.",
+   "W przypadku zgubienia: najpierw zgłoś to na policję, a następnie poinformuj swoją ambasadę oraz urząd ds. cudzoziemców (Ausländerbehörde)."
+  ],
+  "docs": [
+   "Biometryczne zdjęcie paszportowe",
+   "Stary paszport",
+   "Meldebescheinigung (zaświadczenie o zameldowaniu)"
+  ],
+  "cost": "Zależy od Twojego kraju.",
+  "tip": "Bez ważnego paszportu urząd ds. cudzoziemców nie może przedłużyć Twojego pobytu."
+ },
+ "fuehrungszeugnis": {
+  "steps": [
+   "Złóż wniosek online w Federal Office of Justice (Federalny Urząd Sprawiedliwości – wymaga funkcji online ID lub elektronicznej karty pobytu) – lub osobiście w Bürgeramt (urząd dzielnicowy).",
+   "Wybierz rodzaj: prywatny lub rozszerzony (np. do pracy z dziećmi).",
+   "Zapłać 13 €.",
+   "Dokument przyjdzie pocztą po około 1–2 tygodniach."
+  ],
+  "docs": [
+   "Dowód osobisty lub elektroniczna karta pobytu z funkcją online",
+   "W przypadku wersji rozszerzonej: potwierdzenie od pracodawcy"
+  ],
+  "cost": "13 €.",
+  "tip": "⚠️ Tylko przez fuehrungszeugnis.bund.de lub Bürgeramt. Prywatne strony pobierają wyższe opłaty i często przesyłają jedynie instrukcje."
+ },
+ "geburt": {
+  "steps": [
+   "Szpital zazwyczaj zgłasza urodzenie do urzędu stanu cywilnego (Standesamt) – zapytaj o to w szpitalu.",
+   "Zgłoś urodzenie w urzędzie stanu cywilnego w ciągu 1 tygodnia.",
+   "Wybierz imię dla dziecka.",
+   "Zamów akty urodzenia (do zasiłku na dziecko, zasiłku rodzicielskiego oraz ubezpieczenia zdrowotnego)."
+  ],
+  "docs": [
+   "Paszporty rodziców",
+   "Akt małżeństwa (jeśli są Państwo małżeństwem)",
+   "Państwa akty urodzenia",
+   "Tłumaczenia zagranicznych dokumentów, jeśli są wymagane"
+  ],
+  "cost": "Pierwsze akty urodzenia są często bezpłatne (do zasiłku na dziecko/zasiłku rodzicielskiego), kolejne kopie kosztują około 10–15 € każda.",
+  "tip": "Następnie złóż wniosek o zasiłek na dziecko (Kindergeld), zasiłek rodzicielski (Elterngeld), ubezpieczenie zdrowotne oraz zezwolenie na pobyt (Aufenthaltstitel) dla dziecka."
+ },
+ "heirat": {
+  "steps": [
+   "Umów się na wizytę w urzędzie stanu cywilnego (Standesamt) właściwym dla Twojego miejsca zamieszkania, aby zarejestrować małżeństwo.",
+   "Urząd stanu cywilny dokładnie poinformuje Cię, jakich dokumentów potrzebujesz.",
+   "Zagraniczne dokumenty często wymagają legalizacji/apostille oraz poświadczonego tłumaczenia.",
+   "Możesz potrzebować zaświadczenia o zdolności prawnej do zawarcia małżeństwa (certificate of no impediment) z Twojego kraju pochodzenia.",
+   "Ustal datę ślubu."
+  ],
+  "docs": [
+   "Paszporty",
+   "Zaświadczenia o zameldowaniu (Anmeldung)",
+   "Akty urodzenia",
+   "Zaświadczenie o zdolności prawnej do zawarcia małżeństwa (dla obcokrajowców)",
+   "Tłumaczenia"
+  ],
+  "cost": "Zależy od miasta, około 40–100 €, często więcej w przypadku dokumentów zagranicznych.",
+  "tip": "Zacznij wcześnie – uzyskanie dokumentów z zagranicy często zajmuje wiele miesięcy."
+ },
+ "namensaenderung": {
+  "steps": [
+   "Przy ślubie lub rozwodzie: złożenie deklaracji dotyczącej nazwiska w urzędzie stanu cywilnego (Standesamt).",
+   "Inne powody: złożenie wniosku w lokalnym urzędzie ds. zmiany nazwiska (wymagany jest ważny powód).",
+   "Następnie należy zaktualizować paszport, kartę pobytu, dane w banku oraz w umowach."
+  ],
+  "docs": [
+   "Paszport",
+   "Dokumenty potwierdzające powód (np. akt małżeństwa)"
+  ],
+  "cost": "W urzędzie Standesamt (urząd stanu cywilnego) zazwyczaj około 25–50 €, oficjalne zmiany nazwiska są droższe.",
+  "tip": "Niemieckie prawo dotyczące nazwisk zostało zreformowane w 2025 roku – zapytaj w Standesamt o dostępne możliwości."
+ },
+ "aufenthalt": {
+  "steps": [
+   "Sprawdź, która karta pobytu (Aufenthaltstitel) jest odpowiednia (praca, studia, rodzina, ochrona).",
+   "Umów się na wizytę w lokalnym urzędzie ds. cudzoziemców (Ausländerbehörde) – często można to zrobić online.",
+   "Zabierz ze sobą wszystkie dokumenty.",
+   "Zostaną pobrane odciski palców oraz wykonane zdjęcie.",
+   "Po kilku tygodniach odbierz swoją elektroniczną kartę pobytu (eAT)."
+  ],
+  "docs": [
+   "Paszport",
+   "Zdjęcie biometryczne",
+   "Zaświadczenie o zameldowaniu (Meldebescheinigung)",
+   "Dowód ubezpieczenia zdrowotnego",
+   "Umowa o pracę / potwierdzenie miejsca na uczelni / akt małżeństwa",
+   "Umowa najmu mieszkania"
+  ],
+  "cost": "Zazwyczaj około 100 € (opłaty są ustalane ustawowo i zależą od rodzaju pozwolenia).",
+  "tip": "Złóż wniosek, zanim Twoja wiza wygaśnie. Wtedy otrzymasz tymczasowe zaświadczenie (Fiktionsbescheinigung) do czasu podjęcia decyzji."
+ },
+ "verlaengerung": {
+  "steps": [
+   "Umów wizytę w urzędzie ds. cudzoziemców (Ausländerbehörde) na 6–8 tygodni przed wygaśnięciem dokumentu.",
+   "Zbierz aktualne dokumenty (wynagrodzenie, umowa najmu, ubezpieczenie).",
+   "Złóż wniosek – przed datą wygaśnięcia!",
+   "Jeśli jest czas oczekiwania: poproś o Fiktionsbescheinigung (tymczasowe zaświadczenie o prawie pobytu)."
+  ],
+  "docs": [
+   "Paszport",
+   "Aktualne pozwolenie na pobyt",
+   "Zdjęcie",
+   "Paski wypłat (Lohnabrechnungen)",
+   "Umowa najmu",
+   "Ubezpieczenie zdrowotne"
+  ],
+  "cost": "Zazwyczaj około 90–100 €.",
+  "tip": "Złożenie wniosku zbyt późno może skutkować utratą prawa do pobytu. Zawsze weź potwierdzenie złożenia wniosku."
+ },
+ "bluecard": {
+  "steps": [
+   "Sprawdź wymagania: uznany dyplom uniwersytecki lub doświadczony specjalista IT, oferta pracy z minimalnym wynagrodzeniem.",
+   "Minimalne wynagrodzenie jest ustalane co roku – sprawdź aktualną kwotę na make-it-in-germany.com.",
+   "Z zagranicy: wiza w ambasadzie Niemiec. W Niemczech: wniosek w urzędzie ds. cudzoziemców (Ausländerbehörde).",
+   "Po 21–27 miesiącach możliwa jest uzyskanie stałego pobytu (Niederlassungserlaubnis)."
+  ],
+  "docs": [
+   "Paszport",
+   "Umowa o pracę",
+   "Dyplom ukończenia studiów + uznanie kwalifikacji (anabin/ZAB)",
+   "Ubezpieczenie zdrowotne"
+  ],
+  "cost": "Zazwyczaj około 100 €.",
+  "tip": "Z Niebieską Kartą (Blue Card) Twoja rodzina może łatwiej do Ciebie dołączyć."
+ },
+ "familie": {
+  "steps": [
+   "Sprawdź, kto może do Ciebie dołączyć (małżonek, dzieci poniżej 18 roku życia).",
+   "Twoja rodzina składa wniosek o wizę w ambasadzie Niemiec w swoim kraju ojczystym.",
+   "Często wymagane: podstawowy niemiecki (A1) dla małżonków, odpowiednia przestrzeń mieszkalna, stabilny dochód.",
+   "Po przyjeździe: Anmeldung (zameldowanie) oraz uzyskanie pozwolenia na pobyt w urzędzie ds. cudzoziemców."
+  ],
+  "docs": [
+   "Paszporty",
+   "Akty małżeństwa i urodzenia (zalegalizowane, przetłumaczone)",
+   "Umowa najmu",
+   "Dowód dochodów",
+   "Certyfikat A1"
+  ],
+  "cost": "Wiza około 75 €.",
+  "tip": "Czas oczekiwania w ambasadzie może być długi – zarezerwuj termin z wyprzedzeniem."
+ },
+ "niederlassung": {
+  "steps": [
+   "Zazwyczaj możliwe po 5 latach (posiadacze Niebieskiej Karty oraz specjaliści często wcześniej).",
+   "Wymagania: stabilny dochód, 60 miesięcy składek emerytalnych (mniej dla specjalistów), poziom niemieckiego B1, test „Leben in Deutschland” (Życie w Niemczech).",
+   "Umów wizytę w urzędzie ds. cudzoziemców (Ausländerbehörde).",
+   "Odbierz swoją kartę pobytu stałego."
+  ],
+  "docs": [
+   "Paszport",
+   "Dokumentacja ubezpieczenia emerytalnego",
+   "Paski wypłat (Lohnabrechnungen)",
+   "Certyfikat B1",
+   "Test „Leben in Deutschland”",
+   "Umowa najmu"
+  ],
+  "cost": "Zazwyczaj około 113–147 €.",
+  "tip": "Mając stały pobyt, nie musisz już przedłużać dokumentów."
+ },
+ "einbuergerung": {
+  "steps": [
+   "Od 2024 roku zazwyczaj możliwe po 5 latach legalnego pobytu (wcześniej przy specjalnej integracji).",
+   "Wymagania: niemiecki na poziomie B1, test naturalizacyjny, życie bez korzystania z pomocy społecznej (z wyjątkami), brak wyroków karnych.",
+   "Podwójne obywatelstwo jest ogólnie dozwolone od 2024 roku.",
+   "Złóż wniosek w urzędzie zajmującym się naturalizacją (Einbürgerungsbehörde) w swoim mieście lub dzielnicy (często online)."
+  ],
+  "docs": [
+   "Paszport",
+   "Zezwolenie na pobyt (Aufenthaltstitel)",
+   "Certyfikat B1",
+   "Test naturalizacyjny",
+   "Paski wypłat (Lohnabrechnungen)",
+   "Akt urodzenia / akt małżeństwa"
+  ],
+  "cost": "255 € za osobę dorosłą, 51 € za dziecko (jeśli naturalizacja odbywa się wspólnie).",
+  "tip": "Procedura często trwa wiele miesięcy – złóż wniosek odpowiednio wcześnie."
+ },
+ "wohnungssuche": {
+  "steps": [
+   "Szukaj na dużych portalach, w spółdzielniach mieszkaniowych oraz w miejskich firmach mieszkaniowych.",
+   "Przygotuj teczkę z dokumentami: formularz samoopisowy (Selbstauskunft), odcinki wypłat, raport SCHUFA (raport o zdolności kredytowej/historii płatniczej), dokument tożsamości.",
+   "Akceptuj terminy oględzin szybko – dobre mieszkania szybko znikają z rynku.",
+   "Przy niskich dochodach: złóż wniosek o WBS (Wohnberechtigungsschein – zaświadczenie uprawniające do najmu mieszkania socjalnego) w urzędzie ds. mieszkaniowych."
+  ],
+  "docs": [
+   "Dowód osobisty / paszport",
+   "Pozwolenie na pobyt",
+   "Odcinki wypłat z ostatnich 3 miesięcy",
+   "Raport SCHUFA"
+  ],
+  "cost": "Szukanie jest bezpłatne. Opłata dla pośrednika jest zazwyczaj pokrywana przez wynajmującego.",
+  "tip": "⚠️ Ostrzeżenie przed oszustami: nigdy nie przelewaj pieniędzy, zanim nie zobaczysz mieszkania i nie podpiszesz umowy."
+ },
+ "mietvertrag": {
+  "steps": [
+   "Sprawdź czynsz podstawowy (Kaltmiete), opłaty eksploatacyjne oraz całkowity czynsz (Warmmiete).",
+   "Sprawdź okres wypowiedzenia (zazwyczaj 3 miesiące dla najemców) oraz minimalny okres trwania umowy.",
+   "Przeczytaj zapisy dotyczące remontów oraz zwierząt domowych.",
+   "Przy przeprowadzce sporządź protokół zdawczo-odbiorczy wraz ze zdjęciami.",
+   "Pytania: skontaktuj się ze stowarzyszeniem najemców (Mieterverein)."
+  ],
+  "docs": [
+   "Dowód tożsamości",
+   "Podpis"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Nie podpisuj niczego, czego nie rozumiesz – poproś o wyjaśnienie treści umowy."
+ },
+ "kaution": {
+  "steps": [
+   "Maksymalnie 3 miesięczne kwoty czynszu podstawowego (Kaltmiete).",
+   "Można płacić w 3 miesięcznych ratach.",
+   "Wynajmujący musi przechowywać te środki oddzielnie od własnych pieniędzy.",
+   "Po wyprowadzce otrzymasz pieniądze z powrotem, pomniejszone o uzasadnione roszczenia (zazwyczaj w ciągu kilku miesięcy)."
+  ],
+  "docs": [
+   "Umowa najmu",
+   "Potwierdzenie płatności"
+  ],
+  "cost": "Do wysokości 3 miesięcznych kwot czynszu podstawowego.",
+  "tip": "Alternatywnie dostępne są gwarancje kaucji (Mietkaution) – porównaj roczny koszt."
+ },
+ "wohnungsgeber": {
+  "steps": [
+   "Poproś swojego wynajmującego (lub głównego najemcę) o potwierdzenie.",
+   "Muszą je przekazać w ciągu 2 tygodni od przeprowadzki.",
+   "Formularz znajduje się na stronie internetowej Twojego miasta.",
+   "Zanieś go do urzędu rejestracyjnego w Bürgeramt (urząd dzielnicy/miasta)."
+  ],
+  "docs": [
+   "Imię i adres wynajmującego",
+   "Data przeprowadzki"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Bez tego potwierdzenia nie można dokonać rejestracji (Anmeldung)."
+ },
+ "strom": {
+  "steps": [
+   "Zrób zdjęcie stanu licznika w momencie wprowadzenia się.",
+   "Bez podpisanej umowy dostawę zapewnia dostawca domyślny (Grundversorger) – zazwyczaj jest to rozwiązanie drogie.",
+   "Porównaj taryfy i wybierz dostawcę (sprawdź okres wypowiedzenia oraz gwarancję ceny).",
+   "Podaj dostawcy numer licznika oraz jego aktualny stan."
+  ],
+  "docs": [
+   "Numer licznika",
+   "Stan licznika",
+   "Data wprowadzenia się",
+   "IBAN"
+  ],
+  "cost": "Zależy od zużycia, dla 1 osoby często około 30–50 € miesięcznie.",
+  "tip": "Porównywanie ofert się opłaca – taryfa domyślna jest często najdroższa."
+ },
+ "internet": {
+  "steps": [
+   "Sprawdź, jakie połączenia są dostępne pod Twoim adresem (DSL, kabel, światłowód).",
+   "Porównaj taryfy – często są to umowy na 24 miesiące.",
+   "Zarezerwuj datę aktywacji (może to potrwać kilka tygodni).",
+   "W międzyczasie: internet mobilny przez hotspot w telefonie."
+  ],
+  "docs": [
+   "Dowód osobisty lub paszport",
+   "Meldebescheinigung (potwierdzenie zameldowania)",
+   "IBAN"
+  ],
+  "cost": "Zazwyczaj około 30–50 € miesięcznie.",
+  "tip": "Po upływie okresu minimalnej umowy możesz wypowiadać umowę w cyklach miesięcznych."
+ },
+ "rundfunk": {
+  "steps": [
+   "Każde gospodarstwo domowe płaci tylko raz – niezależnie od liczby osób tam mieszkających.",
+   "Po zameldowaniu (Anmeldung) list zazwyczaj przychodzi automatycznie.",
+   "Zarejestruj się online na stronie rundfunkbeitrag.de lub połącz się z istniejącym numerem konta w mieszkaniu współdzielonym.",
+   "Możliwe zwolnienie w przypadku otrzymywania Grundsicherungsgeld (zasiłek socjalny dla osób starszych lub niepełnosprawnych), BAföG (stypendium studenckie) lub pomocy socjalnej."
+  ],
+  "docs": [
+   "Adres",
+   "Numer konta (jeśli posiadasz)",
+   "Decyzja o przyznaniu świadczeń (do zwolnienia"
+  ],
+  "cost": "18.36 € miesięcznie na gospodarstwo domowe (od 2026 roku).",
+  "tip": "Nie ignoruj tego – w przeciwnym razie będą przychodzić przypomnienia i kary."
+ },
+ "nachsenden": {
+  "steps": [
+   "Zamów usługę bezpośrednio w Deutsche Post (online lub na poczcie).",
+   "Wybierz okres obowiązywania (6 lub 12 miesięcy).",
+   "Poinformuj wszystkie ważne urzędy o swoim nowym adresie."
+  ],
+  "docs": [
+   "Stary i nowy adres",
+   "Dokument tożsamości (ID)"
+  ],
+  "cost": "W Deutsche Post kosztuje to około 32 € za 6 miesięcy.",
+  "tip": "⚠️ Prywatne strony czasami pobierają opłaty powyżej 100 € – zamawiaj tylko bezpośrednio przez Deutsche Post."
+ },
+ "fuehrerschein": {
+  "steps": [
+   "Prawo jazdy wydane w kraju spoza UE jest zazwyczaj ważne tylko przez 6 miesięcy od momentu zameldowania (Anmeldung).",
+   "Wymień je w terminie w urzędzie ds. prawa jazdy (Fahrerlaubnisbehörde).",
+   "W zależności od kraju: bez egzaminu, tylko teoria lub teoria + praktyka (wymagana szkoła jazdy).",
+   "Prawo jazdy z krajów UE pozostaje ważne."
+  ],
+  "docs": [
+   "Zagraniczne prawo jazdy + tłumaczenie",
+   "Paszport",
+   "Zaświadczenie o zameldowaniu (Meldebescheinigung)",
+   "Badanie wzroku",
+   "Kurs pierwszej pomocy",
+   "Zdjęcie biometryczne"
+  ],
+  "cost": "Urząd: około 40–60 €, znacznie więcej w przypadku egzaminów i szkoły jazdy.",
+  "tip": "Jeśli nie wymienisz prawa jazdy po 6 miesiącach, będziesz prowadzić pojazd bez ważnego uprawnienia – jest to przestępstwo."
+ },
+ "auto_anmelden": {
+  "steps": [
+   "Wykup ubezpieczenie samochodu – otrzymasz numer eVB (potwierdzenie ubezpieczenia elektronicznego).",
+   "Umów wizytę w urzędzie rejestracyjnym (Bürgeramt/Zulassungsstelle) lub dokonaj rejestracji online przez i-Kfz na stronie internetowej Twojego urzędu.",
+   "Zamów tablice rejestracyjne (na miejscu).",
+   "Odbierz naklejki oraz dowód rejestracyjny.",
+   "Podatek samochodowy jest pobierany przez urząd celny (Zoll) w formie polecenia zapłaty."
+  ],
+  "docs": [
+   "Dowód osobisty / paszport + dowód rejestracyjny",
+   "Numer eVB",
+   "Dowód rejestracyjny część I i II (Zulassungsbescheinigung Teil I i II)",
+   "Potwierdzenie przeglądu technicznego (TÜV)",
+   "Polecenie zapłaty SEPA dla podatku samochodowego"
+  ],
+  "cost": "Rejestracja kosztuje zazwyczaj około 30–40 € + tablice około 20–40 €.",
+  "tip": "⚠️ Rejestracja online jest możliwa tylko przez oficjalną stronę internetową Twojego urzędu. Prywatne strony mogą pobierać opłaty powyżej 200 €."
+ },
+ "auto_abmelden": {
+  "steps": [
+   "Zamelduj wypisanie pojazdu w urzędzie rejestracyjnym (Zulassungsstelle) lub online poprzez usługę i-Kfz urzędu.",
+   "Przynieś tablice rejestracyjne oraz część I dowodu rejestracyjnego (Zulassungsbescheinigung Teil I).",
+   "Ubezpieczenie i podatek samochodowy zostaną następnie automatycznie zakończone."
+  ],
+  "docs": [
+   "Tablice rejestracyjne",
+   "Część I dowodu rejestracyjnego",
+   "Dokument tożsamości"
+  ],
+  "cost": "Około 5–20 €, zależnie od miasta.",
+  "tip": "⚠️ Prywatne strony pobierają za to około 50 € – w urzędzie jest znacznie taniej."
+ },
+ "kfz_versicherung": {
+  "steps": [
+   "Ubezpieczenie odpowiedzialności cywilnej (Haftpflichtversicherung) jest obowiązkowe, natomiast ubezpieczenie częściowe (Teilkasko) i pełne (Vollkasko) są opcjonalne.",
+   "Porównaj oferty.",
+   "Zapytaj, czy Twoje zniżki za bezszkodową jazdę z zagranicy są uznawane.",
+   "Uzyskaj numer eVB (elektroniczna potwierdzenie ubezpieczenia) niezbędny do rejestracji."
+  ],
+  "docs": [
+   "Prawo jazdy",
+   "Dane pojazdu",
+   "IBAN"
+  ],
+  "cost": "Cena znacznie się różni – nowi kierowcy płacą znacznie więcej.",
+  "tip": "Zmiana ubezpieczyciela jest zazwyczaj możliwa do 30 listopada, aby zmiana weszła w życie z końcem roku."
+ },
+ "tuev": {
+  "steps": [
+   "Główny przegląd techniczny (HU) co 2 lata, nowe samochody najpierw po 3 latach.",
+   "Termin przeglądu znajduje się na naklejce na tylnej tablicy rejestracyjnej.",
+   "Umów się w TÜV, DEKRA, GTÜ lub podobnym zakładzie.",
+   "W razie potrzeby napraw usterki i poddaj się ponownemu sprawdzeniu."
+  ],
+  "docs": [
+   "Dowód rejestracyjny część I (Zulassungsbescheinigung Teil I)",
+   "Samochód"
+  ],
+  "cost": "Około 140–170 €.",
+  "tip": "Przegląd po terminie może skutkować mandatem."
+ },
+ "kfz_steuer": {
+  "steps": [
+   "Podczas rejestracji (Anmeldung) udzielasz mandatu SEPA.",
+   "Urząd celny (Zoll) przesyła powiadomienie o podatku i pobiera go corocznie.",
+   "Kwota zależy od pojemności silnika i emisji CO₂ – kalkulator dostępny na zoll.de."
+  ],
+  "docs": [
+   "IBAN",
+   "Dane pojazdu"
+  ],
+  "cost": "Zależy od samochodu, często około 50–300 € rocznie. Samochody elektryczne są tymczasowo zwolnione z opłat.",
+  "tip": "Dbaj o środki na koncie – w przeciwnym razie otrzymasz upomnienia."
+ },
+ "konto": {
+  "steps": [
+   "Każda osoba posiadająca legalny pobyt w UE ma prawo do rachunku podstawowego (Basiskonto).",
+   "Wybierz bank lub bank internetowy i rozpocznij proces otwierania konta.",
+   "Potwierdź swoją tożsamość poprzez wideoweryfikację lub w oddziale banku.",
+   "Karta oraz dane do logowania zostaną przesłane pocztą."
+  ],
+  "docs": [
+   "Paszport",
+   "Pozwolenie na pobyt (Aufenthaltstitel)",
+   "Zaświadczenie o zameldowaniu (Meldebescheinigung)"
+  ],
+  "cost": "Często 0–10 € miesięcznie.",
+  "tip": "Jeśli wniosek o rachunek podstawowy zostanie odrzucony, możesz złożyć skargę do BaFin (Federalny Urząd Nadzoru Finansowego)."
+ },
+ "schufa": {
+  "steps": [
+   "SCHUFA sprawdza, czy płacisz rachunki i kredyty.",
+   "Wynajmujący mieszkania oraz dostawcy usług telefonicznych często o nią proszą.",
+   "Zamów bezpłatną kopię danych (Art. 15 RODO) na stronie meineschufa.de.",
+   "Płać rachunki na czas, aby utrzymać dobrą ocenę punktową."
+  ],
+  "docs": [
+   "Dowód osobisty lub paszport",
+   "Adres"
+  ],
+  "cost": "Kopia danych jest bezpłatna.",
+  "tip": "⚠️ Płatne produkty SCHUFA nie są wymagane – bezpłatna kopia danych zazwyczaj wystarcza."
+ },
+ "ueberweisung": {
+  "steps": [
+   "Przelew: wyślij pieniądze, podając numer IBAN i imię oraz nazwisko odbiorcy.",
+   "Polecenie zapłaty (Direct debit): wyrażasz zgodę firmie na pobieranie pieniędzy (np. za czynsz lub prąd).",
+   "Możesz cofnąć błędne polecenia zapłaty w ciągu 8 tygodni.",
+   "Ustaw zlecenia stałe dla regularnych płatności."
+  ],
+  "docs": [
+   "IBAN odbiorcy",
+   "Bankowość internetowa"
+  ],
+  "cost": "Zazwyczaj bezpłatne.",
+  "tip": "⚠️ Nigdy nie podawaj kodów TAN ani haseł przez telefon – banki nigdy o nie nie proszą."
+ },
+ "krankenversicherung": {
+  "steps": [
+   "Ubezpieczenie zdrowotne jest obowiązkowe w Niemczech.",
+   "Pracownicy: zazwyczaj publiczne (np. AOK, TK, Barmer) – sam wybierasz ubezpieczyciela.",
+   "Złóż wniosek o członkostwo i przekaż zaświadczenie swojemu pracodawcy.",
+   "Twoja karta ubezpieczenia ze zdjęciem przyjdzie pocztą."
+  ],
+  "docs": [
+   "Paszport",
+   "Meldebescheinigung (zaświadczenie o zameldowaniu)",
+   "Umowa o pracę lub zaświadczenie o statusie studenta",
+   "Zdjęcie"
+  ],
+  "cost": "Publiczne: procent Twojego wynagrodzenia, pracodawca pokrywa około połowy kosztów.",
+  "tip": "Członkowie rodziny bez własnego dochodu są często ubezpieczeni bezpłatnie w ramach ubezpieczenia publicznego."
+ },
+ "hausarzt": {
+  "steps": [
+   "Znajdź lekarza pierwszego kontaktu (GP) w swojej okolicy (poproś o pomoc swojego ubezpieczyciela lub skorzystaj z serwisu 116117.de).",
+   "Zadzwoń i zapytaj, czy przyjmują nowych pacjentów.",
+   "Zabierz ze sobą swoją kartę ubezpieczenia zdrowotnego.",
+   "Twój lekarz GP wystawi skierowanie do specjalistów, jeśli będzie to konieczne."
+  ],
+  "docs": [
+   "Karta ubezpieczenia zdrowotnego",
+   "Lista przyjmowanych leków",
+   "Poprzednia dokumentacja medyczna"
+  ],
+  "cost": "Bezpłatne przy ubezpieczeniu publicznym.",
+  "tip": "Nie możesz umówić się na wizytę? Usługa umawiania wizyt 116 117 może pomóc."
+ },
+ "termin116": {
+  "steps": [
+   "Zadzwoń pod numer 116 117 lub skorzystaj z aplikacji / strony internetowej 116117.",
+   "W celu umówienia wizyty u lekarza rodzinnego (GP), specjalisty oraz w ramach dyżuru nocnego/weekendowego.",
+   "Wizyta u specjalisty często wymaga skierowania z kodem.",
+   "Zagrożenie życia? Zawsze dzwoń pod numer 112."
+  ],
+  "docs": [
+   "Karta ubezpieczenia zdrowotnego",
+   "Skierowanie z kodem, jeśli jest wymagane"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Numer 116 117 służy do spraw pilnych, które nie stanowią bezpośredniego zagrożenia życia."
+ },
+ "krankmeldung": {
+  "steps": [
+   "Poinformuj swojego pracodawcę rano w pierwszym dniu choroby.",
+   "Od 4. dnia (często wcześniej – sprawdź swoją umowę) potrzebujesz zwolnienia lekarskiego.",
+   "Lekarz przesyła je elektronicznie do Twojego ubezpieczyciela; Twój pracodawca je pobiera (eAU).",
+   "Twoje wynagrodzenie jest wypłacane przez okres do 6 tygodni."
+  ],
+  "docs": [
+   "Karta ubezpieczenia zdrowotnego"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Jeśli nie zgłosisz choroby w terminie, ryzykujesz otrzymanie oficjalnego ostrzeżenia (Abmahnung)."
+ },
+ "apotheke": {
+  "steps": [
+   "Udaj się do apteki z e-receptą (kartą zdrowia) lub receptą papierową.",
+   "Zapłać dopłatę (Zuzahlung) za lek.",
+   "W nocy/w weekendy: znajdź aptekę dyżurującą (Notdienst).",
+   "Wiele prostych leków nie wymaga recepty – zapytaj w aptece."
+  ],
+  "docs": [
+   "Karta zdrowia / recepta"
+  ],
+  "cost": "Zazwyczaj 5–10 € dopłaty za lek, dzieci są zwolnione z opłat.",
+  "tip": "Farmaceuci udzielają bezpłatnych porad – również na temat interakcji leków."
+ },
+ "notfall": {
+  "steps": [
+   "Zagrożenie życia, poważny wypadek, pożar: dzwoń pod numer 112.",
+   "Powiedz: gdzie? co się stało? ile osób jest rannych? Następnie czekaj na pytania.",
+   "Pilne, ale nie zagrażające życiu: 116 117.",
+   "Szpitalne oddziały ratunkowe (Notaufnahme) są otwarte całą dobę."
+  ],
+  "docs": [
+   "Karta ubezpieczenia zdrowotnego (jeśli to możliwe)"
+  ],
+  "cost": "Połączenia alarmowe są bezpłatne.",
+  "tip": "Numer 112 działa w całej Europie, nawet bez karty SIM."
+ },
+ "steuerid": {
+  "steps": [
+   "Przyjdzie automatycznie pocztą kilka tygodni po Anmeldung (zameldowaniu).",
+   "Twój pracodawca potrzebuje go do wypłaty wynagrodzenia.",
+   "Zgubiłeś go? Poproś o ponowne przesłanie na bzst.de – przyjdzie pocztą."
+  ],
+  "docs": [
+   "Zarejestrowany adres"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Twój numer identyfikacji podatkowej (Steuer-ID) pozostaje taki sam przez całe życie."
+ },
+ "steuerklasse": {
+  "steps": [
+   "Single: klasa I. Samotny rodzic: II. Małżeństwo: IV/IV lub III/V (możesz wybrać).",
+   "Po ślubie automatycznie IV/IV.",
+   "Złóż wniosek o zmianę przez ELSTER (elektroniczny system podatkowy).",
+   "Klasa podatkowa określa jedynie miesięczną kwotę potrącaną z pensji – roczny podatek jest rozliczany w deklaracji podatkowej."
+  ],
+  "docs": [
+   "Identyfikator podatkowy (Steuer-ID)",
+   "Konto ELSTER"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "W przypadku wyboru modelu III/V złożenie rocznej deklaracji podatkowej jest obowiązkowe."
+ },
+ "steuererklaerung": {
+  "steps": [
+   "Załóż konto ELSTER (kod aktywacyjny zostanie wysłany pocztą).",
+   "Zbierz potwierdzenia: zaświadczenie o podatku od wynagrodzeń (Lohnsteuerbescheinigung), koszty dojazdów, sprzęt roboczy, darowizny.",
+   "Wypełnij zeznanie online – wiele danych zostanie uzupełnionych automatycznie.",
+   "Wyślij i czekaj na decyzję podatkową (Steuerbescheid)."
+  ],
+  "docs": [
+   "Identyfikator podatkowy (Steuer-ID)",
+   "Zaświadczenie o podatku od wynagrodzeń (Lohnsteuerbescheinigung)",
+   "Potwierdzenia i rachunki",
+   "IBAN"
+  ],
+  "cost": "Bezpłatnie przez ELSTER.",
+  "tip": "Dobrowolne składanie zeznań jest możliwe za okres do 4 lat wstecz – wiele osób otrzymuje zwrot pieniędzy. Obowiązkowe zeznania należy zazwyczaj złożyć do 31 lipca następnego roku."
+ },
+ "arbeitslosengeld": {
+  "steps": [
+   "Jak tylko dowiesz się o wypowiedzeniu: zarejestruj się jako poszukujący pracy w ciągu 3 dni (najpóźniej 3 miesiące przed zakończeniem stosunku pracy).",
+   "W pierwszym dniu bez pracy zarejestruj się jako bezrobotny (online lub osobiście).",
+   "Złóż wniosek o zasiłek dla bezrobotnych.",
+   "Stawiaj się na wezwania w urzędzie."
+  ],
+  "docs": [
+   "Paszport / karta pobytu",
+   "Wypowiedzenie umowy",
+   "Świadectwo pracy",
+   "IBAN"
+  ],
+  "cost": "Bezpłatne. Otrzymasz około 60 % (67 % w przypadku posiadania dziecka) Twojego wynagrodzenia netto.",
+  "tip": "Późna rejestracja może skutkować okresem zawieszenia wypłaty świadczeń."
+ },
+ "buergergeld": {
+  "steps": [
+   "Od 1 lipca 2026 r. Bürgergeld (zasiłek dla bezrobotnych) będzie nazywane „Grundsicherungsgeld” (podstawowe wsparcie dochodowe) – dla osób z niewystarczającymi dochodami (również jako uzupełnienie wynagrodzenia).",
+   "Złóż wniosek w Jobcenter (przez internet lub osobiście).",
+   "Przedstaw dowody dochodów, oszczędności oraz kosztów mieszkaniowych.",
+   "Regularnie współpracuj z Jobcenter."
+  ],
+  "docs": [
+   "Paszport / karta pobytu",
+   "Umowa najmu",
+   "Wyciągi bankowe",
+   "Potwierdzenie dochodów"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Stare decyzje zawierające słowo „Bürgergeld” pozostają ważne. Reforma wprowadza surowsze obowiązki współpracy. Prawo do świadczeń zależy również od Twojej karty pobytu."
+ },
+ "jobsuche": {
+  "steps": [
+   "Korzystaj z portalu ofert pracy urzędu pracy (Agentur für Arbeit) oraz dużych serwisów z ogłoszeniami o pracę.",
+   "CV w formacie niemieckim (styl tabelaryczny, zdjęcie opcjonalne).",
+   "List motywacyjny powinien być krótki i konkretny.",
+   "Sprawdź, czy Twoja karta pobytu (Aufenthaltstitel) pozwala na podjęcie pracy."
+  ],
+  "docs": [
+   "CV",
+   "Certyfikaty (przetłumaczone)",
+   "Uznanie dyplomu"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Agentur für Arbeit (urząd pracy) oferuje bezpłatne doradztwo w zakresie poszukiwania pracy."
+ },
+ "anerkennung": {
+  "steps": [
+   "Sprawdź na stronie anerkennung-in-deutschland.de, który urząd jest odpowiedzialny za Twoją sprawę.",
+   "W przypadku zawodów regulowanych (lekarz, pielęgniarka, nauczyciel) uznanie kwalifikacji jest obowiązkowe.",
+   "Złóż wniosek wraz z certyfikatami i tłumaczeniami.",
+   "Dyplomy uniwersyteckie: wymagane jest oświadczenie o porównywalności wydane przez ZAB (Zentralstelle für ausländisches Bildungswesen)."
+  ],
+  "docs": [
+   "Certyfikaty + tłumaczenia przysięgłe",
+   "CV",
+   "Paszport"
+  ],
+  "cost": "Zazwyczaj około 100–600 €, w zależności od zawodu. Możliwe jest dofinansowanie.",
+  "tip": "Infolinia „Working and Living in Germany” oraz centra doradcze IQ oferują bezpłatną pomoc."
+ },
+ "arbeitsvertrag": {
+  "steps": [
+   "Sprawdź: wynagrodzenie, wymiar czasu pracy, urlop, okres próbny, okres wypowiedzenia.",
+   "Obowiązuje płaca minimalna (2026: 13.90 € za godzinę).",
+   "Przynajmniej 20 dni urlopu przy 5-dniowym tygodniu pracy (zgodnie z prawem).",
+   "Odbierz umowę w formie pisemnej."
+  ],
+  "docs": [
+   "Tax ID (numer identyfikacji podatkowej)",
+   "Numer ubezpieczenia społecznego",
+   "Ubezpieczyciel zdrowotny",
+   "IBAN"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Nie masz pewności? Zapytaj w związku zawodowym lub w punkcie doradztwa dla migrantów."
+ },
+ "minijob": {
+  "steps": [
+   "Mini-job to niewielkie zatrudnienie do określonego limitu zarobków (w 2026 r.: 603 € miesięcznie).",
+   "Twój pracodawca zgłasza Cię do Minijob-Zentrale (centrala ds. małych zatrudnień).",
+   "Mini-jobs również obejmują płacę minimalną, urlop oraz płatne zwolnienie lekarskie (sick pay).",
+   "Sprawdź, czy Twoja karta pobytu (residence permit) na to pozwala."
+  ],
+  "docs": [
+   "Tax ID (numer identyfikacji podatkowej)",
+   "Social security number (numer ubezpieczenia społecznego)",
+   "IBAN"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Dla Ciebie zazwyczaj bez podatków i składek (ubezpieczenie emerytalne jest opcjonalne)."
+ },
+ "kindergeld": {
+  "steps": [
+   "Złóż wniosek online lub pocztą w urzędzie ds. świadczeń rodzinnych (Familienkasse).",
+   "Podaj swój numer identyfikacji podatkowej oraz numer identyfikacji podatkowej dziecka.",
+   "Czekaj na decyzję – wypłaty następują co miesiąc."
+  ],
+  "docs": [
+   "Akt urodzenia dziecka",
+   "Numery identyfikacji podatkowej (Tax IDs)",
+   "Pozwolenie na pobyt (Residence permit)",
+   "Numer IBAN"
+  ],
+  "cost": "Bezpłatne. 2026: 259 € na dziecko miesięcznie.",
+  "tip": "Można otrzymać wyrównanie do 6 miesięcy wstecz. Prawo do świadczeń zależy od Twojego pozwolenia na pobyt (Residence permit)."
+ },
+ "elterngeld": {
+  "steps": [
+   "Po narodzinach złóż wniosek w urzędzie ds. zasiłku rodzicielskiego (Elterngeld) właściwym dla Twojego landu (często można to zrobić online).",
+   "Wybierz podstawowy zasiłek rodzicielski (Elterngeld) lub ElterngeldPlus (zasiłek wydłużony, ale w niższej kwocie).",
+   "Złóż wniosek w ciągu 3 miesięcy od narodzin."
+  ],
+  "docs": [
+   "Akt urodzenia",
+   "Potwierdzenie dochodów",
+   "Pozwolenie na pobyt (Aufenthaltstitel)",
+   "Zaświadczenie o zasiłku macierzyńskim"
+  ],
+  "cost": "Bezpłatne. Zazwyczaj 65–67 % dochodu netto (minimum 300 €).",
+  "tip": "Zasiłek jest wypłacany tylko wstecz przez 3 miesiące – złóż wniosek jak najwcześniej."
+ },
+ "kita": {
+  "steps": [
+   "Dzieci od 1. roku życia mają ustawowe prawo do miejsca w placówce opiekuńczej.",
+   "Zarejestruj się wcześnie – najlepiej jeszcze przed narodzinami lub tuż po przeprowadzce.",
+   "W zależności od miasta, za pośrednictwem portalu internetowego lub bezpośrednio w żłobkach/przedszkolach.",
+   "Aplikuj do kilku placówek jednocześnie."
+  ],
+  "docs": [
+   "Akt urodzenia",
+   "Meldebescheinigung (zaświadczenie o zameldowaniu)",
+   "Dowód szczepienia przeciw odrze"
+  ],
+  "cost": "Zależy od landu i dochodów, od bezpłatnych po kilka stu euro.",
+  "tip": "Brak miejsca? Zgłoś to do Jugendamt (urząd opieki społecznej dla dzieci) – prawo do miejsca jest ustawowe."
+ },
+ "schule": {
+  "steps": [
+   "Obowiązek szkolny zaczyna się około 6. roku życia – również w przypadku nowo przybyłych dzieci.",
+   "Zarejestruj dziecko w biurze szkoły lub w lokalnej szkole podstawowej.",
+   "Dzieci nieznające języka niemieckiego często rozpoczynają naukę w klasie powitalnej lub przygotowawczej.",
+   "Badanie lekarskie przy przyjęciu do szkoły w urzędzie zdrowia."
+  ],
+  "docs": [
+   "Akt urodzenia",
+   "Zaświadczenie o zameldowaniu (Anmeldung)",
+   "Dowód szczepienia przeciw odrze",
+   "Poprzednie świadectwa szkolne"
+  ],
+  "cost": "Szkoły publiczne są bezpłatne.",
+  "tip": "Obowiązek szkolny jest sprawdzany – zarejestruj dzieci jak najszybciej."
+ },
+ "wohngeld": {
+  "steps": [
+   "Dofinansowanie do czynszu dla osób o niskich dochodach (nie dotyczy osób pobierających Grundsicherungsgeld [zasiłek socjalny]).",
+   "Skorzystaj z kalkulatora zasiłku mieszkaniowego, aby sprawdzić, czy kwalifikujesz się do świadczenia.",
+   "Złóż wniosek w urzędzie ds. zasiłków mieszkaniowych (Wohngeldbehörde) w swoim mieście.",
+   "Zazwyczaj decyzja jest wydawana na 12 miesięcy, po czym należy złożyć wniosek ponownie."
+  ],
+  "docs": [
+   "Umowa najmu",
+   "Potwierdzenie dochodów",
+   "Wyciągi bankowe",
+   "Pozwolenie na pobyt (Aufenthaltstitel)"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Świadczenie jest wypłacane od miesiąca złożenia wniosku – nie działa wstecz."
+ },
+ "integrationskurs": {
+  "steps": [
+   "Kurs łączy naukę języka (do poziomu B1) z kursem orientacyjnym (życie w Niemczech).",
+   "Uzyskaj potwierdzenie uprawnień w urzędzie ds. cudzoziemców (Ausländerbehörde) lub w Jobcenter (urząd pracy).",
+   "Znajdź dostawcę kursów w Twojej okolicy (BAMF course finder) i zapisz się na zajęcia.",
+   "Na koniec: niemiecki egzamin dla imigrantów oraz test „Leben in Deutschland\" (Życie w Niemczech)."
+  ],
+  "docs": [
+   "Zaświadczenie o uprawnieniach",
+   "Paszport / karta pobytu (Aufenthaltstitel)"
+  ],
+  "cost": "Niewielka opłata za każdą lekcję (sprawdź aktualną kwotę na stronie BAMF) – możliwe zwolnienie, np. przy otrzymywaniu Grundsicherungsgeld (zasiłek socjalny).",
+  "tip": "Certyfikat B1 pomaga w uzyskaniu stałego pobytu oraz obywatelstwa."
+ },
+ "deutschkurs": {
+  "steps": [
+   "Kurs integracyjny (Integrationskurs) to często najtańsza opcja.",
+   "Centra edukacji dla dorosłych (VHS) oferują kursy w niskich cenach.",
+   "Ucz się za darmo: aplikacje i kursy online (np. Deutsche Welle).",
+   "Do pracy: zawodowe kursy językowe (B2/C1) przez BAMF (Federalny Urząd ds. Migracji i Uchodźców) oraz Jobcenter (Urząd Pracy)."
+  ],
+  "docs": [
+   "Paszport"
+  ],
+  "cost": "Od bezpłatnych po kilka stu euro.",
+  "tip": "15 minut dziennie jest lepsze niż 2 godziny raz w tygodniu."
+ },
+ "studium": {
+  "steps": [
+   "Wybierz program i sprawdź wymagania rekrutacyjne (DAAD).",
+   "Złóż wniosek bezpośrednio na uczelni lub przez uni-assist.",
+   "Certyfikat językowy (niemiecki lub angielski) i ewentualnie Studienkolleg (przygotowawcza szkoła średnia).",
+   "Wiza studencka i potwierdzenie środków finansowych (Sperrkonto – konto blokowane)."
+  ],
+  "docs": [
+   "Świadectwo szkolne + tłumaczenie",
+   "Certyfikat językowy",
+   "Paszport",
+   "Potwierdzenie środków finansowych"
+  ],
+  "cost": "Publiczne uniwersytety zazwyczaj pobierają jedynie opłatę semestralną (około 150–400 €).",
+  "tip": "Pamiętaj o terminach – często są to 15 stycznia i 15 lipca."
+ },
+ "bafoeg": {
+  "steps": [
+   "Państwowe dofinansowanie na studia i szkołę.",
+   "Obcokrajowcy mogą ubiegać się o wsparcie w zależności od rodzaju posiadanej karty pobytu.",
+   "Złóż wniosek online przez BAföG Digital.",
+   "W przypadku studiów: połowa to bezzwrotna zapomoga, a połowa to nieoprocentowana pożyczka."
+  ],
+  "docs": [
+   "Zaświadczenie o wpisie na studia (Immatrikulationsbescheinigung)",
+   "Dowód dochodów rodziców",
+   "Karta pobytu (Aufenthaltstitel)",
+   "Umowa najmu mieszkania"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Złóż wniosek jak najszybciej – BAföG jest wypłacane dopiero od miesiąca, w którym złożono wniosek."
+ },
+ "haftpflicht": {
+  "steps": [
+   "Pokrywa koszty, jeśli przypadkowo uszkodzisz mienie innych osób (np. zalanie, stłuczony telefon).",
+   "Uważana za najważniejsze ubezpieczenie prywatne.",
+   "Porównaj taryfy – można dołączyć członków rodziny.",
+   "Suma ubezpieczenia co najmniej 10 milionów €."
+  ],
+  "docs": [
+   "Dowód osobisty lub paszport",
+   "IBAN"
+  ],
+  "cost": "Często około 40–80 € rocznie.",
+  "tip": "Wielu wynajmujących (landlords) tego oczekuje."
+ },
+ "hausrat": {
+  "steps": [
+   "Chroni Twoje mienie domowe przed pożarem, zalaniem, kradzieżą oraz burzą.",
+   "Dopasuj sumę ubezpieczenia do wartości Twoich rzeczy należących do mienia.",
+   "Dodaj ubezpieczenie od kradzieży roweru, jeśli jest potrzebne."
+  ],
+  "docs": [
+   "Adres",
+   "Powierzchnia mieszkalna",
+   "IBAN"
+  ],
+  "cost": "Często około 50–150 € rocznie.",
+  "tip": "Przy niewielkiej ilości mienia ubezpieczenie to często nie jest niezbędne."
+ },
+ "rechtsschutz": {
+  "steps": [
+   "Pokrywa koszty prawnika i sądowe, np. w sporach dotyczących zatrudnienia lub najmu mieszkania.",
+   "Zazwyczaj obowiązuje 3-miesięczny okres oczekiwania, zanim ubezpieczenie zacznie działać.",
+   "Alternatywa: stowarzyszenia lokatorów oraz związki zawodowe często oferują ochronę prawną w ramach członkostwa."
+  ],
+  "docs": [
+   "Dowód tożsamości",
+   "IBAN"
+  ],
+  "cost": "Często około 200–400 € rocznie.",
+  "tip": "Nie pokrywa kosztów sporów, które rozpoczęły się przed zawarciem umowy."
+ },
+ "sim": {
+  "steps": [
+   "Kup kartę SIM na kartę (prepaid) lub z abonamentem w sklepie, supermarkecie lub online.",
+   "Wymagane prawem: potwierdź swoją tożsamość za pomocą paszportu lub dowodu osobistego (przez wideo lub w sklepie).",
+   "Czekaj na aktywację."
+  ],
+  "docs": [
+   "Paszport lub dowód osobisty",
+   "Adres"
+  ],
+  "cost": "Karta prepaid od około 5–10 €.",
+  "tip": "Karta prepaid jest dobra na początek – brak umowy i brak sprawdzania SCHUFA (biuro informacji kredytowej)."
+ },
+ "handyvertrag": {
+  "steps": [
+   "Porównaj taryfy: dane, okres obowiązywania (z możliwością wypowiedzenia co miesiąc lub na 24 miesiące).",
+   "Umowy często wymagają sprawdzenia SCHUFA (niemiecki rejestr kredytowy/biuro informacji kredytowej).",
+   "Pobierz numer od swojego poprzedniego dostawcy (przeniesienie numeru)."
+  ],
+  "docs": [
+   "Dowód osobisty lub paszport",
+   "Adres zameldowania (Anmeldung)",
+   "IBAN"
+  ],
+  "cost": "Często około 10–30 € miesięcznie.",
+  "tip": "⚠️ Zachowaj ostrożność przy sprzedaży bezpośredniej (od drzwi do drzwi) oraz telefonicznej – masz 14-dniowe prawo do odstąpienia od umowy."
+ },
+ "deutschlandticket": {
+  "steps": [
+   "Miesięczny abonament na wszystkie autobusy, tramwaje, metro/S-Bahn oraz pociągi regionalne w Niemczech.",
+   "Kup online u przewoźników lub w Deutsche Bahn.",
+   "Możliwość rezygnacji co miesiąc.",
+   "Zapytaj: czy istnieje tańszy bilet dla pracowników lub studentów?"
+  ],
+  "docs": [
+   "IBAN",
+   "Telefon lub karta inteligentna"
+  ],
+  "cost": "2026: 63 € miesięcznie (od 2027: 66.80 €).",
+  "tip": "Nie obowiązuje w pociągach ICE/IC/EC (pociągi dalekobieżne)."
+ },
+ "oepnv": {
+  "steps": [
+   "Kup bilet przed podróżą (w automacie lub aplikacji) – często należy go skasować przed wejściem do pojazdu.",
+   "Bez ważnego biletu grzywna wynosi zazwyczaj 60 €.",
+   "Aplikacje lokalnych przewoźników pokazują połączenia.",
+   "Dzieci poniżej 6 roku życia zazwyczaj podróżują bezpłatnie."
+  ],
+  "docs": [
+   "Bilet"
+  ],
+  "cost": "Zależy od miasta.",
+  "tip": "Mając Deutschlandticket (ogólnokrajowy bilet miesięczny), nie musisz kupować pojedynczych biletów na transport lokalny."
+ },
+ "mbe": {
+  "steps": [
+   "Doradztwo migracyjne dla dorosłych (MBE) oraz usługi migracyjne dla młodzieży (do 27. roku życia) oferują bezpłatną pomoc.",
+   "W zakresie pism z urzędów, wniosków, kursów językowych, pracy oraz mieszkania.",
+   "Znajdź centrum doradcze w swojej okolicy za pomocą wyszukiwarki BAMF (Federalny Urząd ds. Migracji i Uchodźców).",
+   "Często dostępne w wielu językach."
+  ],
+  "docs": [
+   "Twoje pisma i dokumenty"
+  ],
+  "cost": "Bezpłatnie.",
+  "tip": "Dobra pierwsza pomoc – zanim zapłacisz za wsparcie."
+ },
+ "verbraucher": {
+  "steps": [
+   "Pomaga w sprawach dotyczących umów, pułapek subskrypcyjnych, energii, ubezpieczeń oraz podejrzanych stron internetowych.",
+   "Dużo bezpłatnych informacji online.",
+   "Osobiste doradztwo często za niewielką opłatą."
+  ],
+  "docs": [
+   "Umowa / faktura"
+  ],
+  "cost": "Informacje bezpłatne, doradztwo zazwyczaj tanie.",
+  "tip": "Dobra pomoc, jeśli nie rozumiesz umowy lub zostałeś oszukany."
+ },
+ "mieterverein": {
+  "steps": [
+   "Zostań członkiem i uzyskaj poradę w sprawie czynszu, opłat eksploatacyjnych (Nebenkosten), kaucji oraz usterek.",
+   "Często obejmuje ochronę prawną w prawie najmu.",
+   "Zyskaj możliwość sprawdzenia rozliczenia opłat eksploatacyjnych."
+  ],
+  "docs": [
+   "Umowa najmu",
+   "Listy od wynajmującego"
+  ],
+  "cost": "Często około 5–10 € miesięcznie.",
+  "tip": "Szczególnie warto, zwłaszcza w przypadku sporów z wynajmującym."
+ },
+ "notrufe": {
+  "steps": [
+   "110 = policja (niebezpieczeństwo, przemoc, włamanie, wypadki z obrażeniami).",
+   "112 = straż pożarna i pogotowie ratunkowe (pożar, nagły wypadek medyczny).",
+   "116 117 = całodobowa pomoc medyczna (dyżur lekarski).",
+   "Zachowaj spokój, podaj swoją lokalizację, odpowiadaj na pytania."
+  ],
+  "docs": [
+   "Nic – połączenie jest bezpłatne"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "Nadużywanie numerów alarmowych jest przestępstwem."
+ },
+ "anzeige": {
+  "steps": [
+   "Na komisariacie policji lub online za pośrednictwem usług online policji w Twoim landzie (federalnym stanie).",
+   "Opisz jak najdokładniej: co, kiedy, gdzie i kto.",
+   "Zachowaj dowody (zdjęcia, wiadomości, paragony).",
+   "Zapisz numer sprawy (Aktenzeichen) – będzie on potrzebny dla ubezpieczalni i urzędów."
+  ],
+  "docs": [
+   "Dokument tożsamości",
+   "Dowody"
+  ],
+  "cost": "Bezpłatne.",
+  "tip": "W przypadku przemocy lub gróźb: dzwoń pod 110."
+ },
+ "pfand": {
+  "steps": [
+   "Wiele butelek i puszek posiada kaucję (symbol na etykiecie).",
+   "Jednorazowe zazwyczaj 0.25 €, wielorazowe zazwyczaj 0.08–0.15 €.",
+   "Włóż puste butelki do automatu kaucyjnego w supermarkecie.",
+   "Zrealizuj paragon przy kasie."
+  ],
+  "docs": [
+   "Puste butelki"
+  ],
+  "cost": "Otrzymasz pieniądze z powrotem.",
+  "tip": "Butelki bez kaucji należy wrzucić do recyklingu szkła lub do pojemnika na tworzywa sztuczne (żółty worek/pojemnik)."
+ },
+ "sonntag": {
+  "steps": [
+   "W niedziele i święta ustawowe większość sklepów jest zamknięta.",
+   "Otwarte: stacje benzynowe, sklepy na dworcach, piekarnie (często rano), apteki całodobowe (Notapotheke).",
+   "Rób zakupy w soboty i sprawdź dni świąteczne w swoim landzie."
+  ],
+  "docs": [
+   "–"
+  ],
+  "cost": "–",
+  "tip": "Niedziela to dzień odpoczynku – unikaj głośnych prac domowych."
+ },
+ "muell": {
+  "steps": [
+   "Żółty: opakowania z tworzyw sztucznych i metalu. Niebieski: papier. Brązowy: odpady organiczne. Czarny/szary: odpady resztkowe.",
+   "Szkło należy segregować według kolorów i wrzucać do odpowiednich pojemników na szkło.",
+   "Terminy odbioru odpadów można sprawdzić w kalendarzu wywozu śmieci w Twoim mieście (często dostępnym w formie aplikacji).",
+   "Zgłoś odpady wielkogabarytowe (meble) w urzędzie miasta."
+  ],
+  "docs": [
+   "–"
+  ],
+  "cost": "Opłaty za wywóz śmieci są zazwyczaj częścią opłat za usługi (Nebenkosten).",
+  "tip": "Błędna segregacja odpadów może spowodować problemy z wynajmującym (Vermieter) oraz sąsiadami."
+ }
+}

@@ -1,5 +1,5 @@
 /** City map content. Titles: de/en/ar now; other languages fall back to en until translated. */
-export type Lang = 'de' | 'en' | 'ar' | 'tr' | 'uk' | 'ru' | 'fa' | 'ur' | 'hi';
+export type Lang = 'de' | 'en' | 'ar' | 'tr' | 'uk' | 'ru' | 'pl' | 'ro' | 'fa' | 'ur' | 'hi';
 export type T = Partial<Record<Lang, string>> & { de: string; en: string };
 
 export interface Errand { id: string; t: T; link?: string }
@@ -118,6 +118,7 @@ export const BUILDINGS: Building[] = [
 export const LANGS: { id: Lang; name: string; rtl?: boolean }[] = [
   { id: 'de', name: 'Deutsch' }, { id: 'en', name: 'English' }, { id: 'ar', name: 'العربية', rtl: true },
   { id: 'tr', name: 'Türkçe' }, { id: 'uk', name: 'Українська' }, { id: 'ru', name: 'Русский' },
+  { id: 'pl', name: 'Polski' }, { id: 'ro', name: 'Română' },
   { id: 'fa', name: 'دری', rtl: true }, { id: 'ur', name: 'اردو', rtl: true }, { id: 'hi', name: 'हिन्दी' },
 ];
 
@@ -165,3 +166,14 @@ for (const b of BUILDINGS) {
   }
 }
 for (const [k, v] of Object.entries(U)) MORE_LANGS.forEach((l, i) => { if (UI[k]) UI[k][l] = v[i]; });
+
+// --- merge pl/ro ---
+import { B2, E2, U2 } from './i18n_pl_ro';
+(['pl', 'ro'] as const).forEach((l, i) => {
+  for (const b of BUILDINGS) {
+    const tb = B2[b.id]; if (!tb) { MISSING.push('pl/ro building:' + b.id); continue; }
+    b.s[l] = tb[0][i]; b.t[l] = tb[1][i];
+    for (const x of b.errands) { const te = E2[x.id]; if (te) x.t[l] = te[i]; else MISSING.push('pl/ro errand:' + x.id); }
+  }
+  for (const [k, v] of Object.entries(U2)) if (UI[k]) UI[k][l] = v[i];
+});
