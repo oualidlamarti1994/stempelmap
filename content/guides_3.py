@@ -88,15 +88,15 @@ G("arbeitslosengeld", [BA],
   ["Passport / residence permit", "Notice of dismissal", "Employment certificate", "IBAN"], "Free. You get about 60 % (67 % with a child) of your net salary.",
   "Registering late leads to a blocking period."))
 
-G("buergergeld", [BA],
- (["Für Menschen ohne ausreichendes Einkommen (auch ergänzend zum Lohn).", "Antrag beim Jobcenter stellen (online oder vor Ort).",
+G("buergergeld", [BA, "https://www.arbeitsagentur.de/grundsicherung-loest-buergergeld-ab"],
+ (["Seit 1. Juli 2026 heißt das Bürgergeld „Grundsicherungsgeld“ – für Menschen ohne ausreichendes Einkommen (auch ergänzend zum Lohn).", "Antrag beim Jobcenter stellen (online oder vor Ort).",
    "Einkommen, Vermögen und Wohnkosten nachweisen.", "Regelmäßig mit dem Jobcenter zusammenarbeiten."],
   ["Pass/Aufenthaltstitel", "Mietvertrag", "Kontoauszüge", "Einkommensnachweise"], "Kostenlos.",
-  "Die Grundsicherung wird gerade reformiert – Namen und Regeln können sich ändern. Aktuelles auf arbeitsagentur.de. Der Anspruch hängt auch vom Aufenthaltstitel ab."),
- (["For people without enough income (also as a top-up to wages).", "Apply at the job centre (online or in person).",
+  "Alte Bescheide mit dem Wort „Bürgergeld“ bleiben gültig. Mit der Reform gelten strengere Mitwirkungspflichten. Der Anspruch hängt auch vom Aufenthaltstitel ab."),
+ (["Since 1 July 2026 Bürgergeld is called \"Grundsicherungsgeld\" (basic income support) – for people without enough income (also as a top-up to wages).", "Apply at the job centre (online or in person).",
    "Prove income, savings and housing costs.", "Work with the job centre regularly."],
   ["Passport / residence permit", "Rental contract", "Bank statements", "Proof of income"], "Free.",
-  "Basic income support is being reformed – names and rules may change. Current info on arbeitsagentur.de. Eligibility also depends on your residence permit."))
+  "Old notices using the word \"Bürgergeld\" remain valid. The reform brings stricter duties to cooperate. Eligibility also depends on your residence permit."))
 
 G("jobsuche", [BA, "https://www.make-it-in-germany.com"],
  (["Jobbörse der Arbeitsagentur und große Jobportale nutzen.", "Lebenslauf im deutschen Format (tabellarisch, mit Foto optional).",
@@ -172,9 +172,9 @@ G("schule", [FP],
   "Compulsory schooling is checked – register children quickly."))
 
 G("wohngeld", ["https://www.bmwsb.bund.de"],
- (["Zuschuss zur Miete für Menschen mit geringem Einkommen (nicht bei Bürgergeld).", "Mit dem Wohngeldrechner prüfen, ob du Anspruch hast.",
+ (["Zuschuss zur Miete für Menschen mit geringem Einkommen (nicht bei Grundsicherungsgeld).", "Mit dem Wohngeldrechner prüfen, ob du Anspruch hast.",
    "Antrag bei der Wohngeldstelle deiner Stadt.", "Bewilligung meist für 12 Monate, dann neu beantragen."],
   ["Mietvertrag", "Einkommensnachweise", "Kontoauszüge", "Aufenthaltstitel"], "Kostenlos.", "Gilt ab dem Monat der Antragstellung – nicht rückwirkend."),
- (["A rent subsidy for people with low income (not with Bürgergeld).", "Use the housing benefit calculator to check eligibility.",
+ (["A rent subsidy for people with low income (not with Grundsicherungsgeld).", "Use the housing benefit calculator to check eligibility.",
    "Apply at your town's housing benefit office.", "Usually approved for 12 months, then reapply."],
   ["Rental contract", "Proof of income", "Bank statements", "Residence permit"], "Free.", "Paid from the month you apply – not backdated."))

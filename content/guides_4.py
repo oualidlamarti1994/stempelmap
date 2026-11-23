@@ -3,11 +3,11 @@ BAMF = "https://www.bamf.de"; VZ = "https://www.verbraucherzentrale.de"
 G("integrationskurs", [BAMF],
  (["Kurs aus Sprachkurs (bis B1) und Orientierungskurs (Leben in Deutschland).", "Berechtigung bei der Ausländerbehörde oder beim Jobcenter bekommen.",
    "Kursträger in deiner Nähe suchen (BAMF-Kursfinder) und anmelden.", "Am Ende: Deutsch-Test für Zuwanderer und Test „Leben in Deutschland“."],
-  ["Berechtigungsschein", "Pass/Aufenthaltstitel"], "Meist ca. 2,29 € pro Unterrichtsstunde – Befreiung bei Bürgergeld möglich.",
+  ["Berechtigungsschein", "Pass/Aufenthaltstitel"], "Kleiner Eigenanteil pro Unterrichtsstunde (aktuell beim BAMF prüfen) – Befreiung z. B. bei Grundsicherungsgeld möglich.",
   "Das B1-Zertifikat hilft bei Niederlassungserlaubnis und Einbürgerung."),
  (["The course combines a language course (up to B1) and an orientation course (life in Germany).", "Get your eligibility from the immigration office or job centre.",
    "Find a course provider near you (BAMF course finder) and sign up.", "At the end: German test for immigrants and the \"Life in Germany\" test."],
-  ["Eligibility certificate", "Passport / residence permit"], "Usually about 2.29 € per lesson – exemption possible with Bürgergeld.",
+  ["Eligibility certificate", "Passport / residence permit"], "A small contribution per lesson (check the current amount at BAMF) – exemption possible e.g. with Grundsicherungsgeld.",
   "The B1 certificate helps with permanent residence and citizenship."))
 
 G("deutschkurs", ["https://www.goethe.de", BAMF],
@@ -79,10 +79,10 @@ G("handyvertrag", [BNA, VZ],
 
 G("deutschlandticket", ["https://www.bahn.de"],
  (["Monatsabo für alle Busse, Straßenbahnen, U-/S-Bahnen und Regionalzüge in ganz Deutschland.", "Online bei Verkehrsbetrieben oder der Bahn kaufen.",
-   "Monatlich kündbar.", "Fragen: Gibt es ein Job- oder Semesterticket günstiger?"], ["IBAN", "Handy oder Chipkarte"], "2026: 63 € im Monat.",
+   "Monatlich kündbar.", "Fragen: Gibt es ein Job- oder Semesterticket günstiger?"], ["IBAN", "Handy oder Chipkarte"], "2026: 63 € im Monat (ab 2027: 66,80 €).",
   "Gilt nicht in ICE/IC/EC (Fernverkehr)."),
  (["Monthly subscription for all buses, trams, underground/S-Bahn and regional trains in Germany.", "Buy online from transport companies or Deutsche Bahn.",
-   "Cancellable monthly.", "Ask: is there a cheaper job or student ticket?"], ["IBAN", "Phone or smart card"], "2026: 63 € a month.",
+   "Cancellable monthly.", "Ask: is there a cheaper job or student ticket?"], ["IBAN", "Phone or smart card"], "2026: 63 € a month (from 2027: 66.80 €).",
   "Not valid on ICE/IC/EC (long-distance trains)."))
 
 G("oepnv", ["https://www.bahn.de"],

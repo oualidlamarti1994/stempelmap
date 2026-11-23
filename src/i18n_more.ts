@@ -84,7 +84,7 @@ export const E: Record<string, Six> = {
   steuerklasse: ['Vergi sınıfı', 'Податковий клас', 'Налоговый класс', 'کتگوری مالیاتی', 'ٹیکس کلاس', 'टैक्स क्लास'],
   steuererklaerung: ['Vergi beyannamesi (ELSTER)', 'Податкова декларація (ELSTER)', 'Налоговая декларация (ELSTER)', 'اظهارنامه مالیاتی (ELSTER)', 'ٹیکس ریٹرن (ELSTER)', 'टैक्स रिटर्न (ELSTER)'],
   arbeitslosengeld: ['İşsizlik parası', 'Допомога по безробіттю', 'Пособие по безработице', 'کمک بیکاری', 'بے روزگاری الاؤنس', 'बेरोज़गारी भत्ता'],
-  buergergeld: ['Vatandaş parası (Bürgergeld)', 'Громадянська допомога (Bürgergeld)', 'Гражданское пособие (Bürgergeld)', 'کمک شهروندی (Bürgergeld)', 'شہری الاؤنس (Bürgergeld)', 'नागरिक भत्ता (Bürgergeld)'],
+  buergergeld: ['Temel güvence parası (eski Bürgergeld)', 'Базове забезпечення (раніше Bürgergeld)', 'Базовое обеспечение (ранее Bürgergeld)', 'کمک تأمین اساسی (قبلاً Bürgergeld)', 'بنیادی امداد (پہلے Bürgergeld)', 'बुनियादी सहायता (पहले Bürgergeld)'],
   jobsuche: ['İş bulmak', 'Пошук роботи', 'Поиск работы', 'پیدا کردن کار', 'نوکری تلاش کرنا', 'नौकरी ढूँढना'],
   anerkennung: ['Diploma denkliği', 'Визнання диплома', 'Признание диплома', 'تأیید مدرک تحصیلی', 'ڈگری کی منظوری', 'डिग्री की मान्यता'],
   arbeitsvertrag: ['İş sözleşmesini anlamak', 'Трудовий договір', 'Трудовой договор', 'قرارداد کاری', 'ملازمت کا معاہدہ سمجھنا', 'नौकरी का अनुबंध समझना'],

@@ -67,7 +67,7 @@ export const BUILDINGS: Building[] = [
   ] },
   { id: 'jobcenter', icon: '💼', color: '#a26bff', x: 120, y: 720, s: { de: 'Jobcenter', en: 'Job centre', ar: 'مركز العمل' }, t: { de: 'Jobcenter & Arbeitsagentur', en: 'Job centre', ar: 'مركز العمل' }, errands: [
     e('arbeitslosengeld', 'Arbeitslosengeld', 'Unemployment benefit', 'إعانة البطالة', 'https://www.arbeitsagentur.de'),
-    e('buergergeld', 'Bürgergeld', 'Citizen\'s income (Bürgergeld)', 'إعانة المواطن (Bürgergeld)'),
+    e('buergergeld', 'Grundsicherungsgeld (früher Bürgergeld)', 'Basic income support (formerly Bürgergeld)', 'إعانة الضمان الأساسي (سابقاً Bürgergeld)'),
     e('jobsuche', 'Arbeit finden', 'Finding a job', 'البحث عن عمل'),
     e('anerkennung', 'Abschluss anerkennen lassen', 'Recognition of your degree', 'معادلة الشهادة', 'https://www.anerkennung-in-deutschland.de'),
     e('arbeitsvertrag', 'Arbeitsvertrag verstehen', 'Understanding a work contract', 'فهم عقد العمل'),
