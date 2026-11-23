@@ -89,6 +89,7 @@ function Guide({ id, lang, u }: { id: string; lang: Lang; u: (k: string) => stri
     <div class="g">
       {!own && u('guideEn') && <p class="g-note">🌐 {u('guideEn')}</p>}
       {own?.ai && u('aiNote') && <p class="g-note">🤖 {u('aiNote')}</p>}
+      <ReadAloud lang={own ? lang : 'en'} text={[...t.steps, ...t.docs, t.cost, t.tip].join('. ')} u={u} />
       <h4>{u('steps')}</h4>
       <ol class="g-steps" dir={own ? undefined : 'ltr'}>{t.steps.map(s => <li>{s}</li>)}</ol>
       <h4>{u('docs')}</h4>
@@ -102,6 +103,20 @@ function Guide({ id, lang, u }: { id: string; lang: Lang; u: (k: string) => stri
       <p class="g-checked">{u('checked')}</p>
     </div>
   );
+}
+
+const VOICE: Record<string, string> = { de: 'de-DE', en: 'en-US', ar: 'ar-SA', tr: 'tr-TR', uk: 'uk-UA', ru: 'ru-RU', fa: 'fa-IR', ur: 'ur-PK', hi: 'hi-IN' };
+/** Read the guide aloud with the device's own voice (free, offline, nothing is sent). */
+function ReadAloud({ lang, text, u }: { lang: string; text: string; u: (k: string) => string }) {
+  const [on, setOn] = useState(false);
+  if (typeof speechSynthesis === 'undefined') return null;
+  const go = () => {
+    speechSynthesis.cancel();
+    if (on) { setOn(false); return; }
+    const x = new SpeechSynthesisUtterance(text.replace(/⚠️|💡/g, '')); x.lang = VOICE[lang] ?? 'en-US'; x.rate = 0.95;
+    x.onend = () => setOn(false); speechSynthesis.speak(x); setOn(true);
+  };
+  return <button class="read-btn" onClick={go} aria-pressed={on}>{on ? '⏹ ' + u('stop') : '🔊 ' + u('read')}</button>;
 }
 
 render(<App />, document.getElementById('app')!);

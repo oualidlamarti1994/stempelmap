@@ -1,0 +1,496 @@
+{
+ "anmeldung": {
+  "steps": [
+   "Şehrinizdeki nüfus dairesinden (Bürgeramt) çevrimiçi veya telefonla randevu alın. Birçok şehir çevrimiçi kayıt imkanı da sunmaktadır.",
+   "Ev sahibinizden konaklama belgesini (Wohnungsgeberbestätigung) isteyin.",
+   "Kayıt formunu doldurun (şehrinizin web sitesinde bulunur).",
+   "Randevuya gidin. Kayıt belgenizi (Anmeldung) hemen alacaksınız.",
+   "Birkaç hafta sonra vergi kimlik numaranız (Steuer-ID) posta yoluyla size ulaşacaktır."
+  ],
+  "docs": [
+   "Pasaport veya kimlik kartı",
+   "Ev sahibi onay belgesi (Wohnungsgeberbestätigung)",
+   "Kayıt formu",
+   "Aileler için: evlilik ve doğum belgeleri"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Taşındıktan sonra 2 hafta içinde yapılması zorunludur. Yapılmazsa: banka hesabı açılamaz, sözleşme yapılamaz ve vergi kimlik numarası alınamaz."
+ },
+ "ummeldung": {
+  "steps": [
+   "Yeni ev sahibinizden yeni bir ev sahibi onay belgesi (Wohnungsgeberbestätigung) alın.",
+   "Yeni şehrinizdeki Bürgeramt (Vatandaşlık Ofisi) için bir randevu alın.",
+   "İlk seferdeki gibi kayıt yaptırın – eski adresiniz otomatik olarak silinecektir.",
+   "Yeni adresin kimliğinize / oturum izninize (Aufenthaltstitel) işlenmesini sağlayın.",
+   "Bankanıza, işvereninize, sağlık sigortanıza, radyo-televizyon vergisi dairesine (Beitragsservice) ve araç kayıt dairesine yeni adresinizi bildirin."
+  ],
+  "docs": [
+   "Kimlik / pasaport",
+   "Oturum izni (Aufenthaltstitel)",
+   "Ev sahibi onay belgesi (Wohnungsgeberbestätigung)"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Aynı şehir içinde taşınırken de geçerlidir: süre sınırı 2 haftadır."
+ },
+ "abmeldung": {
+  "steps": [
+   "Taşınmadan en erken 1 hafta önce ve en geç 2 hafta sonra Abmeldung (ikamet kaydı silme) işlemini yapın.",
+   "Birçok şehirde bu işlemi form doldurarak, posta yoluyla veya çevrimiçi olarak yapabilirsiniz.",
+   "Abmeldung (ikamet kaydı silme) belgesini saklayın – bu belgeye yayın ücreti (Rundfunkbeitrag), sağlık sigortası ve sözleşmeler için ihtiyacınız olacak.",
+   "Yayın ücreti, elektrik, internet, telefon ve sigortaları iptal edin."
+  ],
+  "docs": [
+   "Kimlik / pasaport",
+   "Yurt dışındaki yeni adres"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Sadece Almanya'yı tamamen terk ediyorsanız gereklidir."
+ },
+ "meldebescheinigung": {
+  "steps": [
+   "Bürgeramt (Nüfus ve Vatandaşlık Dairesi) üzerinden sorun – genellikle kayıt sırasında doğrudan alabilirsiniz.",
+   "Birçok belediye online olarak sipariş etmenize olanak tanır.",
+   "Sadece resmi makamlardan sipariş verin, özel web sitelerinden değil."
+  ],
+  "docs": [
+   "Kimlik / pasaport"
+  ],
+  "cost": "Kayıt sırasında ücretsiz, daha sonra genellikle birkaç euro.",
+  "tip": "⚠️ Özel web siteleri bunun için genellikle çok daha fazla ücret talep eder. ⚠️"
+ },
+ "ausweis": {
+  "steps": [
+   "Alman kimlik kartı veya pasaportu sadece Alman vatandaşlarına Bürgeramt (Vatandaşlık İşleri Dairesi) tarafından verilir.",
+   "Alman vatandaşlığınız yoksa: Pasaportunuzu kendi ülkenizin büyükelçiliğinden veya konsolosluğundan almalısınız.",
+   "Pasaportunuzu zamanında yenileyin – pasaportunuzun oturum izniniz süresince geçerli olması gerekir.",
+   "Kaybederseniz: Önce polise bildirin, ardından büyükelçiliğinizi ve yabancılar dairesini (Ausländerbehörde) bilgilendirin."
+  ],
+  "docs": [
+   "Biyometrik pasaport fotoğrafı",
+   "Eski pasaport",
+   "Kayıt belgesi (Meldebescheinigung)"
+  ],
+  "cost": "Ülkenize bağlıdır.",
+  "tip": "Geçerli bir pasaportunuz olmadan yabancılar dairesi (Ausländerbehörde) kalış sürenizi uzatamaz."
+ },
+ "fuehrungszeugnis": {
+  "steps": [
+   "Federal Office of Justice (Adli Sicil Dairesi) üzerinden çevrimiçi olarak (çevrimiçi kimlik fonksiyonu veya elektronik oturum izni ile) – veya şahsen Bürgeramt (Vatandaşlık İşleri Dairesi) üzerinden başvurun.",
+   "Türünü seçin: özel veya genişletilmiş (örneğin çocuklarla çalışma için).",
+   "13 € ödeyin.",
+   "Yaklaşık 1–2 hafta içinde posta yoluyla gelir."
+  ],
+  "docs": [
+   "Kimlik kartı veya çevrimiçi fonksiyonlu elektronik oturum izni",
+   "Genişletilmiş versiyon için: işveren onayı"
+  ],
+  "cost": "13 €.",
+  "tip": "⚠️ Yalnızca fuehrungszeugnis.bund.de veya Bürgeramt üzerinden yapın. Özel siteler daha fazla ücret talep eder ve genellikle sadece talimat gönderir."
+ },
+ "geburt": {
+  "steps": [
+   "Hastane genellikle doğumu nüfus müdürlüğüne (Standesamt) bildirir – oradan bilgi alabilirsiniz.",
+   "Doğumu 1 hafta içinde nüfus müdürlüğüne (Standesamt) bildirin.",
+   "Çocuğun ismine karar verin.",
+   "Doğum belgelerini sipariş edin (çocuk yardımı (Kindergeld), ebeveyn izni (Elterngeld) ve sağlık sigortası için)."
+  ],
+  "docs": [
+   "Ebeveynlerin pasaportları",
+   "Evlilik cüzdanı (eğer evliyseniz)",
+   "Kendi doğum belgeleriniz",
+   "Gerekirse yabancı belgelerin tercümeleri"
+  ],
+  "cost": "İlk belgeler genellikle ücretsizdir (çocuk yardımı/ebeveyn izni için), ek kopyalar her biri yaklaşık 10–15 € tutar.",
+  "tip": "Ardından çocuk yardımı (Kindergeld), ebeveyn izni (Elterngeld), sağlık sigortası ve çocuk için oturma izni (Aufenthaltstitel) için başvurun."
+ },
+ "heirat": {
+  "steps": [
+   "Evliliği kaydettirmek için ikamet ettiğiniz yerdeki nüfus dairesinden (Standesamt) randevu alın.",
+   "Nüfus dairesi (Standesamt) size tam olarak hangi belgelere ihtiyacınız olduğunu söyleyecektir.",
+   "Yabancı belgeler genellikle tasdik/apostil ve yeminli tercüme gerektirir.",
+   "Kendi ülkenizden evlenmenizde engel olmadığını gösteren bir belgeye (Ehefähigkeitszeugnis) ihtiyacınız olabilir.",
+   "Düğün tarihini belirleyin."
+  ],
+  "docs": [
+   "Pasaportlar",
+   "İkamet belgeleri (Meldebescheinigung)",
+   "Doğum belgeleri",
+   "Evlenme ehliyet belgesi (yabancılar için)",
+   "Tercümeler"
+  ],
+  "cost": "Belediyeye göre değişir, yaklaşık 40–100 €, yabancı belgelerle genellikle daha fazladır.",
+  "tip": "Erken başlayın – yurt dışından gelen belgelerin hazırlanması genellikle aylar sürer."
+ },
+ "namensaenderung": {
+  "steps": [
+   "Evlilik veya boşanma durumunda: Nüfus dairesinde (Standesamt) isim beyanı yapılması.",
+   "Diğer nedenler: Belediyenizin isim değiştirme makamına başvurun (önemli bir neden sunulması gerekir).",
+   "Ardından pasaport, oturum izni, banka bilgileri ve sözleşmeleri güncelleyin."
+  ],
+  "docs": [
+   "Pasaport",
+   "Nedeni kanıtlayan belgeler (örneğin evlilik cüzdanı)"
+  ],
+  "cost": "Nüfus dairesi (Standesamt) genellikle yaklaşık 25–50 €, resmi isim değişiklikleri daha maliyetlidir.",
+  "tip": "Alman isim hukuku 2025 yılında reforme edildi – seçenekleriniz hakkında nüfus dairesine (Standesamt) danışın."
+ },
+ "aufenthalt": {
+  "steps": [
+   "Hangi ikamet izninin size uygun olduğunu kontrol edin (çalışma, eğitim, aile, koruma).",
+   "Yerel göçmenlik büronuzdan (Ausländerbehörde) randevu alın – genellikle çevrimiçi olarak yapılır.",
+   "Tüm belgeleri yanınızda getirin.",
+   "Parmak izi ve fotoğraf alınır.",
+   "Birkaç hafta sonra elektronik ikamet izninizi (eAT) teslim alın."
+  ],
+  "docs": [
+   "Pasaport",
+   "Biyometrik fotoğraf",
+   "Kayıt belgesi (Anmeldung)",
+   "Sağlık sigortası kanıtı",
+   "İş sözleşmesi / üniversite kabul belgesi / evlilik cüzdanı",
+   "Kira sözleşmesi"
+  ],
+  "cost": "Genellikle yaklaşık 100 € (ücretler yasalarla belirlenir ve ikamet iznine göre değişir).",
+  "tip": "Vizeniz bitmeden başvurunuzu yapın. Böylece karar verilene kadar geçici bir belge (Fiktionsbescheinigung) alırsınız."
+ },
+ "verlaengerung": {
+  "steps": [
+   "Süreniz dolmadan 6–8 hafta önce yabancılar dairesinden (Ausländerbehörde) randevu alın.",
+   "Güncel belgeleri toplayın (maaş bordrosu, kira sözleşmesi, sigorta).",
+   "Başvurunuzu yapın – son kullanma tarihinden önce!",
+   "Eğer bekleme süresi varsa: Fiktionsbescheinigung (geçici oturum belgesi) talep edin."
+  ],
+  "docs": [
+   "Pasaport",
+   "Güncel oturum izni",
+   "Fotoğraf",
+   "Maaş bordroları",
+   "Kira sözleşmesi",
+   "Sağlık sigortası"
+  ],
+  "cost": "Genellikle yaklaşık 90–100 €.",
+  "tip": "Başvuruyu çok geç yapmak oturum hakkınızı kaybetmenize neden olabilir. Başvurunuz için mutlaka bir alındı belgesi (receipt) alın."
+ },
+ "bluecard": {
+  "steps": [
+   "Gereklilikleri kontrol edin: tanınmış bir üniversite diploması veya deneyimli bir BT uzmanı, minimum maaşlı bir iş teklifi.",
+   "Minimum maaş her yıl belirlenir – güncel tutarı make-it-in-germany.com adresinden kontrol edin.",
+   "Yurt dışından: Alman büyükelçiliğinden vize alın. Almanya'dan: Ausländerbehörde (Yabancılar Dairesi) üzerinden başvurun.",
+   "21–27 ay sonra, süresiz oturum izni (Niederlassungserlaubnis) mümkün olabilir."
+  ],
+  "docs": [
+   "Pasaport",
+   "İş sözleşmesi",
+   "Diploma sertifikası + denklik (anabin/ZAB)",
+   "Sağlık sigortası"
+  ],
+  "cost": "Genellikle yaklaşık 100 €.",
+  "tip": "Blue Card (Mavi Kart) ile aileniz size daha kolay katılabilir."
+ },
+ "familie": {
+  "steps": [
+   "Kimin size katılabileceğini kontrol edin (eş, 18 yaş altı çocuklar).",
+   "Aileniz, kendi ülkelerindeki Alman büyükelçiliğine vize başvurusu yapar.",
+   "Genellikle gerekenler: eşler için temel Almanca (A1), yeterli yaşam alanı, güvenceli gelir.",
+   "Varıştan sonra: Anmeldung (ikamet kaydı) ve yabancılar dairesinden oturum izni."
+  ],
+  "docs": [
+   "Pasaportlar",
+   "Evlilik ve doğum belgeleri (tasdikli, tercüme edilmiş)",
+   "Kira sözleşmesi",
+   "Gelir belgesi",
+   "A1 sertifikası"
+  ],
+  "cost": "Vize yaklaşık 75 €.",
+  "tip": "Büyükelçilikteki bekleme süreleri uzun olabilir – erken randevu alın."
+ },
+ "niederlassung": {
+  "steps": [
+   "Genellikle 5 yıl sonra mümkündür (Mavi Kart sahipleri ve uzman çalışanlar için genellikle daha erken).",
+   "Gereksinimler: güvenceli gelir, 60 aylık emeklilik primi ödemesi (uzman çalışanlar için daha az), B1 seviyesinde Almanca, \"Almanya'da Yaşam\" (Leben in Deutschland) testi.",
+   "Yabancılar dairesinden (Ausländerbehörde) randevu alın.",
+   "Süresiz oturum izninizi teslim alın."
+  ],
+  "docs": [
+   "Pasaport",
+   "Emeklilik sigortası dökümü",
+   "Maaş bordroları",
+   "B1 sertifikası",
+   "\"Almanya'da Yaşam\" testi",
+   "Kira sözleşmesi"
+  ],
+  "cost": "Genellikle yaklaşık 113–147 €.",
+  "tip": "Süresiz oturum izni ile artık yenileme yapmanıza gerek kalmaz."
+ },
+ "einbuergerung": {
+  "steps": [
+   "2024 yılından itibaren genellikle 5 yıllık yasal ikametten sonra mümkündür (özel entegrasyon durumlarında daha erken).",
+   "Gereksinimler: Almanca B1 seviyesi, vatandaşlık testi (Einbürgerungstest), sosyal yardım almadan yaşamak (istisnalar mevcuttur), sabıka kaydının temiz olması.",
+   "Çifte vatandaşlığa genel olarak 2024 yılından itibaren izin verilmektedir.",
+   "Şehrinizin veya ilçenizin vatandaşlık dairesine (Einbürgerungsbehörde) başvurun (genellikle çevrimiçi)."
+  ],
+  "docs": [
+   "Pasaport",
+   "Oturum izni (Aufenthaltstitel)",
+   "B1 sertifikası",
+   "Vatandaşlık testi (Einbürgerungstest)",
+   "Maaş bordroları",
+   "Doğum / evlilik belgesi"
+  ],
+  "cost": "Yetişkin başına 255 €, çocuk başına 51 € (eğer birlikte vatandaşlığa geçiliyorsa).",
+  "tip": "İşlem süreci genellikle birçok ay sürer – başvurunuzu erken yapın."
+ },
+ "wohnungssuche": {
+  "steps": [
+   "Büyük emlak sitelerinde, konut kooperatiflerinde ve belediye konut şirketlerinde arama yapın.",
+   "Bir başvuru dosyası hazırlayın: kişisel beyan formu, maaş bordroları, SCHUFA (kredi notu raporu) ve kimlik.",
+   "Ev gezmelerini hızlıca kabul edin – iyi daireler çabuk kiralanır.",
+   "Düşük gelir durumunda: belediyenin konut dairesinden (Wohnungsamt) konut yardım belgesi (WBS) için başvurun."
+  ],
+  "docs": [
+   "Kimlik / Pasaport",
+   "Oturum izni",
+   "Son 3 aya ait maaş bordroları",
+   "SCHUFA (kredi notu raporu)"
+  ],
+  "cost": "Arama yapmak ücretsizdir. Emlakçı ücreti genellikle ev sahibi tarafından ödenir.",
+  "tip": "⚠️ Dolandırıcılık uyarısı: Daireyi görmeden ve sözleşmeyi imzalamadan asla para göndermeyin."
+ },
+ "mietvertrag": {
+  "steps": [
+   "Temel kirayı (Kaltmiete), yan giderleri ve toplam kirayı (Warmmiete) kontrol edin.",
+   "Bildirim süresini (kiracılar için genellikle 3 ay) ve minimum süreyi kontrol edin.",
+   "Tadilat ve evcil hayvanlarla ilgili maddeleri okuyun.",
+   "Taşındığınızda fotoğraflı bir teslim tutanağı (Übergabeprotokoll) hazırlayın.",
+   "Sorular için: Kiracı derneklerine (Mieterverein) danışın."
+  ],
+  "docs": [
+   "Kimlik",
+   "İmza"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Anlamadığınız hiçbir şeyi imzalamayın – sözleşmenin size açıklanmasını isteyin."
+ },
+ "kaution": {
+  "steps": [
+   "En fazla 3 aylık temel kira (Kaltmiete) tutarında olabilir.",
+   "Ödemeyi 3 aylık taksitler halinde yapabilirsiniz.",
+   "Ev sahibi, bu parayı kendi kişisel parasından ayrı bir hesapta tutmalıdır.",
+   "Taşındıktan sonra, haklı talepler düşüldükten sonra (genellikle birkaç ay içinde) geri alırsınız."
+  ],
+  "docs": [
+   "Kira sözleşmesi",
+   "Ödeme belgesi"
+  ],
+  "cost": "En fazla 3 aylık temel kira tutarına kadar.",
+  "tip": "Alternatif olarak depozito garantileri (Mietkautionsbürgschaft) mevcuttur – yıllık maliyetleri karşılaştırın."
+ },
+ "wohnungsgeber": {
+  "steps": [
+   "Ev sahibinizden (veya ana kiracıdan) onay belgesini isteyin.",
+   "Taşındıktan sonraki 2 hafta içinde size vermek zorundadırlar.",
+   "Form, belediyenizin web sitesinde bulunmaktadır.",
+   "Belgeyi kayıt işlemleri için Bürgeramt (Vatandaşlık Ofisi) birimine götürün."
+  ],
+  "docs": [
+   "Ev sahibinin adı ve adresi",
+   "Taşınma tarihi"
+  ],
+  "cost": "Ücretsiz.",
+  "tip": "Bu onay belgesi olmadan kayıt (Anmeldung) yaptıramazsınız."
+ },
+ "strom": {
+  "steps": [
+   "Taşındığınızda sayaç okumasının fotoğrafını çekin.",
+   "Bir sözleşme olmadan, varsayılan tedarikçi (Grundversorger) size otomatik olarak hizmet sağlar – bu genellikle pahalıdır.",
+   "Tarifeleri karşılaştırın ve bir sağlayıcı seçin (bildirim süresini ve fiyat garantisini kontrol edin).",
+   "Sağlayıcıya sayaç numarasını ve okuma değerini verin."
+  ],
+  "docs": [
+   "Sayaç numarası",
+   "Sayaç okuması",
+   "Taşınma tarihi",
+   "IBAN"
+  ],
+  "cost": "Kullanıma bağlıdır, 1 kişi için genellikle ayda yaklaşık 30–50 € civarındadır.",
+  "tip": "Karşılaştırma yapmak kazançlıdır – varsayılan tarife genellikle en pahalı olanıdır."
+ },
+ "internet": {
+  "steps": [
+   "Adresinizde hangi bağlantıların mevcut olduğunu kontrol edin (DSL, kablo, fiber).",
+   "Tarifeleri karşılaştırın – genellikle 24 aylık sözleşmeler yapılır.",
+   "Bir aktivasyon tarihi randevusu alın (haftalar sürebilir).",
+   "Bu sırada: telefonunuzun internet paylaşımı (hotspot) üzerinden mobil internet kullanın."
+  ],
+  "docs": [
+   "Kimlik (ID)",
+   "İkametgah belgesi (Anmeldung)",
+   "IBAN"
+  ],
+  "cost": "Genellikle ayda yaklaşık 30–50 € civarındadır.",
+  "tip": "Minimum sözleşme süresi dolduktan sonra aylık olarak iptal edebilirsiniz."
+ },
+ "rundfunk": {
+  "steps": [
+   "Her hane bir kez ödeme yapar – evde kaç kişi yaşarsa yaşasın.",
+   "Kayıttan sonra genellikle otomatik olarak bir mektup gelir.",
+   "rundfunkbeitrag.de adresinden çevrimiçi kayıt yapın veya paylaşımlı bir dairede mevcut bir katkı numarasıyla bağlantı kurun.",
+   "Grundsicherungsgeld (temel geçim yardımı), BAföG (öğrenci bursu/kredisi) veya sosyal yardım ile muafiyet mümkündür."
+  ],
+  "docs": [
+   "Adres",
+   "Katkı numarası (varsa)",
+   "Muafiyet için yardım kararı/bildirimi"
+  ],
+  "cost": "Hane başına ayda 18.36 € (2026 itibarıyla).",
+  "tip": "Bunu görmezden gelmeyin – aksi takdirde hatırlatma mektupları ve ek ücretler gelir."
+ },
+ "nachsenden": {
+  "steps": [
+   "Doğrudan Deutsche Post üzerinden sipariş edin (çevrimiçi veya bir postaneden).",
+   "Süreyi seçin (6 veya 12 ay).",
+   "Tüm önemli resmi makamlara yeni adresinizi bildirmeyi unutmayın."
+  ],
+  "docs": [
+   "Eski ve yeni adres",
+   "Kimlik"
+  ],
+  "cost": "Deutsche Post'ta 6 ay için yaklaşık 32 € tutarındadır.",
+  "tip": "⚠️ Özel siteler bazen 100 €'nun üzerinde ücret talep edebilir – yalnızca doğrudan Deutsche Post üzerinden rezervasyon yapın."
+ },
+ "fuehrerschein": {
+  "steps": [
+   "AB dışı bir ülkeden alınan ehliyet, genellikle Anmeldung (ikamet kaydı) yaptıktan sonra sadece 6 ay geçerlidir.",
+   "Ehliyetinizi zamanında sürücü ehliyeti dairesinde (Führerscheinstelle) dönüştürün.",
+   "Ülkeye bağlı olarak: sınav yok, sadece teori veya teori + uygulama (sürüş okulu gerekir).",
+   "AB ehliyetleri geçerli kalmaya devam eder."
+  ],
+  "docs": [
+   "Yabancı ehliyet + tercümesi",
+   "Pasaport",
+   "Registration certificate (ikamet belgesi)",
+   "Göz testi",
+   "İlk yardım kursu",
+   "Biyometrik fotoğraf"
+  ],
+  "cost": "Resmi daire ücreti yaklaşık 40–60 €, sınavlar ve sürüş okulu ile çok daha fazladır.",
+  "tip": "6 ay içinde dönüştürme yapmazsanız, geçerli bir ehliyet olmadan araç kullanmış olursunuz – bu bir suçtur."
+ },
+ "auto_anmelden": {
+  "steps": [
+   "Araç sigortası yaptırın – size bir eVB (elektronik sigorta onay numarası) verilecektir.",
+   "Kayıt ofisinden (Zulassungsstelle) randevu alın (veya kayıt makamınızın web sitesi üzerinden i-Kfz aracılığıyla çevrimiçi olarak).",
+   "Plakaları yaptırın (yerinde).",
+   "Etiketleri ve araç tescil belgesini alın.",
+   "Araç vergisi, gümrük idaresi (Zoll) tarafından doğrudan borçlandırma yoluyla tahsil edilir."
+  ],
+  "docs": [
+   "Kimlik / pasaport + kayıt belgesi",
+   "eVB numarası",
+   "Araç tescil belgesi Bölüm I ve II (Zulassungsbescheinigung Teil I und II)",
+   "Muayene belgesi (TÜV)",
+   "Araç vergisi için SEPA talimatı"
+  ],
+  "cost": "Kayıt işlemi genellikle yaklaşık 30–40 € + plakalar yaklaşık 20–40 € tutar.",
+  "tip": "⚠️ Çevrimiçi kayıt sadece kayıt makamınızın resmi web sitesi üzerinden yapılmalıdır. Özel siteler 200 €'nun üzerinde ücret talep etmektedir."
+ },
+ "auto_abmelden": {
+  "steps": [
+   "Kayıt ofisinde (Bürgeramt) veya yetkili makamın i-Kfz sistemi üzerinden çevrimiçi olarak ikametgah kaydınızı sildirin (Abmeldung).",
+   "Plakaları ve araç tescil belgesinin birinci kısmını (Zulassungsbescheinigung Teil I) yanınızda getirin.",
+   "Sigorta ve araç vergisi daha sonra otomatik olarak sona erer."
+  ],
+  "docs": [
+   "Plakalar",
+   "Araç tescil belgesinin birinci kısmı (Zulassungsbescheinigung Teil I)",
+   "Kimlik"
+  ],
+  "cost": "Belediyeye bağlı olarak yaklaşık 5–20 € arası.",
+  "tip": "⚠️ Özel siteler bunun için yaklaşık 50 € talep ediyor – resmi makamlarda çok daha ucuzdur."
+ },
+ "kfz_versicherung": {
+  "steps": [
+   "Sorumluluk sigortası zorunludur, kısmi ve tam kapsamlı teminatlar isteğe bağlıdır.",
+   "Teklifleri karşılaştırın.",
+   "Yurt dışındaki hasarsızlık geçmişinizin tanınıp tanınmadığını sorun.",
+   "Kayıt işlemi için eVB (sigorta onay numarası) numarasını alın."
+  ],
+  "docs": [
+   "Sürücü belgesi",
+   "Araç bilgileri",
+   "IBAN"
+  ],
+  "cost": "Çok değişkenlik gösterir – yeni sürücüler çok daha fazla öder.",
+  "tip": "Sigorta değişikliği genellikle yıl sonu için 30 Kasım tarihine kadar mümkündür."
+ },
+ "tuev": {
+  "steps": [
+   "Ana muayene (HU) her 2 yılda bir yapılır, yeni araçlar için ilk muayene 3 yıl sonra gerçekleşir.",
+   "Son tarih, arka plaka üzerindeki çıkartmada belirtilmiştir.",
+   "TÜV, DEKRA, GTÜ veya benzeri bir kurumdan randevu alın.",
+   "Varsa kusurları tamir ettirin ve gerekirse yeniden muayeneye sokun."
+  ],
+  "docs": [
+   "Kayıt belgesi Bölüm I (Zulassungsbescheinigung Teil I)",
+   "Araç"
+  ],
+  "cost": "Yaklaşık 140–170 €.",
+  "tip": "Muayene süresinin geçmesi para cezası anlamına gelebilir."
+ },
+ "kfz_steuer": {
+  "steps": [
+   "Kayıt sırasında bir SEPA talimatı (otomatik ödeme onayı) verirsiniz.",
+   "Gümrük (Zoll) vergi bildirimini gönderir ve tutarı yıllık olarak tahsil eder.",
+   "Tutar, motor hacmi ve CO₂ miktarına bağlıdır – zoll.de adresindeki hesaplayıcıyı kullanabilirsiniz."
+  ],
+  "docs": [
+   "IBAN",
+   "Araç verileri"
+  ],
+  "cost": "Araca bağlıdır, genellikle yılda yaklaşık 50–300 € civarındadır. Elektrikli araçlar geçici olarak muaftır.",
+  "tip": "Hesabınızda yeterli bakiye bulundurun – aksi takdirde hatırlatma bildirimleri gelebilir."
+ },
+ "konto": {
+  "steps": [
+   "AB (Avrupa Birliği) içinde yasal ikamet hakkı olan herkesin bir temel hesaba (Basiskonto) hakkı vardır.",
+   "Bir banka veya online banka seçin ve hesap açılış işlemlerini başlatın.",
+   "Kimliğinizi video görüşme ile veya bir şubede doğrulayın.",
+   "Kart ve giriş bilgileri posta yoluyla size ulaşır."
+  ],
+  "docs": [
+   "Pasaport",
+   "Oturum izni (Aufenthaltstitel)",
+   "İkametgah belgesi (Meldebescheinigung)"
+  ],
+  "cost": "Genellikle ayda 0–10 €.",
+  "tip": "Eğer temel hesap (Basiskonto) açma talebiniz reddedilirse, BaFin'e (Alman Federal Finansal Denetim Otoritesi) şikayette bulunabilirsiniz."
+ },
+ "schufa": {
+  "steps": [
+   "SCHUFA, faturalarınızı ve kredilerinizi ödeyip ödemediğinizi kaydeder.",
+   "Ev sahipleri ve telefon sağlayıcıları genellikle bunu talep eder.",
+   "meineschufa.de adresinden ücretsiz veri kopyasını (GDPR Madde 15 uyarınca) sipariş edin.",
+   "İyi bir skora sahip olmak için faturalarınızı zamanında ödeyin."
+  ],
+  "docs": [
+   "Kimlik",
+   "Adres"
+  ],
+  "cost": "Veri kopyası ücretsizdir.",
+  "tip": "⚠️ Ücretli SCHUFA ürünlerine gerek yoktur – ücretsiz veri kopyası genellikle yeterlidir. ⚠️"
+ },
+ "ueberweisung": {
+  "steps": [
+   "Transfer: parayı alıcının IBAN numarası ve ismiyle gönderin.",
+   "Direct debit (Otomatik ödeme talimatı): bir şirketin para çekmesine izin verirsiniz (örneğin kira, elektrik).",
+   "Hatalı direct debit (otomatik ödeme) işlemlerini 8 hafta içinde iptal edebilirsiniz.",
+   "Düzenli ödemeler için standing order (düzenli ödeme talimatı) oluşturun."
+  ],
+  "docs": [
+   "Alıcının IBAN numarası",
+   "Online banking (İnternet bankacılığı)"
+  ],
+  "cost": "Genellikle ücretsizdir.",
+  "tip": "⚠️ Telefon üzerinden asla TAN (işlem onay kodu) veya şifre vermeyin – bankalar bunları asla istemez."
+ }
+}

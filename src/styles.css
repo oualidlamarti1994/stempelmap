@@ -75,3 +75,4 @@ select { padding: 8px 10px; border-radius: 12px; border: 1px solid var(--line); 
 .g-checked { font-size: .75rem; color: var(--muted); margin-top: 12px; }
 .foot { margin: 18px 0 4px; font-size: .72rem; color: var(--muted); text-align: center; }
 .foot a { color: var(--muted); }
+.read-btn { margin-top: 8px; padding: 10px 16px; border-radius: 999px; border: 0; background: #3cb98a; color: #fff; font-weight: 700; cursor: pointer; }
