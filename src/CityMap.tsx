@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { BUILDINGS, tr, type Building, type Lang } from './data';
 import { Landmarks, Life } from './Life';
+import { Surroundings } from './Surroundings';
 
 const FULL = [0, 0, 800, 1100];
 const BLOCKS = [[40, 170, 160, 255], [230, 170, 300, 100], [560, 170, 200, 100], [230, 300, 300, 120], [560, 300, 200, 120],
@@ -118,6 +119,7 @@ export function CityMap({ lang, active, onPick }: { lang: Lang; active: Building
         <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity=".28" /></filter>
       </defs>
       <rect x="-2000" y="-1000" width="4800" height="3100" fill="url(#grass)" />
+      <Surroundings layer="ground" />
       <path d="M -50 100 C 120 140, 160 40, 330 70 S 620 20, 860 90" fill="none" stroke="#7cc4f2" stroke-width="62" stroke-linecap="round" />
       <path d="M -50 100 C 120 140, 160 40, 330 70 S 620 20, 860 90" fill="none" stroke="#a9dbfa" stroke-width="14" stroke-dasharray="30 26" opacity=".7" />
       <Landmarks />
@@ -143,6 +145,7 @@ export function CityMap({ lang, active, onPick }: { lang: Lang; active: Building
       <rect x="-20" y="1010" width="840" height="30" fill="#9aa0b5" />
       <line x1="-20" y1="1025" x2="820" y2="1025" stroke="#5c6178" stroke-width="4" stroke-dasharray="10 8" />
       <Life houses={HOUSES} />
+      <Surroundings layer="top" />
 
       {BUILDINGS.map(b => {
         const on = active?.id === b.id; const label = tr(b.s, lang); const w = Math.max(60, label.length * 8.2 + 22);
