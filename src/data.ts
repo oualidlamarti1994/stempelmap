@@ -130,6 +130,13 @@ export const UI: Record<string, T> = {
   notAuthority: { de: 'Wir sind keine Behörde. Wir zeigen dir den offiziellen, meist kostenlosen Weg.', en: 'We are not an authority. We show you the official, usually free route.', ar: 'نحن لسنا جهة حكومية. نرشدك إلى الطريق الرسمي والمجاني غالباً.' },
   back: { de: 'Zurück zur Karte', en: 'Back to map', ar: 'العودة إلى الخريطة' },
   errands: { de: 'Erledigungen', en: 'Errands', ar: 'المعاملات' },
+  steps: { de: 'Schritte', en: 'Steps', ar: 'الخطوات' },
+  docs: { de: 'Was du brauchst', en: 'What you need', ar: 'ما تحتاجه' },
+  cost: { de: 'Kosten', en: 'Cost', ar: 'التكلفة' },
+  tip: { de: 'Tipp', en: 'Tip', ar: 'نصيحة' },
+  links: { de: 'Offizielle Links', en: 'Official links', ar: 'روابط رسمية' },
+  guideEn: { de: '', en: '', ar: 'هذا الدليل غير متوفر بالعربية بعد – يُعرض حالياً بالإنجليزية.' },
+  checked: { de: 'Stand 2026. Kosten können je nach Stadt abweichen – prüfe die offizielle Seite.', en: 'As of 2026. Costs can differ by town – check the official site.', ar: 'المعلومات حتى 2026. قد تختلف التكاليف حسب المدينة – تحقق من الموقع الرسمي.' },
   hint: { de: 'Ziehen zum Bewegen · Mausrad zum Zoomen', en: 'Drag to move · scroll to zoom', ar: 'اسحب للتحريك · استخدم العجلة للتكبير' },
   machine: { de: '', en: 'Translation coming soon – showing English.', ar: '' },
 };

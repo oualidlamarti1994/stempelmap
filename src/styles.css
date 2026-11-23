@@ -57,3 +57,19 @@ select { padding: 8px 10px; border-radius: 12px; border: 1px solid var(--line); 
 .app { max-width: 1600px; }
 .map-back { z-index: 3; }
 .hint { position: absolute; z-index: 3; inset-inline-start: 12px; bottom: 16px; background: rgba(29,33,64,.8); color: #fff; font-size: .8rem; padding: 6px 12px; border-radius: 999px; pointer-events: none; }
+
+/* Guides */
+.g h4 { margin: 16px 0 6px; font-size: .95rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.g-steps { margin: 0; padding-inline-start: 0; list-style: none; counter-reset: s; display: grid; gap: 8px; }
+.g-steps li { counter-increment: s; position: relative; padding: 10px 12px; padding-inline-start: 46px; background: var(--bg); border-radius: 12px; }
+.g-steps li::before { content: counter(s); position: absolute; inset-inline-start: 10px; top: 9px; width: 26px; height: 26px; border-radius: 50%;
+  background: var(--c, var(--p)); color: #fff; font-weight: 800; font-size: .85rem; display: grid; place-items: center; }
+.g-docs { margin: 0; padding-inline-start: 0; list-style: none; display: grid; gap: 4px; }
+.g-docs li::before { content: '☐ '; color: var(--c, var(--p)); font-weight: 700; }
+.g-cost { margin-top: 14px; padding: 10px 12px; border-radius: 12px; background: var(--bg); }
+.g-tip { margin-top: 10px; padding: 10px 12px; border-radius: 12px; background: rgba(60,185,138,.14); border-inline-start: 4px solid #3cb98a; }
+.g-tip.warn { background: rgba(255,107,107,.14); border-color: #ff6b6b; }
+.g-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.g-links .official { margin: 0; font-size: .9rem; }
+.g-note { font-size: .85rem; background: rgba(91,108,255,.12); padding: 8px 12px; border-radius: 10px; }
+.g-checked { font-size: .75rem; color: var(--muted); margin-top: 12px; }

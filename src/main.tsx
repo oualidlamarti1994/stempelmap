@@ -2,6 +2,7 @@ import { render } from 'preact';
 import { useMemo, useState } from 'preact/hooks';
 import { BUILDINGS, LANGS, UI, tr, type Building, type Errand, type Lang } from './data';
 import { CityMap } from './CityMap';
+import guidesJson from './guides.json';
 import './styles.css';
 
 const initLang = (): Lang => {
@@ -62,14 +63,41 @@ function App() {
             <div class="guide">
               <button class="link-back" onClick={() => setErrand(null)}>{back} {tr(active.t, lang)}</button>
               <h3>{tr(errand.t, lang)}</h3>
-              <p>{u('soon')}</p>
-              {errand.link && <a class="official" href={errand.link} target="_blank" rel="noopener">🔗 {u('official')}</a>}
+              <Guide id={errand.id} lang={lang} u={u} />
             </div>
           )}
           <p class="disclaimer">ℹ️ {u('notAuthority')}</p>
         </section>
       )}
       </div>
+    </div>
+  );
+}
+
+type GuideText = { steps: string[]; docs: string[]; cost: string; tip: string };
+const GUIDES = guidesJson as Record<string, { links: string[]; de: GuideText; en: GuideText }>;
+
+/** Step-by-step guide. de/en written by hand; other languages show English with a note until translated. */
+function Guide({ id, lang, u }: { id: string; lang: Lang; u: (k: string) => string }) {
+  const g = GUIDES[id];
+  if (!g) return <p>{u('soon')}</p>;
+  const own = (g as any)[lang] as GuideText | undefined;
+  const t = own ?? g.en;
+  const isWarn = (s: string) => s.startsWith('⚠️');
+  return (
+    <div class="g">
+      {!own && u('guideEn') && <p class="g-note">🌐 {u('guideEn')}</p>}
+      <h4>{u('steps')}</h4>
+      <ol class="g-steps" dir={own ? undefined : 'ltr'}>{t.steps.map(s => <li>{s}</li>)}</ol>
+      <h4>{u('docs')}</h4>
+      <ul class="g-docs" dir={own ? undefined : 'ltr'}>{t.docs.map(s => <li>{s}</li>)}</ul>
+      <div class="g-cost"><b>💶 {u('cost')}:</b> <span dir={own ? undefined : 'ltr'}>{t.cost}</span></div>
+      {t.tip && <div class={'g-tip' + (isWarn(t.tip) ? ' warn' : '')} dir={own ? undefined : 'ltr'}>{isWarn(t.tip) ? '' : '💡 '}{t.tip}</div>}
+      <h4>{u('links')}</h4>
+      <div class="g-links">
+        {g.links.map(l => <a class="official" href={l} target="_blank" rel="noopener noreferrer">🔗 {new URL(l).hostname.replace(/^www\./, '')}</a>)}
+      </div>
+      <p class="g-checked">{u('checked')}</p>
     </div>
   );
 }
