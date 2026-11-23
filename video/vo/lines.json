@@ -1,0 +1,12 @@
+[
+ {"say": "Das ist StempelMap. Behördengänge in Deutschland, erklärt wie eine Stempelpresse: Brief rein, Sprache wählen, stempeln.", "cap": "Brief rein · Sprache wählen · stempeln"},
+ {"say": "Du siehst eine ganze Stadt: Bürgeramt, Ausländerbehörde, Bank, Arzt, Jobcenter und vieles mehr.", "cap": "Deine Stadt als Karte"},
+ {"say": "Tippe auf ein Gebäude, zum Beispiel die Kfz-Zulassungsstelle, und du siehst alle Erledigungen.", "cap": "Gebäude antippen"},
+ {"say": "Jede Anleitung zeigt dir Schritt für Schritt, welche Unterlagen du brauchst, was es kostet, und den offiziellen Link.", "cap": "Schritte · Unterlagen · Kosten · offizieller Link"},
+ {"say": "Und StempelMap warnt dich vor teuren Abzock-Seiten, die für kostenlose Anträge Geld verlangen.", "cap": "Warnt vor Abzocke"},
+ {"say": "Alles gibt es in elf Sprachen, von Arabisch und Türkisch bis Ukrainisch, Polnisch und Hindi.", "cap": "11 Sprachen"},
+ {"say": "Du kannst auch einfach suchen, in deiner eigenen Sprache.", "cap": "Suche in deiner Sprache"},
+ {"say": "StempelMap ist barrierefrei: mit Textliste, Vorlesefunktion, großer Schrift und hohem Kontrast.", "cap": "Barrierefrei"},
+ {"say": "Und natürlich funktioniert alles auch auf dem Handy.", "cap": "Auch auf dem Handy"},
+ {"say": "StempelMap. Kostenlos. Keine Behörde. Wir zeigen dir den offiziellen Weg.", "cap": "stempelmap.de"}
+]

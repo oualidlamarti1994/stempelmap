@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { BUILDINGS, tr, type Building, type Lang } from './data';
+import { Landmarks, Life } from './Life';
 
 const FULL = [0, 0, 800, 1100];
 const BLOCKS = [[40, 170, 160, 255], [230, 170, 300, 100], [560, 170, 200, 100], [230, 300, 300, 120], [560, 300, 200, 120],
@@ -119,7 +120,7 @@ export function CityMap({ lang, active, onPick }: { lang: Lang; active: Building
       <rect x="-2000" y="-1000" width="4800" height="3100" fill="url(#grass)" />
       <path d="M -50 100 C 120 140, 160 40, 330 70 S 620 20, 860 90" fill="none" stroke="#7cc4f2" stroke-width="62" stroke-linecap="round" />
       <path d="M -50 100 C 120 140, 160 40, 330 70 S 620 20, 860 90" fill="none" stroke="#a9dbfa" stroke-width="14" stroke-dasharray="30 26" opacity=".7" />
-      <text x="680" y="58" font-size="18" fill="#fff" opacity=".8">⛵</text>
+      <Landmarks />
       {BLOCKS.map(([x, y, w, h]) => <rect x={x} y={y} width={w} height={h} rx="18" fill="#f1ead8" stroke="#e2d6b8" stroke-width="3" />)}
       <rect x="230" y="605" width="300" height="240" rx="26" fill="#a6d77f" stroke="#8cc562" stroke-width="3" />
       <ellipse cx="440" cy="770" rx="62" ry="32" fill="#7cc4f2" opacity=".85" />
@@ -138,14 +139,10 @@ export function CityMap({ lang, active, onPick }: { lang: Lang; active: Building
         {[150, 285, 435, 590, 860].map(y => <line x1="-20" y1={y} x2="820" y2={y} />)}
         {[215, 545, 780].map(x => <line x1={x} y1="130" x2={x} y2="1005" />)}
       </g>
-      {CARS.map(([x, y, c, h]) => (
-        <g transform={`translate(${x} ${y}) rotate(${h ? 0 : 90})`}><rect x="-13" y="-7" width="26" height="14" rx="5" fill={c} />
-          <rect x="-5" y="-5" width="10" height="10" rx="2" fill="#fff" opacity=".6" /></g>
-      ))}
       <rect x="196" y="40" width="38" height="100" rx="6" fill="#c9b48a" /><rect x="526" y="22" width="38" height="118" rx="6" fill="#c9b48a" />
       <rect x="-20" y="1010" width="840" height="30" fill="#9aa0b5" />
       <line x1="-20" y1="1025" x2="820" y2="1025" stroke="#5c6178" stroke-width="4" stroke-dasharray="10 8" />
-      <g transform="translate(120 1025)"><rect x="-60" y="-11" width="120" height="22" rx="8" fill="#ff7a45" /><rect x="-50" y="-6" width="20" height="9" rx="2" fill="#fff" opacity=".8" /><rect x="-20" y="-6" width="20" height="9" rx="2" fill="#fff" opacity=".8" /><rect x="10" y="-6" width="20" height="9" rx="2" fill="#fff" opacity=".8" /></g>
+      <Life houses={HOUSES} />
 
       {BUILDINGS.map(b => {
         const on = active?.id === b.id; const label = tr(b.s, lang); const w = Math.max(60, label.length * 8.2 + 22);

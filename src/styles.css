@@ -101,3 +101,7 @@ html.hc .sheet, html.hc .list-view, html.hc .lv-b button, html.hc .errands butto
 html.hc a { color: #ffd166; }
 html.hc .official, html.hc .read-btn { background: #ffd166 !important; color: #000 !important; }
 @media (min-width: 980px) { .app.has-sheet .stage:has(.list-view) { grid-template-columns: minmax(0, 1fr) minmax(360px, 1fr); } }
+.lm-label { font: 700 15px system-ui, sans-serif; fill: #1d2140; paint-order: stroke; stroke: #fff; stroke-width: 4px; }
+.lm-river { font: italic 700 18px system-ui, sans-serif; fill: #ffffff; opacity: .85; letter-spacing: 3px; }
+.pin { transition: filter .2s; }
+.pin:hover { filter: drop-shadow(0 0 10px rgba(255, 209, 102, .9)); }

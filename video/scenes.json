@@ -1,0 +1,105 @@
+{
+ "total": 54.52,
+ "scenes": [
+  {
+   "img": "figure",
+   "fx": 0.5,
+   "fy": 0.5,
+   "z0": 1,
+   "z1": 1,
+   "a": 0,
+   "b": 7.096,
+   "cap": "Brief rein · Sprache wählen · stempeln"
+  },
+  {
+   "img": "shots/01-map-de.png",
+   "fx": 0.5,
+   "fy": 0.55,
+   "z0": 1.0,
+   "z1": 1.1,
+   "a": 7.096,
+   "b": 13.189,
+   "cap": "Deine Stadt als Karte"
+  },
+  {
+   "img": "shots/02-car-list.png",
+   "fx": 0.62,
+   "fy": 0.5,
+   "z0": 1.0,
+   "z1": 1.12,
+   "a": 13.189,
+   "b": 18.564,
+   "cap": "Gebäude antippen"
+  },
+  {
+   "img": "shots/03-guide-de.png",
+   "fx": 0.75,
+   "fy": 0.45,
+   "z0": 1.05,
+   "z1": 1.22,
+   "a": 18.564,
+   "b": 24.756,
+   "cap": "Schritte · Unterlagen · Kosten · offizieller Link"
+  },
+  {
+   "img": "shots/04-guide-warning.png",
+   "fx": 0.75,
+   "fy": 0.75,
+   "z0": 1.1,
+   "z1": 1.3,
+   "a": 24.756,
+   "b": 29.845,
+   "cap": "Warnt vor Abzocke"
+  },
+  {
+   "img": "lang",
+   "fx": 0.5,
+   "fy": 0.5,
+   "z0": 1,
+   "z1": 1,
+   "a": 29.845,
+   "b": 35.233,
+   "cap": "11 Sprachen"
+  },
+  {
+   "img": "shots/07-search-tr.png",
+   "fx": 0.4,
+   "fy": 0.25,
+   "z0": 1.05,
+   "z1": 1.2,
+   "a": 35.233,
+   "b": 38.44,
+   "cap": "Suche in deiner Sprache"
+  },
+  {
+   "img": "shots/08-a11y.png",
+   "fx": 0.45,
+   "fy": 0.3,
+   "z0": 1.0,
+   "z1": 1.12,
+   "a": 38.44,
+   "b": 44.661,
+   "cap": "Barrierefrei"
+  },
+  {
+   "img": "phones",
+   "fx": 0.5,
+   "fy": 0.5,
+   "z0": 1,
+   "z1": 1,
+   "a": 44.661,
+   "b": 47.557,
+   "cap": "Auch auf dem Handy"
+  },
+  {
+   "img": "outro",
+   "fx": 0.5,
+   "fy": 0.5,
+   "z0": 1,
+   "z1": 1,
+   "a": 47.557,
+   "b": 54.52,
+   "cap": "stempelmap.de"
+  }
+ ]
+}

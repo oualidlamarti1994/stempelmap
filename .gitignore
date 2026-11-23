@@ -5,3 +5,7 @@ translator/node_modules
 translator/.wrangler
 translator/run.log
 .pages-project
+video/shots/
+video/*.mp4
+video/prev_*.png
+video/vo/*.wav
