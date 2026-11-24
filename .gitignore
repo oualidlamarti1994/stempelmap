@@ -9,3 +9,7 @@ video/shots/
 video/*.mp4
 video/prev_*.png
 video/vo/*.wav
+video2/*.mp4
+video2/prev_*.png
+video2/sheet*.png
+video2/psheet.png
