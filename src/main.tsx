@@ -2,6 +2,7 @@ import { render } from 'preact';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { BUILDINGS, LANGS, UI, tr, type Building, type Errand, type Lang } from './data';
 import { CityMap } from './CityMap';
+import './i18n_v2';
 import guidesJson from './guides.json';
 import { NEXT_UPDATE, STAND, VERSION, fmtDate } from './version';
 import './styles.css';
@@ -30,6 +31,20 @@ function App() {
 
   const pick = (b: Building, x?: Errand) => { setActive(b); setErrand(x ?? null); setQ(''); };
 
+  // deep links: #e=<errand id> opens that guide (shareable)
+  useEffect(() => {
+    const open = () => { const m = location.hash.match(/e=([a-z_0-9]+)/); if (!m) return;
+      for (const b of BUILDINGS) { const x = b.errands.find(y => y.id === m[1]); if (x) { setActive(b); setErrand(x); return; } } };
+    open(); addEventListener('hashchange', open); return () => removeEventListener('hashchange', open);
+  }, []);
+  useEffect(() => { const h = errand ? '#e=' + errand.id : ''; if (location.hash !== h) history.replaceState(null, '', location.pathname + location.search + h); }, [errand]);
+
+  // Stempel-Pass (browser only)
+  const [done, setDone] = useState<string[]>(() => { try { return JSON.parse(localStorage.getItem('pc.done') || '[]'); } catch { return []; } });
+  const toggleDone = (id: string) => { const n = done.includes(id) ? done.filter(x => x !== id) : [...done, id]; setDone(n); try { localStorage.setItem('pc.done', JSON.stringify(n)); } catch { /* ignore */ } };
+  const total = BUILDINGS.reduce((a, b) => a + b.errands.length, 0);
+  const [route, setRoute] = useState(false);
+
   // accessibility preferences (kept in this browser only)
   const load = (k: string) => { try { return localStorage.getItem('pc.' + k) === '1'; } catch { return false; } };
   const [listMode, setListMode] = useState(load('list'));
@@ -53,12 +68,14 @@ function App() {
   const skipToList = (e: Event) => { e.preventDefault(); setListMode(true); setTimeout(() => listHead.current?.focus(), 50); };
 
   return (
-    <div class={'app' + (active ? ' has-sheet' : '')} dir={rtl ? 'rtl' : 'ltr'} lang={lang}>
+    <div class={'app' + (active || route ? ' has-sheet' : '')} dir={rtl ? 'rtl' : 'ltr'} lang={lang}>
       <a href="#list" class="skip" onClick={skipToList}>{u('skip')}</a>
       <div class="sr" aria-live="polite">{say}</div>
       <header>
         <div class="brand"><span class="logo" dangerouslySetInnerHTML={{ __html: STAMP }} /><div><b>StempelMap</b><small>{u('title')} · {u('sub')}</small></div></div>
         <div class="tools">
+        <button class="route-btn" aria-pressed={route} onClick={() => { setRoute(!route); setActive(null); setErrand(null); }}>🧭 <span class="lbl">{u('route')}</span></button>
+        <span class="pass" title={u('passNote')}>🎫 <span class="lbl">{u('pass')}</span> <b>{done.length}/{total}</b></span>
         <button class="a11y-btn" aria-expanded={panel} aria-controls="a11y-panel" onClick={() => setPanel(!panel)}>♿ <span class="lbl">{u('a11y')}</span></button>
         <select value={lang} onChange={ev => setLang((ev.target as HTMLSelectElement).value as Lang)} aria-label="Language">
           {LANGS.map(l => <option value={l.id}>{l.name}</option>)}
@@ -92,12 +109,21 @@ function App() {
         </nav>
       ) : (
       <div class="map-wrap">
-        <CityMap lang={lang} active={active} onPick={b => pick(b)} />
+        <CityMap lang={lang} active={active} onPick={b => pick(b)} done={done} route={route ? ROUTE : null} />
         {!active && <span class="hint">🖐️ {u('hint')}</span>}
         {active && <button class="map-back" onClick={() => { setActive(null); setErrand(null); }}>{back} {u('back')}</button>}
       </div>
       )}
 
+      {route && !active && (
+        <section class="sheet route-sheet" style={{ '--c': '#e63946' } as any}>
+          <div class="sheet-head"><span class="big-icon" aria-hidden="true">🧭</span><h2>{u('route')}</h2></div>
+          <p class="muted">{u('routeSub')}</p>
+          <ol class="route-list">{ROUTE.map((id, i) => { const b = BUILDINGS.find(bb => bb.errands.some(x => x.id === id))!; const x = b.errands.find(y => y.id === id)!;
+            return <li><button onClick={() => pick(b, x)}><span class="rn">{done.includes(id) ? '✓' : i + 1}</span><span>{b.icon} {tr(x.t, lang)}</span></button></li>; })}</ol>
+          <button class="btn-ghost" onClick={() => setRoute(false)}>{u('close')}</button>
+        </section>
+      )}
       {active && (
         <section class="sheet" aria-label={tr(active.t, lang)} style={{ '--c': active.color } as any}>
           <div class="sheet-head"><span class="big-icon" aria-hidden="true">{active.icon}</span><h2 ref={sheetHead} tabIndex={-1}>{tr(active.t, lang)}</h2></div>
@@ -113,6 +139,10 @@ function App() {
               <button class="link-back" onClick={() => setErrand(null)}>{back} {tr(active.t, lang)}</button>
               <h3>{tr(errand.t, lang)}</h3>
               <Guide id={errand.id} lang={lang} u={u} />
+              <div class="g-actions">
+                <button class={'stamp-btn' + (done.includes(errand.id) ? ' on' : '')} onClick={() => toggleDone(errand.id)}>{done.includes(errand.id) ? '🔴 ' + u('stamped') : u('getStamp')}</button>
+                <ShareBtn id={errand.id} title={tr(errand.t, lang)} u={u} />
+              </div>
             </div>
           )}
           <p class="disclaimer">ℹ️ {u('notAuthority')}</p>
@@ -122,6 +152,22 @@ function App() {
       <footer class="foot"><span>StempelMap v{VERSION} · {fmtDate(STAND, lang)} · ⟳ {fmtDate(NEXT_UPDATE, lang)}</span> · <a href="./impressum.html">Impressum</a> · <a href="./datenschutz.html">Datenschutz</a> · <span>{u('notAuthority')}</span></footer>
     </div>
   );
+}
+
+/** First 30 days in Germany – order matters (registration unlocks bank, tax ID, contracts). */
+const ROUTE = ['anmeldung', 'konto', 'krankenversicherung', 'steuerid', 'sim', 'aufenthalt', 'hausarzt', 'haftpflicht', 'rundfunk', 'integrationskurs'];
+
+function ShareBtn({ id, title, u }: { id: string; title: string; u: (k: string) => string }) {
+  const [ok, setOk] = useState(false);
+  const url = location.origin + location.pathname + '#e=' + id;
+  const share = async () => {
+    try { if (navigator.share) { await navigator.share({ title: 'StempelMap – ' + title, url }); return; } } catch { return; }
+    try { await navigator.clipboard.writeText(url); setOk(true); setTimeout(() => setOk(false), 2500); } catch { /* ignore */ }
+  };
+  return (<>
+    <button class="share-btn" onClick={share}>🔗 {ok ? u('copied') : u('share')}</button>
+    <a class="share-btn wa" href={'https://wa.me/?text=' + encodeURIComponent('StempelMap – ' + title + ': ' + url)} target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  </>);
 }
 
 type GuideText = { steps: string[]; docs: string[]; cost: string; tip: string; ai?: boolean };

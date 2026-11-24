@@ -105,3 +105,18 @@ html.hc .official, html.hc .read-btn { background: #ffd166 !important; color: #0
 .lm-river { font: italic 700 18px system-ui, sans-serif; fill: #ffffff; opacity: .85; letter-spacing: 3px; }
 .pin { transition: filter .2s; }
 .pin:hover { filter: drop-shadow(0 0 10px rgba(255, 209, 102, .9)); }
+
+/* v1.1: share, Stempel-Pass, route */
+.route-btn, .pass { padding: 8px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); font-weight: 700; white-space: nowrap; }
+.route-btn { cursor: pointer; } .route-btn[aria-pressed="true"] { background: #e63946; color: #fff; border-color: #e63946; }
+.pass b { color: #e63946; }
+@media (max-width: 760px) { .route-btn .lbl, .pass .lbl { display: none; } }
+.g-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--line); }
+.stamp-btn { padding: 11px 16px; border-radius: 999px; border: 2px solid #e63946; background: transparent; color: #e63946; font-weight: 800; cursor: pointer; }
+.stamp-btn.on { background: #e63946; color: #fff; }
+.share-btn { padding: 11px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); font-weight: 700; cursor: pointer; text-decoration: none; color: var(--text); }
+.share-btn.wa { background: #25d366; color: #0b2e18; border-color: #25d366; }
+.route-list { list-style: none; margin: 8px 0 12px; padding: 0; display: grid; gap: 8px; }
+.route-list button { width: 100%; display: flex; gap: 12px; align-items: center; text-align: start; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--line); background: var(--bg); cursor: pointer; font-weight: 600; }
+.rn { width: 28px; height: 28px; flex: none; border-radius: 50%; display: grid; place-items: center; background: #e63946; color: #fff; font-weight: 800; }
+.btn-ghost { padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line); background: transparent; cursor: pointer; font-weight: 700; }

@@ -21,7 +21,7 @@ const TREES = [[30, 445], [210, 165], [550, 595], [790, 600], [30, 860], [210, 6
 const WORLD = { x: -150, y: -60, w: 1100, h: 1220 };       // pannable area
 const MIN_W = 220, MAX_W = 2600;
 
-export function CityMap({ lang, active, onPick }: { lang: Lang; active: Building | null; onPick: (b: Building) => void }) {
+export function CityMap({ lang, active, onPick, done = [], route = null }: { lang: Lang; active: Building | null; onPick: (b: Building) => void; done?: string[]; route?: string[] | null }) {
   const svg = useRef<SVGSVGElement>(null);
   const [vb, setVb] = useState(FULL);
   const cur = useRef(FULL);
@@ -147,6 +147,16 @@ export function CityMap({ lang, active, onPick }: { lang: Lang; active: Building
       <Life houses={HOUSES} />
       <Surroundings layer="top" />
 
+      {route && (() => {
+        const pts = route.map(id => BUILDINGS.find(b => b.errands.some(x => x.id === id))!);
+        const d = pts.map((b, i) => (i ? 'L' : 'M') + ' ' + b.x + ' ' + b.y).join(' ');
+        return (<g class="route" aria-hidden="true">
+          <path d={d} fill="none" stroke="#e63946" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 14" />
+          {pts.map((b, i) => { const n = pts.slice(0, i).filter(p => p === b).length; return (
+            <g transform={`translate(${b.x - 34 - n * 22} ${b.y - 34})`}><circle r="12" fill={done.includes(route[i]) ? '#3cb98a' : '#e63946'} stroke="#fff" stroke-width="2.5" />
+              <text y="4.5" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">{done.includes(route[i]) ? '✓' : i + 1}</text></g>); })}
+        </g>);
+      })()}
       {BUILDINGS.map(b => {
         const on = active?.id === b.id; const label = tr(b.s, lang); const w = Math.max(60, label.length * 8.2 + 22);
         return (
@@ -160,6 +170,9 @@ export function CityMap({ lang, active, onPick }: { lang: Lang; active: Building
               <rect x={-w / 2} y="-12" width={w} height="23" rx="11.5" fill="#1d2140" opacity=".88" />
               <text x="0" y="4.5" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">{label}</text>
             </g>
+            {(() => { const c = b.errands.filter(x => done.includes(x.id)).length; return c ? (
+              <g transform="translate(26 -26) rotate(-14)"><circle r="14" fill="#fff" stroke="#e63946" stroke-width="3" /><circle r="9.5" fill="none" stroke="#e63946" stroke-width="1.4" stroke-dasharray="3 2" />
+                <text y="4.5" text-anchor="middle" font-size="12" font-weight="900" fill="#e63946">{c}</text></g>) : null; })()}
           </g>
         );
       })}
