@@ -68,6 +68,20 @@ export function Landmarks() {
       {[-26, -10, 6, 22].map((x) => <rect x={x} y="-4" width="7" height="12" rx="3.5" fill="#6b7290" />)}
       <text x="0" y="84" text-anchor="middle" class="lm-label">Neuschwanstein</text>
     </g>
+    {/* Wuppertaler Schwebebahn: hanging train on steel trestles over the Wupper */}
+    <g transform="translate(-78 605)">
+      <ellipse cx="0" cy="40" rx="82" ry="9" fill="#000" opacity=".1" />
+      <path d="M -85 30 Q 0 22 85 30 L 85 44 Q 0 36 -85 44 Z" fill="#5fa8d3" /><path d="M -60 36 q 10 -3 20 0 M 10 34 q 10 -3 20 0" stroke="#bfe3f5" stroke-width="1.5" fill="none" />
+      {[-60, 0, 60].map((x) => <g><path d={`M ${x - 22} 36 L ${x} -44 L ${x + 22} 36`} fill="none" stroke="#4d7a6a" stroke-width="3.5" /><path d={`M ${x - 13} 0 L ${x + 13} 0 M ${x - 7} -20 L ${x + 7} -20`} stroke="#4d7a6a" stroke-width="2" /></g>)}
+      <rect x="-84" y="-48" width="168" height="6" rx="1.5" fill="#3f6b5c" />
+      {[-80, -60, -40, -20, 0, 20, 40, 60].map((x) => <path d={`M ${x} -48 l 10 6 l 10 -6`} stroke="#2f5246" stroke-width="1" fill="none" />)}
+      <g class="schwebe">
+        <path d="M -8 -42 L -8 -32 M 8 -42 L 8 -32" stroke="#333" stroke-width="2" />
+        <rect x="-24" y="-32" width="48" height="20" rx="7" fill="#2b5fb4" /><rect x="-24" y="-17" width="48" height="5" rx="2" fill="#f1f1f1" />
+        {[-18, -8, 2, 12].map((x) => <rect x={x} y="-28" width="7" height="8" rx="1.5" fill="#cfe6ff" />)}
+      </g>
+      <text x="0" y="66" text-anchor="middle" class="lm-label">Schwebebahn</text>
+    </g>
     <text x="640" y="80" class="lm-river">Rhein</text>
   </g>);
 }

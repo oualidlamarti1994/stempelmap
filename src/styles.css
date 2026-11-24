@@ -120,3 +120,6 @@ html.hc .official, html.hc .read-btn { background: #ffd166 !important; color: #0
 .route-list button { width: 100%; display: flex; gap: 12px; align-items: center; text-align: start; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--line); background: var(--bg); cursor: pointer; font-weight: 600; }
 .rn { width: 28px; height: 28px; flex: none; border-radius: 50%; display: grid; place-items: center; background: #e63946; color: #fff; font-weight: 800; }
 .btn-ghost { padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line); background: transparent; cursor: pointer; font-weight: 700; }
+.schwebe { animation: schwebe 14s ease-in-out infinite alternate; }
+@keyframes schwebe { from { transform: translateX(-52px); } to { transform: translateX(52px); } }
+@media (prefers-reduced-motion: reduce) { .schwebe { animation: none; } }

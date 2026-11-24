@@ -74,9 +74,7 @@ export function Surroundings({ layer }: { layer: 'ground' | 'top' }) {
     {/* Left: vineyards, sheep meadow, forest */}
     <g>{Array.from({ length: 8 }, (_, i) => <path d={`M -165 ${140 + i * 14} Q -75 ${132 + i * 14} 20 ${140 + i * 14}`} stroke="#5d8f3a" stroke-width="5" stroke-linecap="round" fill="none" />)}
       {Array.from({ length: 24 }, (_, i) => <circle cx={-150 + (i % 8) * 22} cy={140 + Math.floor(i / 8) * 42} r="3" fill="#6b3a7d" />)}</g>
-    <rect x="-170" y="545" width="185" height="140" rx="20" fill="#a8d88a" stroke="#c9a66b" stroke-width="3" stroke-dasharray="6 5" />
-    {[[-140, 590], [-95, 620], [-50, 585], [-120, 650], [-25, 640]].map(([x, y], i) => (
-      <g transform={`translate(${x} ${y})`}><g ref={(e) => { sheep.current[i] = e; }}><ellipse rx="11" ry="7" fill="#f7f4ec" /><circle cx="10" cy="-3" r="4" fill="#3a3a3a" /><rect x="-7" y="5" width="2" height="5" fill="#3a3a3a" /><rect x="5" y="5" width="2" height="5" fill="#3a3a3a" /></g></g>))}
+    <rect x="-170" y="545" width="185" height="140" rx="20" fill="#a8d88a" />
     {Array.from({ length: 14 }, (_, i) => <Pine x={-160 + (i % 7) * 28} y={895 + Math.floor(i / 7) * 34 + (i % 2) * 8} s={1.1} />)}
 
     {/* Right: wind turbines, Ferris wheel, farm */}
@@ -97,6 +95,8 @@ export function Surroundings({ layer }: { layer: 'ground' | 'top' }) {
     {/* Below the track: fields + football pitch */}
     {Array.from({ length: 6 }, (_, i) => <rect x={-170 + i * 190} y="1060" width="180" height="90" rx="10" fill={['#e8d48a', '#a6d77f', '#d9c27a', '#9fd071', '#e3cf86', '#b2dc8a'][i]} />)}
     <g transform="translate(380 1105)"><rect x="-70" y="-38" width="140" height="76" rx="6" fill="#4fae5a" stroke="#fff" stroke-width="2" /><line x1="0" y1="-38" x2="0" y2="38" stroke="#fff" stroke-width="2" /><circle r="12" fill="none" stroke="#fff" stroke-width="2" /></g>
+    {[[125, 1090], [170, 1105], [135, 1135], [180, 1140], [150, 1115]].map(([x, y], i) => (
+      <g transform={`translate(${x} ${y})`}><g ref={(e) => { sheep.current[i] = e; }}><ellipse rx="11" ry="7" fill="#f7f4ec" /><circle cx="10" cy="-3" r="4" fill="#3a3a3a" /><rect x="-7" y="5" width="2" height="5" fill="#3a3a3a" /><rect x="5" y="5" width="2" height="5" fill="#3a3a3a" /></g></g>))}
 
     {WINTER && <rect x="-2000" y="-1000" width="4800" height="3100" fill="#ffffff" opacity=".28" style="pointer-events:none" />}
   </g>);
