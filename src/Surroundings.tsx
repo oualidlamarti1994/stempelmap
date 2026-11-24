@@ -18,6 +18,24 @@ const Tree = ({ x, y, s = 1, c = '#5fae4a' }: { x: number; y: number; s?: number
 const Pine = ({ x, y, s = 1 }: { x: number; y: number; s?: number }) =>
   <g transform={`translate(${x} ${y}) scale(${s})`}><rect x="-2" y="10" width="4" height="8" fill="#6b4a2e" /><path d="M 0 -18 L 12 10 L -12 10 Z" fill="#2f7d4a" /><path d="M 0 -10 L 9 6 L -9 6 Z" fill="#3c9a5c" /></g>;
 
+/** German theme: black-red-gold bunting over the streets and waving flags. */
+const DE = ['#1a1a1a', '#dd0000', '#ffce00'];
+function Bunting({ x1, x2, y }: { x1: number; x2: number; y: number }) {
+  const n = Math.max(4, Math.round((x2 - x1) / 22)), sag = (x2 - x1) * 0.12;
+  const at = (t: number) => [x1 + (x2 - x1) * t, y + 4 * sag * t * (1 - t)];
+  return (<g>
+    <path d={`M ${x1} ${y} Q ${(x1 + x2) / 2} ${y + 2 * sag} ${x2} ${y}`} stroke="#6b5a3a" stroke-width="1.2" fill="none" />
+    {Array.from({ length: n }, (_, i) => { const [a, b] = at((i + 0.15) / n), [c, d] = at((i + 0.85) / n), [m, k] = at((i + 0.5) / n);
+      return <path d={`M ${a} ${b} L ${c} ${d} L ${m} ${k + 13} Z`} fill={DE[i % 3]} />; })}
+  </g>);
+}
+function Flag({ x, y, s = 1 }: { x: number; y: number; s?: number }) {
+  return (<g transform={`translate(${x} ${y}) scale(${s})`}>
+    <rect x="-1.5" y="-70" width="3" height="70" fill="#9aa0b4" /><circle cy="-71" r="3" fill="#ffce00" />
+    <g class="de-flag">{DE.map((c, i) => <rect x="1.5" y={-68 + i * 9} width="40" height="9" fill={c} />)}</g>
+  </g>);
+}
+
 export function Surroundings({ layer }: { layer: 'ground' | 'top' }) {
   const turbines = useRef<(SVGGElement | null)[]>([]);
   const wheel = useRef<SVGGElement>(null);
@@ -64,6 +82,11 @@ export function Surroundings({ layer }: { layer: 'ground' | 'top' }) {
   }, []);
 
   if (layer === 'ground') return (<g class="surroundings" aria-hidden="true">
+    <g class="de-bg">
+      <clipPath id="de-shape"><path d="M 271 -200 L 432 -180 L 568 -100 L 754 -120 L 965 0 L 990 120 L 1015 260 L 1027 460 L 1064 560 L 977 600 L 804 720 L 705 720 L 754 820 L 816 920 L 915 1020 L 816 1120 L 791 1240 L 816 1280 L 717 1260 L 506 1280 L 395 1280 L 271 1260 L 147 1260 L 134 1120 L 221 980 L -2 940 L -39 760 L -52 620 L -64 580 L -27 400 L 47 380 L 85 260 L 35 180 L 72 100 L 196 60 L 258 80 L 308 0 Z" /></clipPath>
+      <g clip-path="url(#de-shape)" opacity=".5"><rect x="-400" y="-240" width="1800" height="520" fill="#1a1a1a" /><rect x="-400" y="280" width="1800" height="520" fill="#dd0000" /><rect x="-400" y="800" width="1800" height="525" fill="#ffce00" /></g>
+      <path d="M 271 -200 L 432 -180 L 568 -100 L 754 -120 L 965 0 L 990 120 L 1015 260 L 1027 460 L 1064 560 L 977 600 L 804 720 L 705 720 L 754 820 L 816 920 L 915 1020 L 816 1120 L 791 1240 L 816 1280 L 717 1260 L 506 1280 L 395 1280 L 271 1260 L 147 1260 L 134 1120 L 221 980 L -2 940 L -39 760 L -52 620 L -64 580 L -27 400 L 47 380 L 85 260 L 35 180 L 72 100 L 196 60 L 258 80 L 308 0 Z" fill="none" stroke="#1a1a1a" stroke-opacity=".4" stroke-width="4" stroke-linejoin="round" />
+    </g>
     {/* Siebengebirge + Drachenfels above the Rhine */}
     <path d="M -1400 70 L -260 70 Q -160 -40 -60 30 Q 40 -70 150 20 Q 240 -60 340 30 Q 460 -50 560 25 Q 680 -60 800 30 Q 900 -30 1060 60 L 2200 60 L 2200 90 L -1400 90 Z" fill="#8cbf6e" />
     <path d="M -1400 80 L -260 80 Q -120 10 0 60 Q 160 0 300 55 Q 520 0 700 50 Q 900 10 1060 75 L 2200 75 L 2200 95 L -1400 95 Z" fill="#79b05c" />
