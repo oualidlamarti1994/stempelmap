@@ -82,11 +82,6 @@ export function Surroundings({ layer }: { layer: 'ground' | 'top' }) {
   }, []);
 
   if (layer === 'ground') return (<g class="surroundings" aria-hidden="true">
-    <g class="de-bg">
-      <clipPath id="de-shape"><path d="M 271 -200 L 432 -180 L 568 -100 L 754 -120 L 965 0 L 990 120 L 1015 260 L 1027 460 L 1064 560 L 977 600 L 804 720 L 705 720 L 754 820 L 816 920 L 915 1020 L 816 1120 L 791 1240 L 816 1280 L 717 1260 L 506 1280 L 395 1280 L 271 1260 L 147 1260 L 134 1120 L 221 980 L -2 940 L -39 760 L -52 620 L -64 580 L -27 400 L 47 380 L 85 260 L 35 180 L 72 100 L 196 60 L 258 80 L 308 0 Z" /></clipPath>
-      <g clip-path="url(#de-shape)" opacity=".5"><rect x="-400" y="-240" width="1800" height="520" fill="#1a1a1a" /><rect x="-400" y="280" width="1800" height="520" fill="#dd0000" /><rect x="-400" y="800" width="1800" height="525" fill="#ffce00" /></g>
-      <path d="M 271 -200 L 432 -180 L 568 -100 L 754 -120 L 965 0 L 990 120 L 1015 260 L 1027 460 L 1064 560 L 977 600 L 804 720 L 705 720 L 754 820 L 816 920 L 915 1020 L 816 1120 L 791 1240 L 816 1280 L 717 1260 L 506 1280 L 395 1280 L 271 1260 L 147 1260 L 134 1120 L 221 980 L -2 940 L -39 760 L -52 620 L -64 580 L -27 400 L 47 380 L 85 260 L 35 180 L 72 100 L 196 60 L 258 80 L 308 0 Z" fill="none" stroke="#1a1a1a" stroke-opacity=".4" stroke-width="4" stroke-linejoin="round" />
-    </g>
     {/* Siebengebirge + Drachenfels above the Rhine */}
     <path d="M -1400 70 L -260 70 Q -160 -40 -60 30 Q 40 -70 150 20 Q 240 -60 340 30 Q 460 -50 560 25 Q 680 -60 800 30 Q 900 -30 1060 60 L 2200 60 L 2200 90 L -1400 90 Z" fill="#8cbf6e" />
     <path d="M -1400 80 L -260 80 Q -120 10 0 60 Q 160 0 300 55 Q 520 0 700 50 Q 900 10 1060 75 L 2200 75 L 2200 95 L -1400 95 Z" fill="#79b05c" />
