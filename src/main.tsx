@@ -3,6 +3,8 @@ import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { BUILDINGS, LANGS, UI, tr, type Building, type Errand, type Lang } from './data';
 import { CityMap } from './CityMap';
 import './i18n_v2';
+import './i18n_v3';
+import { TownPicker, LocalLinks, type MyPlace } from './Town';
 import guidesJson from './guides.json';
 import { NEXT_UPDATE, STAND, VERSION, fmtDate } from './version';
 import './styles.css';
@@ -44,6 +46,10 @@ function App() {
   const toggleDone = (id: string) => { const n = done.includes(id) ? done.filter(x => x !== id) : [...done, id]; setDone(n); try { localStorage.setItem('pc.done', JSON.stringify(n)); } catch { /* ignore */ } };
   const total = BUILDINGS.reduce((a, b) => a + b.errands.length, 0);
   const [route, setRoute] = useState(false);
+  // my town (browser only)
+  const [place, setPlace] = useState<MyPlace | null>(() => { try { return JSON.parse(localStorage.getItem('pc.place') || 'null'); } catch { return null; } });
+  const [picker, setPicker] = useState(false);
+  const choosePlace = (p: MyPlace) => { setPlace(p); setPicker(false); try { localStorage.setItem('pc.place', JSON.stringify(p)); } catch { /* ignore */ } };
 
   // accessibility preferences (kept in this browser only)
   const load = (k: string) => { try { return localStorage.getItem('pc.' + k) === '1'; } catch { return false; } };
@@ -75,6 +81,7 @@ function App() {
         <div class="brand"><span class="logo" dangerouslySetInnerHTML={{ __html: STAMP }} /><div><b>StempelMap</b><small>{u('title')} · {u('sub')}</small></div></div>
         <div class="tools">
         <button class="route-btn" aria-pressed={route} onClick={() => { setRoute(!route); setActive(null); setErrand(null); }}>🧭 <span class="lbl">{u('route')}</span></button>
+        <button class="town-btn" onClick={() => setPicker(true)} aria-haspopup="dialog">📍 <span class="lbl">{place ? place.name : u('myTown')}</span></button>
         <span class="pass" title={u('passNote')}>🎫 <span class="lbl">{u('pass')}</span> <b>{done.length}/{total}</b></span>
         <button class="a11y-btn" aria-expanded={panel} aria-controls="a11y-panel" onClick={() => setPanel(!panel)}>♿ <span class="lbl">{u('a11y')}</span></button>
         <select value={lang} onChange={ev => setLang((ev.target as HTMLSelectElement).value as Lang)} aria-label="Language">
@@ -89,6 +96,7 @@ function App() {
           <label><input type="checkbox" checked={contrast} onChange={() => setContrast(!contrast)} /> 🌓 {u('contrast')}</label>
         </div>
       )}
+      {picker && <TownPicker lang={lang} u={u} onPick={choosePlace} onClose={() => setPicker(false)} />}
       <div class="search">
         <input value={q} onInput={ev => setQ((ev.target as HTMLInputElement).value)} placeholder={u('search')} aria-label={u('search')} />
         {hits.length > 0 && (
@@ -139,6 +147,7 @@ function App() {
               <button class="link-back" onClick={() => setErrand(null)}>{back} {tr(active.t, lang)}</button>
               <h3>{tr(errand.t, lang)}</h3>
               <Guide id={errand.id} lang={lang} u={u} />
+              <LocalLinks building={active.id} query={errand.t.de || ''} place={place} u={u} onPick={() => setPicker(true)} />
               <div class="g-actions">
                 <button class={'stamp-btn' + (done.includes(errand.id) ? ' on' : '')} onClick={() => toggleDone(errand.id)}>{done.includes(errand.id) ? '🔴 ' + u('stamped') : u('getStamp')}</button>
                 <ShareBtn id={errand.id} title={tr(errand.t, lang)} u={u} />
