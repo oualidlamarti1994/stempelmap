@@ -125,12 +125,13 @@ html.hc .official, html.hc .read-btn { background: #ffd166 !important; color: #0
 @media (prefers-reduced-motion: reduce) { .schwebe { animation: none; } }
 
 /* German theme: the flag as page background, with soft fabric folds and a vignette */
-body {
+html { background: #0d0d0d; } body { background: transparent; }
+body::before {
   background:
     radial-gradient(ellipse 120% 90% at 50% 40%, transparent 55%, rgba(0,0,0,.38) 100%),
     linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.10) 10%, rgba(0,0,0,.16) 24%, rgba(255,255,255,.08) 40%, rgba(0,0,0,.14) 57%, rgba(255,255,255,.10) 73%, rgba(0,0,0,.14) 90%, rgba(255,255,255,.04) 100%),
     linear-gradient(#0d0d0d 0 33.34%, #dd0000 0 66.67%, #ffce00 0);
-  background-attachment: fixed; background-size: cover;
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
 }
 .app { padding: 20px clamp(16px, 5vw, 96px) 40px; max-width: 1700px; }
 header { background: color-mix(in srgb, var(--card) 90%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
@@ -142,3 +143,27 @@ html.hc body { background: #000; } html.hc header, html.hc .foot { background: #
 .de-flag { transform-origin: 1.5px -60px; animation: wave 3s ease-in-out infinite alternate; }
 @keyframes wave { from { transform: skewY(-4deg) scaleX(.94); } to { transform: skewY(4deg) scaleX(1); } }
 @media (prefers-reduced-motion: reduce) { .de-flag { animation: none; } }
+
+/* Responsive: phone / tablet / laptop */
+header { flex-wrap: wrap; }
+.tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: flex-end; }
+@media (max-width: 900px) {
+  .app { padding: 12px 12px 28px; }
+  header { padding: 10px 12px; gap: 10px; }
+  .brand small { font-size: .78rem; }
+}
+@media (max-width: 640px) {
+  .app { padding: 8px 8px 24px; }
+  header { border-radius: 16px; }
+  .brand { flex: 1 1 100%; } .brand small { display: none; } .logo svg { width: 34px; height: 34px; }
+  .tools { flex: 1 1 100%; justify-content: stretch; gap: 6px; }
+  .tools > * { display: inline-flex; align-items: center; gap: 4px; flex: 1 1 0; min-width: 0; min-height: 44px; justify-content: center; text-align: center; }
+  .tools select { flex: 1.6 1 0; }
+  .search, .search input { font-size: 16px; }
+  .map-wrap { height: calc(100dvh - 190px); min-height: 380px; border-radius: 18px; border-width: 3px; }
+  .hint { font-size: .72rem; bottom: 10px; }
+  .foot { font-size: .75rem; }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  .map-wrap { height: calc(100dvh - 200px); }
+}

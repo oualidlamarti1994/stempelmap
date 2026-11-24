@@ -45,7 +45,7 @@ export function CityMap({ lang, active, onPick, done = [], route = null }: { lan
     };
     anim.current = requestAnimationFrame(step);
   };
-  const overview = () => { const w = Math.min(MAX_W, Math.max(860, 1130 / aspect.current)); fly([400 - w / 2, 550 - (w * aspect.current) / 2, w, w * aspect.current]); };
+  const overview = () => { const w = Math.min(MAX_W, Math.max(aspect.current > 1.2 ? 660 : 860, 1130 / aspect.current)); fly([400 - w / 2, 550 - (w * aspect.current) / 2, w, w * aspect.current]); };
 
   // keep the map filling its element when the window size changes
   useEffect(() => {
