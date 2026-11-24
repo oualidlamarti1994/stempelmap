@@ -1,22 +1,28 @@
-# StempelMap – Roadmap v1 → v10
+# StempelMap – Timeline & Roadmap (updated 2026-11-24)
 
-**Update rhythm (fixed timestamps):** a release on **1 Jan · 1 Apr · 1 Jul · 1 Oct**.
-Why these dates: most German rules change on **1 January and 1 July** (minimum wage, Minijob limit, child benefit,
-Deutschlandticket, social benefits). Every release: re-check all numbers → set `STAND` in `src/version.ts` → changelog → deploy.
-Each guide shows "🕓 Stand: <date>", the footer shows version + next update.
+## Phase 0 – Launch (now → Dec 2026)
+| When | What | Who |
+|---|---|---|
+| by 30 Nov 2026 | Buy stempelmap.de · submit Prototype Fund (Resilienz) | Owner |
+| right after purchase | Connect domain, remove noindex, DNSSEC, Google Search Console | Claude |
+| Dec 2026 | Native-speaker check ar / uk / tr (then the rest) · test with 5–10 newcomers + 1 advice centre in Bonn | Owner + volunteers |
 
-| Version | Date | Map grows by | Content / features |
-|---|---|---|---|
-| **v1.0** | Nov 2026 | 17 buildings, 71 errands | 11 languages, guides with official links, accessibility (list, read aloud, contrast) |
-| **v2.0** | 1 Jan 2027 | 📮 Post office, 🏢 "City centre" district | Yearly number update (min. wage 14,60 €, Minijob 633 €, D-Ticket 66,80 € …). "First 30 days in Germany" route drawn on the map. City links for the 10 biggest cities (booking pages of Bürgeramt / Ausländerbehörde). |
-| **v3.0** | 1 Apr 2027 | – | **Stempel-Pass:** personal checklist, collect a stamp per finished errand, deadline reminders (e.g. Anmeldung within 2 weeks). Data stays in the browser. |
-| **v4.0** | 1 Jul 2027 | 🏭 Work district: self-employment/Gewerbe, 🧓 pension office, ⚖️ court & legal aid | **Letter explainer:** upload a German letter → explained in your language (opt-in AI, nothing stored). |
-| **v5.0** | 1 Oct 2027 | – | More languages: Kurdish, Albanian, Pashto, Persian (Iran), Tigrinya, Spanish, French. Native-speaker review of all translations. Audio versions of guides. |
-| **v6.0** | 1 Jan 2028 | 🤝 Partner street | Verified partner marketplace: language schools, translators, driving schools, tax help (clearly marked as ads). |
-| **v7.0** | 1 Apr 2028 | 🗺️ Real city maps | Own map per big city with real office addresses and opening hours (open data), starting with Bonn, Köln, Berlin, Hamburg, München. |
-| **v8.0** | 1 Jul 2028 | 🏢 Company campus | B2B: white-label onboarding for employers and cities (own logo, own checklist, own languages). |
-| **v9.0** | 1 Oct 2028 | 💬 Community square | Moderated Q&A, tips from people who did it, "what happened at my appointment". |
-| **v10.0** | 1 Jan 2029 | 🇦🇹 🇨🇭 new countries | Austria & Switzerland maps; installable app (PWA/Android); 20 languages. |
+## Phase 1 – Versions (fixed release dates: 1 Jan / 1 Apr / 1 Jul / 1 Oct)
+| Version | Date | Content |
+|---|---|---|
+| **v1.0–1.1** ✅ | Nov 2026 | 17 buildings, 71 guides, 11 languages, accessibility, living map, route "First 30 days", Stempel-Pass, share/WhatsApp, German-flag design, responsive, security headers, **local links for all 11,100 municipalities** |
+| **v2.0** | 1 Jan 2027 | Yearly numbers (min. wage 14,60 €, Minijob 633 €, D-Ticket 66,80 € …) · 📮 post office · fixes from user tests · checked translations marked ✓ |
+| **v3.0** | 1 Apr 2027 | Deadline reminders (e.g. Anmeldung within 2 weeks) · offline/PWA · tested direct links for the 50 biggest cities · **decision point**: continue if users/funding, else keep as finished portfolio |
+| Funding | Jun–Nov 2027 | *If Prototype Fund approved:* open data format (JSON schema), reusable engine, automatic link check, 2 pilot towns, WCAG 2.2 AA test |
+| **v4.0** | 1 Jul 2027 | 🏭 Work district (Gewerbe, pension, legal aid) · letter explainer (opt-in AI, nothing stored) |
+| **v5.0** | 1 Oct 2027 | More languages (Kurdish, Albanian, Pashto, Tigrinya, Spanish, French) · audio guides |
+| **v6.0** | 1 Jan 2028 | Engine 1.0 public: any town/advice centre builds its own map |
+| **v7.0** | 1 Apr 2028 | Real city maps with office addresses & opening hours (open data) |
+| **v8.0** | 1 Jul 2028 | Partner version for employers/cities (own logo & checklist) – main income idea |
+| **v9.0** | 1 Oct 2028 | 💬 Moderated community tips ("what happened at my appointment") |
+| **v10.0** | 1 Jan 2029 | 🇦🇹 🇨🇭 Austria & Switzerland · Android app · 20 languages |
+
+**Rule:** every release date also = content check (fees, laws, dead links). Time budget: 2–3 h/week.
 
 ## Release checklist (every fixed date)
 1. Check all numbers/fees against official sources (search "<topic> <year>" on bund.de, BAMF, Arbeitsagentur, DRV).
