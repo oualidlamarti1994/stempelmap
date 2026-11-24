@@ -11,6 +11,11 @@ export default {
       const body = { state: inDE ? STATE[cf.regionCode] ?? null : null, city: inDE ? cf.city ?? null : null };
       return new Response(JSON.stringify(body), { headers: { 'content-type': 'application/json', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' } });
     }
-    return env.ASSETS.fetch(req);
+    if (url.hostname === 'www.stempelmap.de') return Response.redirect('https://stempelmap.de' + url.pathname + url.search, 301);
+    const res = await env.ASSETS.fetch(req);
+    if (url.hostname !== 'stempelmap.de') { // keep the old workers.dev address out of search engines
+      const r = new Response(res.body, res); r.headers.set('X-Robots-Tag', 'noindex, nofollow'); return r;
+    }
+    return res;
   },
 };

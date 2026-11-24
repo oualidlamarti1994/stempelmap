@@ -1,0 +1,22 @@
+const p=require('../../calm_app/node_modules/puppeteer-core');const U='https://paperclip.adhs-ruhe-report.workers.dev/';const W=ms=>new Promise(r=>setTimeout(r,ms));
+async function page(b,{w=1600,h=900,dpr=1.2,lang='de',ls={},mobile=false}={}){const pg=await b.newPage();
+  await pg.emulateMediaFeatures([{name:'prefers-color-scheme',value:'dark'}]);
+  await pg.setViewport({width:w,height:h,deviceScaleFactor:dpr,isMobile:mobile,hasTouch:mobile});
+  await pg.evaluateOnNewDocument((L,ls)=>{Object.defineProperty(navigator,'language',{get:()=>L});try{localStorage.clear();for(const k in ls)localStorage.setItem(k,ls[k]);}catch(e){}},lang,ls);return pg;}
+const go=async(pg,h='')=>{await pg.goto(U+'?v=2'+h,{waitUntil:'networkidle0'});await W(1500);};
+const shot=(pg,n)=>pg.screenshot({path:'shots/'+n+'.png'});
+const BONN=JSON.stringify({name:'Bonn',ags:'05314000'});
+(async()=>{const b=await p.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
+let pg=await page(b);await go(pg);await shot(pg,'01-map');
+await pg.evaluate(()=>{const t=[...document.querySelectorAll('.pin')].find(e=>/Bürgeramt/.test(e.textContent));(t.querySelector('rect')||t).dispatchEvent(new MouseEvent('click',{bubbles:true}));});await W(1800);await shot(pg,'02-building');
+pg=await page(b);await go(pg,'#e=anmeldung');await shot(pg,'03-guide');
+await pg.click('.town-cta');await W(1200);await pg.type('.town-dlg input','Bonn');await W(600);await shot(pg,'04-town');
+pg=await page(b,{ls:{'pc.place':BONN}});await go(pg,'#e=aufenthalt');await pg.evaluate(()=>{const s=document.querySelector('.sheet');s.scrollTop=s.scrollHeight;document.querySelector('.g-local').scrollIntoView({block:'center'});});await W(600);await shot(pg,'05-local');
+pg=await page(b,{ls:{'pc.place':BONN}});await go(pg);await pg.click('.route-btn');await W(2200);await shot(pg,'06-route');
+pg=await page(b,{ls:{'pc.place':BONN,'pc.done':JSON.stringify(['anmeldung','konto','krankenversicherung','steuerid','sim'])}});await go(pg,'#e=steuerid');await pg.evaluate(()=>{document.querySelector('.g-actions').scrollIntoView({block:'center'})});await W(500);await shot(pg,'07-stamp');
+pg=await page(b,{w:1000,h:900,dpr:1.5,lang:'ar'});await go(pg,'#e=anmeldung');await shot(pg,'08-ar');
+pg=await page(b,{w:1000,h:900,dpr:1.5,lang:'uk'});await go(pg,'#e=anmeldung');await shot(pg,'08-uk');
+pg=await page(b,{ls:{'pc.list':'1','pc.big':'1'}});await go(pg);await pg.click('.a11y-btn');await W(600);await shot(pg,'09-a11y');
+pg=await page(b,{w:390,h:844,dpr:2.5,mobile:true,ls:{'pc.place':BONN}});await go(pg);await shot(pg,'10-phone-map');
+pg=await page(b,{w:390,h:844,dpr:2.5,mobile:true,lang:'tr',ls:{'pc.place':BONN}});await go(pg,'#e=anmeldung');await pg.evaluate(()=>document.querySelector('.g-local').scrollIntoView({block:'center'}));await W(500);await shot(pg,'10-phone-guide');
+await b.close();console.log('ok');})().catch(e=>{console.error(e);process.exit(1)});
